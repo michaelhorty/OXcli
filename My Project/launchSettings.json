@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "oxcli": {
+      "commandName": "Project",
+      "commandLineArgs": "issuesxls --file exampleissues.xlsx"
+    }
+  }
+}
