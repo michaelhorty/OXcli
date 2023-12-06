@@ -777,6 +777,16 @@ errorCatch:
         Return json
     End Function
 
+
+    Public Function osFilename(fileN$) As String
+        If osType = "Windows" Then
+            osFilename = Replace(fileN, "/", "\")
+        Else
+            osFilename = Replace(fileN, "\", "/")
+        End If
+    End Function
+
+
     '    Public Function getJSONObject(key$, json$) As String
     '        On Error GoTo errorcatch
     '

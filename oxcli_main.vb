@@ -1,12 +1,18 @@
+Imports System.Text.RegularExpressions
 Imports System
 Imports System.IO
+Imports System.Runtime.InteropServices
 
 Module Program
     Public aTimer As New System.Timers.Timer
     Public OX As oxWrapper
 
     Public currOffset = 0
-    Public issueLimit = 30
+    Public issueLimit = 1000
+
+    Public ogDir$
+    Public pyDir$
+    Public osType$
 
     Public numResponseFiles As Integer = 0
 
@@ -19,70 +25,369 @@ Module Program
         Dim actioN$ = args(0)
         Console.WriteLine("ACTION: " + actioN)
 
+        ' this will generate errors if no python folder exists
+        ogDir$ = FileSystem.CurDir
+        ChDir("python")
+        pyDir$ = FileSystem.CurDir
+        ChDir(ogDir)
 
+
+        If RuntimeInformation.IsOSPlatform(OSPlatform.Windows) = True Then osType = "Windows"
+        If RuntimeInformation.IsOSPlatform(OSPlatform.OSX) = True Then osType = "MacOSX"
+        If RuntimeInformation.IsOSPlatform(OSPlatform.Linux) = True Then osType = "Linux"
+
+        Console.WriteLine("Detecting " + osType + " environment")
 
         Select Case LCase(actioN)
-            Case "help"
-                Console.WriteLine(fLine("help", "shows this list of commands"))
-                Console.WriteLine(fLine("policycsv", "create CSV of policies (requires that policy JSON files are saved manually)"))
-                Console.WriteLine(fLine("getjson", "uses python engine to pull API JSON args --API (name of API), --file (output filename)"))
-                Console.WriteLine(fLine("issuesxls", "retrieves issues using python engine args --FILE (name of XLS file to create)"))
-                End
+                Case "help"
+                    Console.WriteLine(vbCrLf + "Usage  : ACTION --PARAM1 value --PARAM2 value                        >>>> Actions and parameters are not case sensitive")
+                    Console.WriteLine("Example: oxcli getjson --api getapplications --file applist.json     >>>> Performs 'getjson' action using param values of 'api' and 'file'")
+                    Console.WriteLine("=======================================================================================================================================================")
+                    Console.WriteLine(fLine("help", "shows this list of commands"))
+                    Console.WriteLine("-----------------")
+                    Console.WriteLine(fLine("checkme", "self-inspection of environment"))
+                    Console.WriteLine("-----------------")
+                    Console.WriteLine(fLine("setenv", "sets environment vars for Python API calls"))
+                    Console.WriteLine(fLine("", "[REQUIRED] --KEY (OX API Key)"))
+                    Console.WriteLine(fLine("", "[OPT] --KEY (OX API Key defaults to https://api.cloud.ox.security/api/apollo-gateway)"))
+                    Console.WriteLine("-----------------")
+                    Console.WriteLine(fLine("policycsv", "create CSV of policies (requires that policy JSON files are saved manually)"))
+                    Console.WriteLine("-----------------")
+                    Console.WriteLine(fLine("getjson", "uses python engine to pull API JSON args"))
+                    Console.WriteLine(fLine("", "[REQUIRED] --API (name of API), --file (output filename)"))
+                    Console.WriteLine("-----------------")
+                    Console.WriteLine(fLine("issuesxls", "retrieves issues using python engine args and creates pivot Excel doc"))
+                    Console.WriteLine(fLine("", "[REQUIRED] --FILE (name of XLS file to create)"))
+                    Console.WriteLine("-----------------")
+                    Console.WriteLine(fLine("issuescsv", "retrieves issues using python engine args and creates CSV doc"))
+                    Console.WriteLine(fLine("", "[REQUIRED] --FILE (name of CSV file to create)"))
+                    Console.WriteLine("-----------------")
+                    Console.WriteLine(fLine("addtag", "adds a new tag - name must be unique"))
+                    Console.WriteLine(fLine("", "[REQUIRED] --NAME (name of the tag)"))
+                    Console.WriteLine(fLine("", "[OPTIONAL] --DISPLAY (display name, defaults to same as --NAME), --TYPE (defaults to 'simple' - recommend default)"))
+                    Console.WriteLine("-----------------")
 
-            Case "policycsv"
-                Call policyCSV()
-                End
-
-            Case "getjson"
-                Dim apiCall$ = argValue("api", args)
-                Dim fileN$ = argValue("file", args)
-
-                If Len(apiCall) = 0 Then
-                    Console.WriteLine("This command's parameters:  getjson --api apiname --file 'file name.json'" + vbCrLf + "api  [req] : the name of the API call (action getAPIs)" + vbCrLf + "file [opt]: the output filename to dump JSON")
+                    Console.WriteLine(fLine("edittags", "Loop through apps and Add/Remove tags using string and/or regex match"))
+                    Console.WriteLine(fLine("", "[REQUIRED] --ADDTAG (tag displayname) OR --REMTAG (name)"))
+                    Console.WriteLine(fLine("", "[OPTIONAL] --STR (app contains string), --REGEX (app matches regex), --COMMIT true (otherwise will only preview)"))
+                    Console.WriteLine(fLine("", "[TEST]     --MATCH (submit test app name) - will confirm string and/or regex match without looping through apps"))
+                    Console.WriteLine("=======================================================================================================================================================")
                     End
-                End If
+
+                Case "checkme"
+                    Console.WriteLine("Current directory: " + ogDir)
+                    ChDir("python")
+                    Console.WriteLine("Python directory:  " + pyDir)
+                    If File.Exists(".env") Then
+                        Console.WriteLine("Environment file exists - credentials not verified")
+                    Else
+                        Console.WriteLine("Environment file (.\python\.env) is not present and is needed for credentials")
+                    End If
+                    If File.Exists("python_examp.py") Then
+                        Console.WriteLine("Python executable exists")
+                    Else
+                        Console.WriteLine("Python script to call APIs must be present - obtain python folder that accompanies this DOTNET executable")
+                    End If
+                    ChDir(ogDir)
+                    If File.Exists("Newtonsoft.json.dll") = True Then
+                        Console.WriteLine("OXcli files present")
+                    Else
+                        Console.WriteLine("OX dependencies missing - check folder contents or download new version")
+                    End If
+                    End
+
+
+                Case "setenv"
+                    Dim urL$ = argValue("url", args)
+                    Dim apiKey$ = argValue("key", args)
+                    If apiKey = "" Then
+                        Console.WriteLine("To set environment, OXCLI needs the URL and API KEY. Submit using --URL and --KEY params")
+                    End If
+                    If urL = "" Then
+                        urL = "https://api.cloud.ox.security/api/apollo-gateway"
+                        Console.WriteLine("Will default to https://api.cloud.ox.security/api/apollo-gateway")
+                    End If
+                    Dim newEfile$ = "oxUrl='" + urL + "'" + Chr(13) + "oxKey='" + apiKey + "'"
+                    safeKILL("./python/.env")
+                    Call streamWriterTxt("./python/.env", newEfile)
+                    Console.WriteLine("New environment variables set for " + urL)
+                    End
+
+                Case "policycsv"
+                    Call policyCSV()
+                    End
+
+                Case "addtag"
+                    Call addTag(argValue("name", args), argValue("display", args), argValue("type", args))
+                    End
+
+
+
+                Case "edittags"
+                    Call editTags(args)
+                    End
+
+                Case "getjson"
+                    Dim apiCall$ = argValue("api", args)
+                    Dim fileN$ = argValue("file", args)
+
+                    If Len(apiCall) = 0 Then
+                        Console.WriteLine("This command's parameters:  getjson --api apiname --file 'file name.json'" + vbCrLf + "api  [req] : the name of the API call (action getAPIs)" + vbCrLf + "file [opt]: the output filename to dump JSON")
+                        End
+                    End If
 
                 If Len(fileN) = 0 Then
                     Call setUpAPICall(apiCall, "", True)
                 Else
-                    Console.WriteLine("File created: " + fileN)
+                    Call setUpAPICall(apiCall, fileN)
+                    Console.WriteLine("File created: " + "./python/" + fileN)
                 End If
+
                 End
 
-                    Case "issuesxls"
-                Dim toFilename$ = argValue("file", args)
-                If Len(toFilename) = 0 Then
-                    Console.WriteLine("This command's parameters:  makexls --file 'filename.xlsx'" + vbCrLf + "file : the output Excel filename.")
-                    Console.WriteLine("You must specify a filename for the Excel .xlsx.")
+            Case "issuesxls", "issuescsv"
+
+                If LCase(actioN) = "issuesxls" And osType <> "Windows" Then
+                    Console.WriteLine("This command will only work on a Windows machine with Excel locally installed")
                     End
                 End If
-                Call getAllIssues()
-                Dim allIssues As List(Of issueS)
-                allIssues = buildIssues("getissues.json", numResponseFiles - 1)
-                Call issueRpt(allIssues, CurDir() + "\" + toFilename)
-        End Select
 
-        End
+                Dim toFilename$ = argValue("file", args)
+                    If Len(toFilename) = 0 Then
+                        Console.WriteLine("This command's parameters:  issuesxls OR issuescsv --file 'filename.xlsx'" + vbCrLf + "file : the output Excel filename.")
+                        Console.WriteLine("You must specify a filename for the CSV or Excel .xlsx.")
+                        End
+                    End If
+                    Call getAllIssues()
+                    Dim allIssues As List(Of issueS)
+                allIssues = buildIssues("getissues.json", numResponseFiles - 1)
+
+                If osType = "Windows" Then
+                    toFilename = ogDir + "\" + toFilename
+                Else
+                    toFilename = ogDir + "/" + toFilename
+                End If
+
+                If LCase(actioN) = "issuesxls" Then
+                    Call issueRpt(allIssues, toFilename)
+                Else
+                    Call issueCSV(allIssues, toFilename)
+                End If
+            End Select
+
+            End
 
 
 
     End Sub
+
+
+    Public Function addTag(tagName$, Optional ByVal dName$ = "", Optional ByVal tType$ = "simple") As String
+        addTag = "" ' returns empty if unsuccessful otherwise tagid of new tag
+        If dName = "" Then dName = tagName
+        If tType = "" Then tType = "simple"
+
+        Console.WriteLine("Adding tag:")
+        Call setAddTagVars(tagName, dName, tType)
+        Dim jSon$ = setUpAPICall("addTag",, True)
+
+        addTag = OX.getTagId(jSon)
+
+        If addTag = "" Then
+            Console.WriteLine("ERROR: Could not add tag - return JSON=" + vbCrLf + jSon)
+        Else
+            Console.WriteLine("New Tag: " + tagName + " >> TagID: " + addTag)
+        End If
+
+    End Function
+
+
+    Public Sub editTags(args() As String)
+        Dim doRegExMatch As Boolean = False
+        Dim toMatch$ = argValue("match", args)
+        Dim regX As Regex
+        Dim regXmatch As Match
+        Dim matchStr$ = argValue("str", args)
+        Dim testingOnly As Boolean = False
+
+        Dim addedTag$ = argValue("addtag", args)
+        Dim remTag$ = argValue("remtag", args)
+
+        Dim newModTag As editTagsRequestVARS = New editTagsRequestVARS
+
+        Dim commitChanges As Boolean = False
+
+        If LCase(argValue("commit", args)) = "true" Then commitChanges = True
+
+        If Len(toMatch) > 0 Then
+            testingOnly = True
+            Console.WriteLine("STR=" + matchStr + " TOMATCH=" + toMatch)
+        End If
+
+        If Len(argValue("regex", args)) Then
+            doRegExMatch = True
+            regX = New Regex(argValue("regex", args))
+            Console.WriteLine("Performing REGEX matching using " + qT(argValue("regex", args)))
+            If testingOnly Then
+                Console.WriteLine("Testing match on " + qT(toMatch) + " using Regular Expression: " + qT(argValue("regex", args)))
+                regXmatch = regX.Match(toMatch)
+                Console.WriteLine("REGX_MATCH: " + CStr(regXmatch.Success) + "  VALUE: " + regXmatch.Value)
+            End If
+        End If
+
+        Dim doStringMatch As Boolean = False
+        If Len(matchStr) Then
+            doStringMatch = True
+            Console.WriteLine("Performing STRING matching using " + qT(matchStr))
+            If testingOnly Then
+                Console.WriteLine("Testing match on " + qT(toMatch) + " by looking for string: " + qT(matchStr))
+                If InStr(toMatch, matchStr, CompareMethod.Text) Then
+                    Console.WriteLine("STR_MATCH: True ")
+                Else
+                    Console.WriteLine("MATCH: False ")
+                End If
+            End If
+        End If
+
+        If testingOnly = True Then
+            End
+        End If
+
+        Console.WriteLine("Getting applications")
+
+        Dim appsWithTag As Integer = 0
+        Dim allAppsWithTag As Integer = 0
+
+        Dim allApps As List(Of oxAppshort) = getAppListShort()
+        Console.WriteLine("# of Applications: " + allApps.Count.ToString)
+        Dim allTags As List(Of oxTag) = getAllTags()
+        Console.WriteLine("# of Tags: " + allTags.Count.ToString)
+
+        Dim tId$ = OX.returnTagId(addedTag, allTags)
+        If tId = "" Then
+            Console.WriteLine("This tag must be created before it can be applied")
+            If commitChanges = True Then tId = addTag(addedTag)
+            If tId = "" And commitChanges = True Then
+                Console.WriteLine("ERROR:Could not add this tag - exiting without changes")
+                End
+            Else
+                newModTag.addedTagsIds.Add(tId)
+            End If
+        Else
+            Console.WriteLine("Found TAG: " + tId)
+            newModTag.addedTagsIds.Add(tId)
+        End If
+
+
+        ' for now - remTAG needs to be accounted for.. Is API smart enough to ignore REMOVE commands when TAG doesnt exist in first place?
+        ' May need to separate ADD and REMOVE and separate operations, although API appears to account for both across multiple apps with a single call
+
+        If newModTag.addedTagsIds.Count + newModTag.removedTagsIds.Count = 0 Then
+            Console.WriteLine("You must either add or remove a tag for this operation to run, using --addtag and/or --remtag")
+            End
+        End If
+
+
+        Console.WriteLine(vbCrLf + "These applications to receive new tags:" + vbCrLf)
+        Console.WriteLine(fLine("Application Name" + spaces(44), "Link" + spaces(76) + "# Tags"))
+        Console.WriteLine(fLine("================" + spaces(44), "====" + spaces(76) + "======"))
+        For Each app In allApps
+            Dim addTag As Boolean = True
+
+            If doRegExMatch = True And addTag = True Then
+                regXmatch = regX.Match(app.appName)
+                If regXmatch.Success = False Then addTag = False
+            End If
+
+            If doStringMatch = True And addTag = True Then
+                If InStr(app.appName, matchStr, CompareMethod.Text) = 0 Then addTag = False
+            End If
+
+            If app.tagExist(, addedTag) Then
+                allAppsWithTag += 1
+
+                If addTag = True Then
+                    appsWithTag += 1
+                    addTag = False
+                End If
+            End If
+
+            ' not yet - later ' If app.tagExist(, remTag) Then
+
+            If addTag Then
+                Console.WriteLine(fLine(app.appName + spaces(60 - Len(app.appName)), app.link + spaces(80 - Len(app.link)) + app.tags.Count.ToString))
+                newModTag.appIds.Add(app.appId)
+            End If
+        Next
+
+        Console.WriteLine(vbCrLf)
+
+        Console.WriteLine("# Matching Apps with Tag:  " + appsWithTag.ToString)
+        Console.WriteLine("# Total Apps with Tag:     " + allAppsWithTag.ToString)
+
+        Console.WriteLine("# Matching Apps to Modify: " + newModTag.appIds.Count.ToString + vbCrLf)
+
+        ' setEditTagsVarsRequests
+        If newModTag.appIds.Count Then
+            Call setEditTagsVarsRequests(newModTag)
+            Console.WriteLine("This action will modify tags of " + newModTag.appIds.Count.ToString + " apps")
+
+            If LCase(argValue("commit", args)) = "true" Then
+                Call setUpAPICall("modifyAppsTags")
+                Console.WriteLine("Action completed")
+            Else
+                Console.WriteLine("In order to commit these changes, call command with '--commit true'")
+            End If
+        Else
+            Console.WriteLine("Exiting without changes")
+        End If
+        End
+    End Sub
+
+
+
+
+    ' these get* funcs also need to move to the wrapper
+
+    Public Function getAllTags() As List(Of oxTag)
+        getAllTags = New List(Of oxTag)
+        Dim fName$ = "getAllTags.json"
+
+        Call setUpAPICall("getAllTags", fName)
+
+        getAllTags = OX.getAllTags("./python/" + fName)
+    End Function
+
+
+
+    Public Function getAppListShort() As List(Of oxAppshort)
+        getAppListShort = New List(Of oxAppshort)
+        Dim fName$ = "appsListShort.json"
+
+        Call setUpAPICall("getAppsShort", fName)
+
+        getAppListShort = OX.getAppInfoShort("./python/" + fName)
+    End Function
+
     Public Function getAllIssues() As Integer
         numResponseFiles = 0
 
         Dim fileName$ = "getissues.json"
         Call setGetIssuesVars(0)
 
+        Console.WriteLine("Pulling first page of issues")
+
         Call setUpAPICall("getissues", Replace(fileName, ".json", "0.json"))
 
         Dim respIssue As listIssues = New listIssues
-        respIssue = OX.getListIssues(Replace(fileName, ".json", "0.json"))
+        respIssue = OX.getListIssues("./python/" + Replace(fileName, ".json", "0.json"))
         With respIssue
             Console.WriteLine("Total Issues: " + .totalIssues.ToString)
             'Console.WriteLine("Filtered Issues: " + .totalFilteredIssues.ToString)
             'Console.WriteLine("Offset: " + .offset.ToString)
         End With
 
+        numResponseFiles = 1
         'this was the first file
 
         Do Until numResponseFiles = numIssueRequests(respIssue.totalFilteredIssues)
@@ -100,6 +405,21 @@ Module Program
 
         Return numResponseFiles
     End Function
+
+    ' Consider putting these in wrapper <summary>
+    ' writing new vars files
+
+    Public Sub setAddTagVars(name$, displayName$, tagType$)
+        Dim newTag As newTagRequestVARS = New newTagRequestVARS(displayName, name, tagType)
+        OX = New oxWrapper("", "")
+        Dim newJson$ = OX.jsonGetNewTagVars(newTag)
+        Console.WriteLine(newJson)
+        Call saveJSONtoFile(newJson, "./python/addTag.variables.json")
+
+    End Sub
+
+
+
     Public Sub setGetIssuesVars(offSet As Integer)
         Dim newIssueVar As issueRequestVARS = New issueRequestVARS
         With newIssueVar
@@ -109,11 +429,22 @@ Module Program
             .getIssuesInput.offset = offSet
         End With
         Dim newJson$ = ""
+        ' this is sloppy pls figure out why you did this, this way
         OX = New oxWrapper("", "")
         newJson = OX.jsonGetIssuesVars(newIssueVar)
         Call saveJSONtoFile(newJson, "./python/getissues.variables.json")
 
     End Sub
+
+    Public Sub setEditTagsVarsRequests(evReq As editTagsRequestVARS)
+        Dim newJson$ = ""
+        ' more sloppy - make OX global for main
+        OX = New oxWrapper("", "")
+        newJson = OX.jsonGetEditTagsVars(evReq)
+        'Console.WriteLine(newJson)
+        Call saveJSONtoFile(newJson, "./python/modifyAppsTags.variables.json")
+    End Sub
+
 
     Public Function numIssueRequests(totalIssues As Long) As Long
         numIssueRequests = 0
@@ -127,11 +458,19 @@ Module Program
 
     End Function
 
-    Public Sub setUpAPICall(apiCall$, Optional ByVal fileN$ = "", Optional ByVal showJSON As Boolean = False)
+    Public Function setUpAPICall(apiCall$, Optional ByVal fileN$ = "", Optional ByVal showJSON As Boolean = False) As String
+        setUpAPICall = ""
         OX = New oxWrapper("", "")
         'Console.WriteLine("Retrieving JSON From OX API: " + apiCall)
 
-        Dim getFile$ = "./python/" + apiCall + "_response.json"
+        Dim getFile$ = osFilename(pyDir + "\" + apiCall + "_response.json")
+        '        If osType = "Windows" Then
+        '            getFile = pyDir + "\" + apiCall + "_response.json"
+        '        Else
+        '            getFile = pyDir + "/" + apiCall + "_response.json"
+        '        End If
+        If fileN <> "" Then fileN = osFilename(pyDir + "\" + fileN)
+
         safeKILL(getFile)
         If Len(fileN) Then safeKILL(fileN)
 
@@ -144,10 +483,10 @@ Module Program
             If Len(fileN) Then
                 FileCopy(getFile, fileN)
             Else
-                If showJSON = True Then Console.WriteLine(streamReaderTxt(getFile))
+                If showJSON = True Then setUpAPICall = streamReaderTxt(getFile) ' Console.WriteLine(streamReaderTxt(getFile))
             End If
         End If
-    End Sub
+    End Function
 
     Public Sub policyCSV()
 
@@ -187,14 +526,23 @@ Module Program
         Dim cFile$
 
         For currFile = 0 To numFiles
-            cFile = Replace(fileN, ".json", currFile.ToString + ".json")
+            cFile = "./python/" + Replace(fileN, ".json", currFile.ToString + ".json")
             Dim tempIssues As List(Of issueS) = New List(Of issueS)
+            Console.WriteLine("Deserializing JSON " + cFile)
             tempIssues = OX.returnIssues(streamReaderTxt(cFile))
-            For Each T In tempIssues
-                allIssues.Add(T)
-            Next
+
+            If numFiles = 0 Then
+                allIssues = tempIssues
+            Else
+                ' is there a better way? test 
+                For Each T In tempIssues
+                    allIssues.Add(T)
+                Next
+            End If
         Next
-        Console.WriteLine("Total # of files (" + issueLimit.ToString + " issues per file): " + numFiles.ToString)
+
+
+        Console.WriteLine("Total # of files (" + issueLimit.ToString + " issues per file): " + (numFiles + 1).ToString)
         Console.WriteLine("# of Issues: " + allIssues.Count.ToString)
         Return allIssues
     End Function
@@ -207,6 +555,8 @@ Module Program
         rAR.s1 = fileN
 
         Call safeKILL(fileN)
+
+        'Console.WriteLine("Building output from results")
 
         With rAR.someColl
             .Add("APP_NAME")
@@ -243,5 +593,51 @@ Module Program
 
         End
     End Sub
+
+    Private Sub issueCSV(allIssues As List(Of issueS), fileN$)
+        Dim newRpt As customRPT = New customRPT
+        Dim rAR As reportingArgs = New reportingArgs
+
+        rAR.someColl = New Collection
+        rAR.s1 = fileN
+
+        Call safeKILL(fileN)
+
+        With rAR.someColl
+            .Add("APP_NAME")
+            .Add("PRIORITY")
+            .Add("CATEGORY")
+            .Add("POLICY")
+            .Add("ISSUE_TITLE")
+            .Add("SEVERITY")
+            .Add("DATE_FOUND")
+            .Add("#_OCCURRENCES")
+            .Add("#_ISSUES")
+        End With
+
+        Dim xls3d(allIssues.Count - 1, 8) As Object
+
+        Dim roW As Long = 0
+        For Each aA In allIssues
+            xls3d(roW, 0) = aA.app.name
+            xls3d(roW, 1) = Math.Round(aA.app.businessPriority, 0)
+            xls3d(roW, 2) = aA.category.name
+            xls3d(roW, 3) = aA.policy.name
+            xls3d(roW, 4) = aA.mainTitle
+            xls3d(roW, 5) = aA.severity
+            xls3d(roW, 6) = jStoDate(aA.created)
+            xls3d(roW, 7) = aA.occurrences
+            xls3d(roW, 8) = 1
+            roW += 1
+        Next
+
+        Console.WriteLine("Throwing object of " + (allIssues.Count * 8).ToString + " elements into CSV..")
+        rAR.booL1 = True ' create XLS not CSV
+
+        Call newRpt.dump2TXT(xls3d, allIssues.Count, rAR)
+
+        End
+    End Sub
+
 
 End Module
