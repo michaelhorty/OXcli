@@ -1,0 +1,528 @@
+{
+  "data": {
+    "getApplications": {
+      "applications": [
+        {
+          "appId": "584102675",
+          "appName": "OX-Security-Demo/Multi-currency-management",
+          "link": "https://github.com/OX-Security-Demo/Multi-currency-management",
+          "tags": [
+            {
+              "tagId": "ox_tag_30",
+              "name": "React",
+              "displayName": "React"
+            },
+            {
+              "tagId": "ox_tag_2",
+              "name": "Login",
+              "displayName": "Login"
+            },
+            {
+              "tagId": "ox_tag_29",
+              "name": "Express.js",
+              "displayName": "Express.js"
+            }
+          ]
+        },
+        {
+          "appId": "584352228",
+          "appName": "OX-Security-Demo/Bank-Website",
+          "link": "https://github.com/OX-Security-Demo/Bank-Website",
+          "tags": [
+            {
+              "tagId": "ox_tag_8",
+              "name": "PostgreSQL",
+              "displayName": "PostgreSQL"
+            },
+            {
+              "tagId": "ox_tag_22",
+              "name": "SpringBoot",
+              "displayName": "Spring Boot"
+            }
+          ]
+        },
+        {
+          "appId": "*GitHub-Settings (OX-Security-Demo)",
+          "appName": "*GitHub-Settings (OX-Security-Demo)",
+          "link": "",
+          "tags": []
+        },
+        {
+          "appId": "310663043",
+          "appName": "michaelhorty/WebGoat",
+          "link": "https://github.com/michaelhorty/WebGoat",
+          "tags": [
+            {
+              "tagId": "ox_tag_17",
+              "name": "Django",
+              "displayName": "Django"
+            },
+            {
+              "tagId": "ox_tag_1",
+              "name": "PII",
+              "displayName": "PII"
+            },
+            {
+              "tagId": "ox_tag_22",
+              "name": "SpringBoot",
+              "displayName": "Spring Boot"
+            },
+            {
+              "tagId": "ox_tag_94",
+              "name": "Published Package",
+              "displayName": "Published Package"
+            },
+            {
+              "tagId": "b8793483-85f8-4f9e-be05-887021b3d704",
+              "name": "new tag",
+              "displayName": "New Tag"
+            },
+            {
+              "tagId": "9502fea7-2507-494a-98fa-138ffced9115",
+              "name": "test zohar",
+              "displayName": "Test Zohar"
+            },
+            {
+              "tagId": "cec543b0-dd86-4c75-b677-b4dcffb5a189",
+              "name": "horty",
+              "displayName": "HORTY"
+            },
+            {
+              "tagId": "ae74ed68-b4d6-4d43-bcd6-a324d98c9ef2",
+              "name": "mhghlab",
+              "displayName": "MHGHLAB"
+            }
+          ]
+        },
+        {
+          "appId": "647669373",
+          "appName": "OX-Security-Demo/Backend-Server",
+          "link": "https://github.com/OX-Security-Demo/Backend-Server",
+          "tags": [
+            {
+              "tagId": "ox_tag_1",
+              "name": "PII",
+              "displayName": "PII"
+            },
+            {
+              "tagId": "bb4cb444-66a8-4c47-82c6-728ac137c7f7",
+              "name": "mike2",
+              "displayName": "mike2"
+            }
+          ]
+        },
+        {
+          "appId": "585303099",
+          "appName": "OX-Security-Demo/Bank-Website-Backend",
+          "link": "https://github.com/OX-Security-Demo/Bank-Website-Backend",
+          "tags": [
+            {
+              "tagId": "ox_tag_3",
+              "name": "PaymentProcessing",
+              "displayName": "Payment"
+            },
+            {
+              "tagId": "ox_tag_1",
+              "name": "PII",
+              "displayName": "PII"
+            },
+            {
+              "tagId": "ox_tag_29",
+              "name": "Express.js",
+              "displayName": "Express.js"
+            }
+          ]
+        },
+        {
+          "appId": "585479391",
+          "appName": "OX-Security-Demo/Investment-management",
+          "link": "https://github.com/OX-Security-Demo/Investment-management",
+          "tags": [
+            {
+              "tagId": "ox_tag_94",
+              "name": "Published Package",
+              "displayName": "Published Package"
+            }
+          ]
+        },
+        {
+          "appId": "585497913",
+          "appName": "OX-Security-Demo/BankForensicsCollector",
+          "link": "https://github.com/OX-Security-Demo/BankForensicsCollector",
+          "tags": []
+        },
+        {
+          "appId": "637651212",
+          "appName": "OX-Security-Demo/Lines-Credits",
+          "link": "https://github.com/OX-Security-Demo/Lines-Credits",
+          "tags": [
+            {
+              "tagId": "ox_tag_22",
+              "name": "SpringBoot",
+              "displayName": "Spring Boot"
+            }
+          ]
+        },
+        {
+          "appId": "586554191",
+          "appName": "OX-Security-Demo/Liquidity-management",
+          "link": "https://github.com/OX-Security-Demo/Liquidity-management",
+          "tags": [
+            {
+              "tagId": "ox_tag_21",
+              "name": "Spring",
+              "displayName": "Spring"
+            }
+          ]
+        },
+        {
+          "appId": "585531998",
+          "appName": "OX-Security-Demo/Insurance-Service",
+          "link": "https://github.com/OX-Security-Demo/Insurance-Service",
+          "tags": [
+            {
+              "tagId": "ox_tag_1",
+              "name": "PII",
+              "displayName": "PII"
+            },
+            {
+              "tagId": "bb4cb444-66a8-4c47-82c6-728ac137c7f7",
+              "name": "mike2",
+              "displayName": "mike2"
+            }
+          ]
+        },
+        {
+          "appId": "593520605",
+          "appName": "OX-Security-Demo/Currency-Credits",
+          "link": "https://github.com/OX-Security-Demo/Currency-Credits",
+          "tags": [
+            {
+              "tagId": "ox_tag_22",
+              "name": "SpringBoot",
+              "displayName": "Spring Boot"
+            }
+          ]
+        },
+        {
+          "appId": "708853940",
+          "appName": "oxsecurity/ox-queries",
+          "link": "https://github.com/oxsecurity/ox-queries",
+          "tags": []
+        },
+        {
+          "appId": "363001753",
+          "appName": "michaelhorty/TMCLI",
+          "link": "https://github.com/michaelhorty/TMCLI",
+          "tags": [
+            {
+              "tagId": "cec543b0-dd86-4c75-b677-b4dcffb5a189",
+              "name": "horty",
+              "displayName": "HORTY"
+            },
+            {
+              "tagId": "ae74ed68-b4d6-4d43-bcd6-a324d98c9ef2",
+              "name": "mhghlab",
+              "displayName": "MHGHLAB"
+            }
+          ]
+        },
+        {
+          "appId": "708845747",
+          "appName": "oxsecurity/ox-cli",
+          "link": "https://github.com/oxsecurity/ox-cli",
+          "tags": []
+        },
+        {
+          "appId": "335646257",
+          "appName": "michaelhorty/VCCLI",
+          "link": "https://github.com/michaelhorty/VCCLI",
+          "tags": [
+            {
+              "tagId": "cec543b0-dd86-4c75-b677-b4dcffb5a189",
+              "name": "horty",
+              "displayName": "HORTY"
+            },
+            {
+              "tagId": "ae74ed68-b4d6-4d43-bcd6-a324d98c9ef2",
+              "name": "mhghlab",
+              "displayName": "MHGHLAB"
+            }
+          ]
+        },
+        {
+          "appId": "167596016",
+          "appName": "michaelhorty/CxCLI",
+          "link": "https://github.com/michaelhorty/CxCLI",
+          "tags": [
+            {
+              "tagId": "cec543b0-dd86-4c75-b677-b4dcffb5a189",
+              "name": "horty",
+              "displayName": "HORTY"
+            },
+            {
+              "tagId": "ae74ed68-b4d6-4d43-bcd6-a324d98c9ef2",
+              "name": "mhghlab",
+              "displayName": "MHGHLAB"
+            }
+          ]
+        },
+        {
+          "appId": "715723869",
+          "appName": "michaelhorty/juiceshop_clone",
+          "link": "https://github.com/michaelhorty/juiceshop_clone",
+          "tags": []
+        },
+        {
+          "appId": "307444027",
+          "appName": "michaelhorty/VDemo_JAVA",
+          "link": "https://github.com/michaelhorty/VDemo_JAVA",
+          "tags": [
+            {
+              "tagId": "ox_tag_21",
+              "name": "Spring",
+              "displayName": "Spring"
+            },
+            {
+              "tagId": "ox_tag_11",
+              "name": "MySQL",
+              "displayName": "MySQL"
+            },
+            {
+              "tagId": "cec543b0-dd86-4c75-b677-b4dcffb5a189",
+              "name": "horty",
+              "displayName": "HORTY"
+            },
+            {
+              "tagId": "ae74ed68-b4d6-4d43-bcd6-a324d98c9ef2",
+              "name": "mhghlab",
+              "displayName": "MHGHLAB"
+            }
+          ]
+        },
+        {
+          "appId": "708855481",
+          "appName": "oxsecurity/ox-api-client",
+          "link": "https://github.com/oxsecurity/ox-api-client",
+          "tags": []
+        },
+        {
+          "appId": "373373380",
+          "appName": "michaelhorty/TMGUI",
+          "link": "https://github.com/michaelhorty/TMGUI",
+          "tags": [
+            {
+              "tagId": "cec543b0-dd86-4c75-b677-b4dcffb5a189",
+              "name": "horty",
+              "displayName": "HORTY"
+            },
+            {
+              "tagId": "ae74ed68-b4d6-4d43-bcd6-a324d98c9ef2",
+              "name": "mhghlab",
+              "displayName": "MHGHLAB"
+            }
+          ]
+        },
+        {
+          "appId": "703603930",
+          "appName": "michaelhorty/OXcli",
+          "link": "https://github.com/michaelhorty/OXcli",
+          "tags": []
+        },
+        {
+          "appId": "708248201",
+          "appName": "michaelhorty/OX_QUERIES",
+          "link": "https://github.com/michaelhorty/OX_QUERIES",
+          "tags": []
+        },
+        {
+          "appId": "704226371",
+          "appName": "michaelhorty/OX-API-Client",
+          "link": "https://github.com/michaelhorty/OX-API-Client",
+          "tags": []
+        },
+        {
+          "appId": "179169985",
+          "appName": "michaelhorty/CxMOreporting",
+          "link": "https://github.com/michaelhorty/CxMOreporting",
+          "tags": [
+            {
+              "tagId": "cec543b0-dd86-4c75-b677-b4dcffb5a189",
+              "name": "horty",
+              "displayName": "HORTY"
+            },
+            {
+              "tagId": "ae74ed68-b4d6-4d43-bcd6-a324d98c9ef2",
+              "name": "mhghlab",
+              "displayName": "MHGHLAB"
+            }
+          ]
+        },
+        {
+          "appId": "222751603",
+          "appName": "michaelhorty/AQL2XLS_WinApp",
+          "link": "https://github.com/michaelhorty/AQL2XLS_WinApp",
+          "tags": [
+            {
+              "tagId": "cec543b0-dd86-4c75-b677-b4dcffb5a189",
+              "name": "horty",
+              "displayName": "HORTY"
+            },
+            {
+              "tagId": "ae74ed68-b4d6-4d43-bcd6-a324d98c9ef2",
+              "name": "mhghlab",
+              "displayName": "MHGHLAB"
+            }
+          ]
+        },
+        {
+          "appId": "688093659",
+          "appName": "MH-New-Organization/MH_NO_WEBG",
+          "link": "https://github.com/MH-New-Organization/MH_NO_WEBG",
+          "tags": [
+            {
+              "tagId": "cec543b0-dd86-4c75-b677-b4dcffb5a189",
+              "name": "horty",
+              "displayName": "HORTY"
+            }
+          ]
+        },
+        {
+          "appId": "*GitHub-Settings (MH-New-Organization)",
+          "appName": "*GitHub-Settings (MH-New-Organization)",
+          "link": "",
+          "tags": []
+        },
+        {
+          "appId": "191856056",
+          "appName": "michaelhorty/WG384",
+          "link": "https://github.com/michaelhorty/WG384",
+          "tags": [
+            {
+              "tagId": "ox_tag_21",
+              "name": "Spring",
+              "displayName": "Spring"
+            },
+            {
+              "tagId": "ox_tag_1",
+              "name": "PII",
+              "displayName": "PII"
+            },
+            {
+              "tagId": "ox_tag_7",
+              "name": "MSSQL",
+              "displayName": "MSSQL"
+            },
+            {
+              "tagId": "ox_tag_3",
+              "name": "PaymentProcessing",
+              "displayName": "Payment"
+            },
+            {
+              "tagId": "ae74ed68-b4d6-4d43-bcd6-a324d98c9ef2",
+              "name": "mhghlab",
+              "displayName": "MHGHLAB"
+            }
+          ]
+        },
+        {
+          "appId": "629437774",
+          "appName": "OX-Security-Demo/Bank-Backup-Operator",
+          "link": "https://github.com/OX-Security-Demo/Bank-Backup-Operator",
+          "tags": []
+        },
+        {
+          "appId": "672064956",
+          "appName": "michaelhorty/vulpy",
+          "link": "https://github.com/michaelhorty/vulpy",
+          "tags": [
+            {
+              "tagId": "cec543b0-dd86-4c75-b677-b4dcffb5a189",
+              "name": "horty",
+              "displayName": "HORTY"
+            },
+            {
+              "tagId": "ae74ed68-b4d6-4d43-bcd6-a324d98c9ef2",
+              "name": "mhghlab",
+              "displayName": "MHGHLAB"
+            }
+          ]
+        },
+        {
+          "appId": "354893252",
+          "appName": "michaelhorty/TMDBexplore",
+          "link": "https://github.com/michaelhorty/TMDBexplore",
+          "tags": [
+            {
+              "tagId": "cec543b0-dd86-4c75-b677-b4dcffb5a189",
+              "name": "horty",
+              "displayName": "HORTY"
+            },
+            {
+              "tagId": "ae74ed68-b4d6-4d43-bcd6-a324d98c9ef2",
+              "name": "mhghlab",
+              "displayName": "MHGHLAB"
+            }
+          ]
+        },
+        {
+          "appId": "354893981",
+          "appName": "michaelhorty/TMDB_Explore",
+          "link": "https://github.com/michaelhorty/TMDB_Explore",
+          "tags": [
+            {
+              "tagId": "cec543b0-dd86-4c75-b677-b4dcffb5a189",
+              "name": "horty",
+              "displayName": "HORTY"
+            },
+            {
+              "tagId": "ae74ed68-b4d6-4d43-bcd6-a324d98c9ef2",
+              "name": "mhghlab",
+              "displayName": "MHGHLAB"
+            }
+          ]
+        },
+        {
+          "appId": "329712156",
+          "appName": "michaelhorty/VeracodeAzureYMLSamples",
+          "link": "https://github.com/michaelhorty/VeracodeAzureYMLSamples",
+          "tags": [
+            {
+              "tagId": "cec543b0-dd86-4c75-b677-b4dcffb5a189",
+              "name": "horty",
+              "displayName": "HORTY"
+            },
+            {
+              "tagId": "ae74ed68-b4d6-4d43-bcd6-a324d98c9ef2",
+              "name": "mhghlab",
+              "displayName": "MHGHLAB"
+            }
+          ]
+        },
+        {
+          "appId": "688095954",
+          "appName": "michaelhorty/TEST_REPO",
+          "link": "https://github.com/michaelhorty/TEST_REPO",
+          "tags": [
+            {
+              "tagId": "cec543b0-dd86-4c75-b677-b4dcffb5a189",
+              "name": "horty",
+              "displayName": "HORTY"
+            },
+            {
+              "tagId": "ae74ed68-b4d6-4d43-bcd6-a324d98c9ef2",
+              "name": "mhghlab",
+              "displayName": "MHGHLAB"
+            }
+          ]
+        },
+        {
+          "appId": "647668897",
+          "appName": "OX-Security-Demo/Bank-ecommerce",
+          "link": "https://github.com/OX-Security-Demo/Bank-ecommerce",
+          "tags": []
+        }
+      ]
+    }
+  }
+}

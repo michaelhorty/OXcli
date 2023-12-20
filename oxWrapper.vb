@@ -68,8 +68,6 @@ Public Class oxWrapper
     Public Function getJSON(apiCall$) As Boolean
         On Error GoTo errorcatch
 
-        ChDir(pyDir)
-
         Dim sInfo$ = "python"
         If osType = "MacOSX" Then sInfo = "python3"
 
@@ -82,8 +80,6 @@ Public Class oxWrapper
 
         Dim callPython As System.Diagnostics.Process = Process.Start(startInfo)
         ' Process.Start(startInfo)
-
-        ChDir(ogDir)
 
         If callPython.WaitForExit(30000) = True Then
             getJSON = True

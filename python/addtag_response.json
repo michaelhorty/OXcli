@@ -1,0 +1,16 @@
+{
+  "data": {
+    "addTags": {
+      "tags": [
+        {
+          "tagType": "simple",
+          "tagId": "fa573cdb-b3e1-4c16-be10-fc000a743cad",
+          "name": "neatsun",
+          "isOxTag": false,
+          "displayName": "neatsun",
+          "createdBy": "test@ox.security"
+        }
+      ]
+    }
+  }
+}

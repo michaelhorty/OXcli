@@ -1,0 +1,637 @@
+APP_NAME,PRIORITY,CATEGORY,POLICY,ISSUE_TITLE,SEVERITY,DATE_FOUND,#_OCCURRENCES,#_ISSUES
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","AWS S3 Bucket is configured for PUBLIC read access","Critical",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s cluster should not be exposed to public internet","Critical",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Open Source Security","Vulnerable dependency (CVE) in code","spring-web@5.3.19 is a Java direct dependency having 1 direct and 1 indirect vulnerabilities. CVE-2016-1000027 (CVSS:9.8_ Deserialization of Untrusted Data) is the most severe vulnerability.","Critical",12/5/2023,2,1
+"OX-Security-Demo/Bank-Website",97,"Open Source Security","Vulnerable dependency (CVE) in code","jetty-server@9.3.20.v20170531 is a Java direct dependency having 12 direct and 2 indirect vulnerabilities. CVE-2017-7657 (CVSS:9.8_ Incorrect Calculation) is the most severe vulnerability.","Critical",12/5/2023,14,1
+"OX-Security-Demo/Bank-Website",97,"Open Source Security","Vulnerable dependency (CVE) in code","spring-boot-starter-web@2.1.2.RELEASE is a Java direct dependency having 1 direct and 17 indirect vulnerabilities. CVE-2020-1938 (CVSS:9.8_ Improper Privilege Management) is the most severe vulnerability.","Critical",12/5/2023,18,1
+"OX-Security-Demo/Bank-Website",97,"Secret/PII Scan","Secret in code","Active GitHub Access Token was found in the code of a private repository","Critical",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Open Source Security","Vulnerable dependency (CVE) in DockerFile base image","openjdk@8 is a base image defined in Dockerfile having 402 vulnerabilities. Top risk: CVE-2019-8457 (CVSS:9.8_ Buffer Overflow)","Critical",12/5/2023,402,1
+"OX-Security-Demo/Multi-currency-management",97,"Secret/PII Scan","Secret in code","AWS Secret Key was found in the code of a public repository","Critical",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Secret/PII Scan","Secret in code","GitHub Fine-Grained Personal Access Token was found in the code of a public repository","Critical",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Secret/PII Scan","Secret in code","JFrog Registry Credentials was found in the code of a public repository","Critical",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"SBOM","Typosquatting dependency in code","serverles@3.27.1 is a JavaScript direct dependency typosquatting 'serverless'","Critical",12/5/2023,1,1
+"*GitHub-Settings (OX-Security-Demo)",97,"SBOM","Dependency Confusion: Organization scope in code","The internal organization scope @private-org-scope-at-azure is open to dependency confusion attacks on the NPM public registry","Critical",12/5/2023,2,1
+"*GitHub-Settings (OX-Security-Demo)",97,"SBOM","Dependency Confusion: Organization scope in code","The internal organization scope @org-private-scope-yarnrc-yml is open to dependency confusion attacks on the NPM public registry","Critical",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Git Posture","Repo wiki publicly editable","Public wiki for repo is editable by anyone","Critical",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Open Source Security","Vulnerable dependency (CVE) in DockerFile base image","openjdk@11.0.1-jre-slim-stretch is a base image defined in docker/Dockerfile having 296 vulnerabilities. Top risk: CVE-2017-12424 (CVSS:9.8_ Buffer Overflow)","Critical",12/5/2023,296,1
+"michaelhorty/WebGoat",71,"Open Source Security","Vulnerable dependency (CVE) in DockerFile base image","openjdk@11.0.1-jre-slim-stretch is a base image defined in webgoat-server/Dockerfile having 296 vulnerabilities. Top risk: CVE-2017-12424 (CVSS:9.8_ Buffer Overflow)","Critical",12/5/2023,296,1
+"michaelhorty/WebGoat",71,"Open Source Security","Vulnerable dependency (CVE) in DockerFile base image","resin/rpi-raspbian@jessie is a base image defined in webgoat-server/src/main/docker_rpi3/Dockerfile having 197 vulnerabilities. Top risk: CVE-2016-9841 (CVSS:9.8)","Critical",12/5/2023,197,1
+"michaelhorty/WebGoat",71,"Open Source Security","Vulnerable dependency (CVE) in DockerFile base image","openjdk@11.0.1-jre-slim-stretch is a base image defined in webwolf/Dockerfile having 296 vulnerabilities. Top risk: CVE-2017-12424 (CVSS:9.8_ Buffer Overflow)","Critical",12/5/2023,296,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Secret/PII Scan","Secret in code","Active GitHub Access Token was found in the code of a private repository","Critical",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Open Source Security","Vulnerable dependency (CVE) in DockerFile base image","python@3.11.1 is a base image defined in Dockerfile having 1797 vulnerabilities. Top risk: CVE-2019-8457 (CVSS:9.8_ Buffer Overflow)","Critical",12/5/2023,1797,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Open Source Security","Vulnerable dependency (CVE) in DockerFile base image","datadog/agent@6.0.2 is a base image defined in Dockerfile.ddAgent having 182 vulnerabilities. Top risk: CVE-2017-12424 (CVSS:9.8_ Buffer Overflow)","Critical",12/5/2023,182,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Git Posture","Private repo fork detected","User's private repo is a fork of orgs private repo: mirox13","Critical",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Git Posture","Private repo fork detected","User's private repo is a fork of orgs private repo: eyalatox","Critical",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Git Posture","Private repo fork detected","Former User's private repo is a fork of orgs private repo: JohnDow999","Critical",12/5/2023,1,1
+"michaelhorty/vulpy",7,"Secret/PII Scan","Secret in code","Flask Secret Key was found in the code of a public repository","Critical",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s API Server should only accept API requests through HTTPS","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s API Server key-value store access should require client authentication","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s API Server should use better encryption providers","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s API Server should use strong cryptographic ciphers","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s API Server should not allow anonymous access","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s API Server does not authenticate securely with kubelets","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s API Server does not validate certificate","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s API Server is serving APIs through an insecure port","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s API Server does not validate service account token","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s API Server key-value store access does not require server authentication","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s Kubelet Server should not allow anonymous access","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s Kubelet should only communicate through HTTPS","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","AWS S3 Object Versioning may not be enabled","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","AWS Virtual Private Cloud Flow logs not enabled","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","AWS Virtual Private Cloud default Security Group does not restrict all traffic","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","AWS Security Group allows all traffic on SSH port 22","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","AWS instances and launch configurations should use securely encrypted EBS volumes","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Open Source Security","Vulnerable dependency (CVE) in code","jjwt-jackson@0.10.5 is a Java direct dependency having 53 indirect vulnerabilities and no direct vulnerabilities. CVE-2019-14379 (CVSS:9.8_ Prototype Pollution) is the most severe vulnerability.","High",12/5/2023,53,1
+"OX-Security-Demo/Bank-Website",97,"Secret/PII Scan","Secret in code","Base64 Slack Access Token was found in the code of a private repository","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Code Security","SAST issue","Potential SSRF via URL Input","High",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Open Source Security","Vulnerable dependency (CVE) in code","express-fileupload@0.4.0 is a JavaScript direct dependency having 3 direct and 1 indirect vulnerabilities. CVE-2020-7699 (CVSS:9.8_ Prototype Pollution) is the most severe vulnerability.","High",12/5/2023,4,1
+"OX-Security-Demo/Multi-currency-management",97,"Code Security","SAST issue","Reflected XSS via User Input in Express","High",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"SBOM","Deprecated direct dependency in code","Deprecated library directly referenced in code: apollo-server@3.11.1","High",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"SBOM","Deprecated direct dependency in code","Deprecated library directly referenced in code: axios@0.15.3","High",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"SBOM","Deprecated direct dependency in code","Deprecated library directly referenced in code: express-fileupload@0.4.0","High",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"SBOM","Deprecated direct dependency in code","Deprecated library directly referenced in code: rookout@0.1.130","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Git Posture","Branch Protection not enforced","Code reviews may be bypassed via Push Events or Pull Requests with no review enforcement","High",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Git Posture","Branch Protection not enforced","Code reviews may be bypassed via Push Events or Pull Requests with no review enforcement","High",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Git Posture","Security Policy file missing in repo","Security Policy missing from public repo","High",12/5/2023,1,1
+"OX-Security-Demo/Backend-Server",71,"Open Source Security","Vulnerable dependency (CVE) in code","play-json_2.13@2.7.4 is a Java direct dependency having 53 indirect vulnerabilities and no direct vulnerabilities. CVE-2022-36944 (CVSS:9.8_ Deserialization of Untrusted Data) is the most severe vulnerability.","High",12/5/2023,53,1
+"OX-Security-Demo/Backend-Server",71,"Open Source Security","Vulnerable dependency (CVE) in code","commons-text@1.8 is a Java direct dependency having 1 direct vulnerability and no indirect vulnerabilities. CVE-2022-42889 (CVSS:9.8_ Code Injection) is the most severe vulnerability.","High",12/5/2023,1,1
+"OX-Security-Demo/Backend-Server",71,"Secret/PII Scan","Secret in code","PGP Private Key was found in the code of a public repository","High",12/5/2023,1,1
+"OX-Security-Demo/Backend-Server",71,"Open Source Security","Vulnerable dependency (CVE) in DockerFile base image","openjdk@8u332-jre-slim-bullseye is a base image defined in docker/hive/Dockerfile having 142 vulnerabilities. Top risk: CVE-2019-8457 (CVSS:9.8_ Buffer Overflow)","High",12/5/2023,142,1
+"michaelhorty/WebGoat",71,"Secret/PII Scan","Secret in code","Generic Password was found in the code of a public repository","High",12/5/2023,3,1
+"michaelhorty/WebGoat",71,"Secret/PII Scan","Secret in code","Generic Key was found in the code of a public repository","High",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Secret/PII Scan","Secret in code","Generic Basic Authentication Password was found in the code of a public repository","High",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Potential SSRF via URL Input","High",12/5/2023,2,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Path Traversal vulnerability due to user controlled path variables","High",12/5/2023,2,1
+"michaelhorty/WebGoat",71,"Secret/PII Scan","PII embedded in code","Email Address is exposed in code","High",12/5/2023,4,1
+"OX-Security-Demo/Backend-Server",71,"Git Posture","Security Policy file missing in repo","Security Policy missing from public repo","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"SBOM","Unapproved license used by direct dependency in code","Library with unapproved license directly referenced in code: ldap3@2.5.1 (GNU Lesser General Public License v3 (LGPLv3))","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"SBOM","Unapproved license used by direct dependency in code","Library with unapproved license directly referenced in code: python-gitlab@2.10.1 (LGPL-3.0)","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Open Source Security","Vulnerable dependency (CVE) in code","cryptography@3.1.1 is a Python direct dependency having 8 direct vulnerabilities and no indirect vulnerabilities. CVE-2020-36242 (CVSS:9.1_ Incorrect Calculation) is the most severe vulnerability.","High",12/5/2023,8,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Open Source Security","Vulnerable dependency (CVE) in code","starkbank-ecdsa@2.0.0 is a Python direct dependency having 2 direct vulnerabilities and no indirect vulnerabilities. CVE-2021-43572 (CVSS:9.8_ Improper Verification of Cryptographic Signature) is the most severe vulnerability.","High",12/5/2023,2,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Secret/PII Scan","Secret in code","Active AWS Secret Key was found in the code of a private repository","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Secret/PII Scan","Secret in code","Fastly API key was found in the code of a private repository","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Code Security","SAST issue","Data leak possible due to usage of Telnet-related functions","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Code Security","SAST issue","Data leak possible by using insecure FTP protocol","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Code Security","SAST issue","Data leak possible by using insecure Telnet protocol","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Code Security","SAST issue","Data leak possible by using insecure FTP protocol","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"SBOM","Dependency Confusion: Private package in code","The internal package private-pytorch-pkg is open to dependency confusion attacks through the PyPI public registry","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Secret/PII Scan","PII logging in code","Credit card information is leaked via logging in code","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Secret/PII Scan","Secret logging in code","Generic password is leaked via logging in code","High",12/5/2023,1,1
+"OX-Security-Demo/Investment-management",67,"Secret/PII Scan","Secret in code","Generic Password was found in the code of a public repository","High",12/5/2023,1,1
+"OX-Security-Demo/Investment-management",67,"Git Posture","Security Policy file missing in repo","Security Policy missing from public repo","High",12/5/2023,1,1
+"OX-Security-Demo/BankForensicsCollector",62,"Code Security","SAST issue","Banned C functions due to security used","High",12/5/2023,7,1
+"OX-Security-Demo/BankForensicsCollector",62,"Git Posture","Security Policy file missing in repo","Security Policy missing from public repo","High",12/5/2023,1,1
+"OX-Security-Demo/Lines-Credits",60,"Open Source Security","Vulnerable dependency (CVE) in code","spring-boot-starter-log4j2@2.6.1 is a Java direct dependency having 4 indirect vulnerabilities and no direct vulnerabilities. CVE-2021-44228 (CVSS:10_ Improper Input Validation) is the most severe vulnerability.","High",12/5/2023,4,1
+"OX-Security-Demo/Lines-Credits",60,"Open Source Security","Vulnerable dependency (CVE) in DockerFile base image","openjdk@8u181-jdk-alpine is a base image defined in Dockerfile having 310 vulnerabilities. Top risk: CVE-2019-12900 (CVSS:9.8_ Buffer Overflow)","High",12/5/2023,310,1
+"OX-Security-Demo/Liquidity-management",37,"Open Source Security","Vulnerable dependency (CVE) in code","spring-web@5.3.19 is a Java direct dependency having 1 direct and 7 indirect vulnerabilities. CVE-2016-1000027 (CVSS:9.8_ Deserialization of Untrusted Data) is the most severe vulnerability.","High",12/5/2023,8,1
+"OX-Security-Demo/Liquidity-management",37,"Open Source Security","Vulnerable dependency (CVE) in code","jetty-server@9.3.20.v20170531 is a Java direct dependency having 12 direct and 2 indirect vulnerabilities. CVE-2017-7657 (CVSS:9.8_ Incorrect Calculation) is the most severe vulnerability.","High",12/5/2023,14,1
+"OX-Security-Demo/Liquidity-management",37,"Open Source Security","Vulnerable dependency (CVE) in code","spring-boot-starter-web@2.6.1 is a Java direct dependency having 1 direct and 16 indirect vulnerabilities. CVE-2022-22965 (CVSS:9.8_ Code Injection) is the most severe vulnerability.","High",12/5/2023,17,1
+"OX-Security-Demo/Liquidity-management",37,"Open Source Security","Vulnerable dependency (CVE) in code","log4j-core@2.13.3 is a Java direct dependency having 4 direct vulnerabilities and no indirect vulnerabilities. CVE-2021-44228 (CVSS:10_ Improper Input Validation) is the most severe vulnerability.","High",12/5/2023,4,1
+"OX-Security-Demo/Liquidity-management",37,"Open Source Security","Vulnerable dependency (CVE) in DockerFile base image","openjdk@8 is a base image defined in Dockerfile having 402 vulnerabilities. Top risk: CVE-2019-8457 (CVSS:9.8_ Buffer Overflow)","High",12/5/2023,402,1
+"OX-Security-Demo/Currency-Credits",35,"Open Source Security","Vulnerable dependency (CVE) in code","spring-web@5.3.19 is a Java direct dependency having 1 direct and 8 indirect vulnerabilities. CVE-2016-1000027 (CVSS:9.8_ Deserialization of Untrusted Data) is the most severe vulnerability.","High",12/5/2023,9,1
+"OX-Security-Demo/Currency-Credits",35,"Open Source Security","Vulnerable dependency (CVE) in code","jetty-server@9.3.20.v20170531 is a Java direct dependency having 12 direct and 2 indirect vulnerabilities. CVE-2017-7657 (CVSS:9.8_ Incorrect Calculation) is the most severe vulnerability.","High",12/5/2023,14,1
+"OX-Security-Demo/Currency-Credits",35,"Open Source Security","Vulnerable dependency (CVE) in code","spring-boot-starter-web@2.2.5.RELEASE is a Java direct dependency having 1 direct and 18 indirect vulnerabilities. CVE-2022-22965 (CVSS:9.8_ Code Injection) is the most severe vulnerability.","High",12/5/2023,19,1
+"OX-Security-Demo/Currency-Credits",35,"Open Source Security","Vulnerable dependency (CVE) in code","log4j-core@2.13.3 is a Java direct dependency having 4 direct vulnerabilities and no indirect vulnerabilities. CVE-2021-44228 (CVSS:10_ Improper Input Validation) is the most severe vulnerability.","High",12/5/2023,4,1
+"michaelhorty/juiceshop_clone",14,"Secret/PII Scan","Secret in code","Generic Secret was found in the code of a public repository","High",12/5/2023,1,1
+"MH-New-Organization/MH_NO_WEBG",12,"Secret/PII Scan","Secret in code","PGP Private Key was found in the code of a public repository","High",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s pod requires a NetworkPolicy to define allowed communication with other pods","Medium",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s container should not share the host network namespace","Medium",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s container should not explicitly allow elevation of privileges","Medium",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s root container usage is not minimized","Medium",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s Kubelet nodes should read only associated objects","Medium",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s API Server audit logs is not enabled","Medium",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","AWS EC2 instance detailed monitoring is disabled","Medium",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","AWS VPC subnets should not allow automatic public IP assignment","Medium",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Open Source Security","Vulnerable dependency (CVE) in code","jackson-mapper-asl@1.9.13 is a Java direct dependency having 2 direct vulnerabilities and no indirect vulnerabilities. CVE-2019-10202 (CVSS:9.8_ Deserialization of Untrusted Data) is the most severe vulnerability.","Medium",12/5/2023,2,1
+"OX-Security-Demo/Bank-Website",97,"Open Source Security","Vulnerable dependency (CVE) in code","postgresql@42.2.5 is a Java direct dependency having 6 direct vulnerabilities and no indirect vulnerabilities. CVE-2022-21724 (CVSS:9.8_ Improper Initialization) is the most severe vulnerability.","Medium",12/5/2023,6,1
+"OX-Security-Demo/Bank-Website",97,"Open Source Security","Vulnerable dependency (CVE) in code","jsoup@1.8.3 is a Java direct dependency having 2 direct vulnerabilities and no indirect vulnerabilities. CVE-2021-37714 (CVSS:7.5_ Improper Error Management) is the most severe vulnerability.","Medium",12/5/2023,2,1
+"OX-Security-Demo/Bank-Website",97,"Open Source Security","Vulnerable dependency (CVE) in code","commons-text@1.9 is a Java direct dependency having 1 indirect vulnerability and no direct vulnerabilities. CVE-2022-42889 (CVSS:9.8_ Code Injection) is the most severe vulnerability.","Medium",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Secret/PII Scan","Secret in code","Generic Secret was found in the code of a private repository","Medium",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Code Security","SAST issue","Usage of Weak Random Number Generators","Medium",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Code Security","SAST issue","MD5 hash algorithm used is considered insecure","Medium",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Code Security","SAST issue","SQL Injection (SQLI) vulnerability in format string query","Medium",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Secret/PII Scan","PII embedded in code","Email Address is exposed in code","Medium",12/5/2023,3,1
+"OX-Security-Demo/Multi-currency-management",97,"SBOM","Unused direct dependency in code","Dependency not used in code: (16 dependencies)","Medium",12/5/2023,16,1
+"OX-Security-Demo/Multi-currency-management",97,"Infrastructure as Code Scan","IaC issue","AWS Lambda environment variables are not encrypted","Medium",12/5/2023,2,1
+"OX-Security-Demo/Multi-currency-management",97,"Secret/PII Scan","Secret in Git history","RSA Private Key was found in the history of a public repository","Medium",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Secret/PII Scan","Secret in Git history","Private Key was found in the history of a public repository","Medium",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Secret/PII Scan","Secret in code","AWS Access Key was found in the code of a public repository","Medium",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Open Source Security","Vulnerable dependency (CVE) in DockerFile base image","node@16-alpine is a base image defined in Dockerfile having 5 vulnerabilities. Top risk: CVE-2023-5363 (CVSS:7.5)","Medium",12/5/2023,5,1
+"*GitHub-Settings (OX-Security-Demo)",97,"Git Posture","Too many org owners","Too many owners for org OX-Security-Demo: 6 owners (35% of all users)","Medium",12/5/2023,6,1
+"OX-Security-Demo/Backend-Server",71,"Open Source Security","Vulnerable dependency (CVE) in code","analytics@2.1.1 is a Java direct dependency having 3 indirect vulnerabilities and no direct vulnerabilities. CVE-2018-1000844 (CVSS:9.1_ Information Exposure) is the most severe vulnerability.","Medium",12/5/2023,3,1
+"OX-Security-Demo/Backend-Server",71,"Open Source Security","Vulnerable dependency (CVE) in code","hasher_2.13@1.2.2 is a Java direct dependency having 1 indirect vulnerability and no direct vulnerabilities. CVE-2022-36944 (CVSS:9.8_ Deserialization of Untrusted Data) is the most severe vulnerability.","Medium",12/5/2023,1,1
+"OX-Security-Demo/Backend-Server",71,"Open Source Security","Vulnerable dependency (CVE) in code","influxdb-java@2.14 is a Java direct dependency having 3 indirect vulnerabilities and no direct vulnerabilities. CVE-2018-1000844 (CVSS:9.1_ Information Exposure) is the most severe vulnerability.","Medium",12/5/2023,3,1
+"OX-Security-Demo/Backend-Server",71,"Open Source Security","Vulnerable dependency (CVE) in code","scopt_2.13@3.7.1 is a Java direct dependency having 1 indirect vulnerability and no direct vulnerabilities. CVE-2022-36944 (CVSS:9.8_ Deserialization of Untrusted Data) is the most severe vulnerability.","Medium",12/5/2023,1,1
+"OX-Security-Demo/Backend-Server",71,"Code Security","SAST issue","SQL Injection vulnerability due to tainted user input","Medium",12/5/2023,2,1
+"michaelhorty/WebGoat",71,"Infrastructure as Code Scan","IaC issue","K8s pod requires a NetworkPolicy to define allowed communication with other pods","Medium",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Infrastructure as Code Scan","IaC issue","K8s container should not explicitly allow elevation of privileges","Medium",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Infrastructure as Code Scan","IaC issue","K8s root container usage is not minimized","Medium",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Medium",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Usage of Weak Random Number Generators","Medium",12/5/2023,2,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","String comparisons using '==='_ '!=='_ '!=' and '==' is vulnerable to timing attacks. More info: https://snyk.io/blog/node-js-timing-attack-ccc-ctf/","Medium",12/5/2023,2,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","SQL Injection (SQLI) vulnerability in format string query","Medium",12/5/2023,10,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","SQL Injection (SQLI) vulnerability due to manually-constructed SQL string","Medium",12/5/2023,3,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","MD5 hash algorithm used is considered insecure","Medium",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","XMLInputFactory being instantiated without calling the setProperty functions that are generally used for disabling entity processing","Medium",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"CI/CD Posture","Webhook without SSL/TLS","Insecure webhook: no SSL","Medium",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"SBOM","Unused direct dependency in code","Dependency not used in code: (3 dependencies)","Medium",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Git Posture","Unreviewed code change","Unreviewed code: eyalatox (kostya253@gmail.com) ","Medium",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Git Posture","Unreviewed code change","Unreviewed code: mirox13 (kostya253@gmail.com) ","Medium",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Secret/PII Scan","Secret in code","Active AWS Access Key was found in the code of a private repository","Medium",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Secret/PII Scan","Secret in code","Generic Secret was found in the code of a private repository","Medium",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Secret/PII Scan","Secret in code","HTTP Basic Authentication Password was found in the code of a private repository","Medium",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Secret/PII Scan","Secret in code","HTTP Basic Authentication Password was found in the code of a private repository","Medium",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Code Security","SAST issue","request_without_timeout","Medium",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Secret/PII Scan","PII embedded in code","Credit Card Number is exposed in code","Medium",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Git Posture","Private repo forking is enabled","Private repo can be forked","Medium",12/5/2023,0,1
+"OX-Security-Demo/BankForensicsCollector",62,"Code Security","SAST issue","Passing a predicable value to srand() is very insecure and should be avoided.","Medium",12/5/2023,1,1
+"OX-Security-Demo/Liquidity-management",37,"Secret/PII Scan","Secret in Git history","Generic Token was found in the history of a public repository","Medium",12/5/2023,2,1
+"OX-Security-Demo/Liquidity-management",37,"Secret/PII Scan","Secret in code","MySQL Database Password was found in the code of a public repository","Medium",12/5/2023,1,1
+"OX-Security-Demo/Liquidity-management",37,"Git Posture","Security Policy file missing in repo","Security Policy missing from public repo","Medium",12/5/2023,1,1
+"OX-Security-Demo/Currency-Credits",35,"Open Source Security","Vulnerable dependency (CVE) in DockerFile base image","openjdk@11-jre-slim is a base image defined in Dockerfile having 151 vulnerabilities. Top risk: CVE-2019-8457 (CVSS:9.8_ Buffer Overflow)","Medium",12/5/2023,151,1
+"OX-Security-Demo/Currency-Credits",35,"Git Posture","Security Policy file missing in repo","Security Policy missing from public repo","Medium",12/5/2023,1,1
+"OX-Security-Demo/Insurance-Service",35,"Git Posture","Security Policy file missing in repo","Security Policy missing from public repo","Medium",12/5/2023,1,1
+"michaelhorty/TMCLI",19,"Secret/PII Scan","PII embedded in code","Email Address is exposed in code","Medium",12/5/2023,1,1
+"michaelhorty/CxCLI",15,"Secret/PII Scan","PII embedded in code","Email Address is exposed in code","Medium",12/5/2023,5,1
+"michaelhorty/VDemo_JAVA",14,"Open Source Security","Vulnerable dependency (CVE) in code","spring-web@4.3.10.RELEASE is a Java direct dependency having 3 indirect vulnerabilities and no direct vulnerabilities. CVE-2016-1000027 (CVSS:9.8_ Deserialization of Untrusted Data) is the most severe vulnerability.","Medium",12/5/2023,3,1
+"michaelhorty/VDemo_JAVA",14,"Open Source Security","Vulnerable dependency (CVE) in code","spring-webmvc@4.3.10.RELEASE is a Java direct dependency having 2 indirect vulnerabilities and no direct vulnerabilities. CVE-2022-22965 (CVSS:9.8_ Code Injection) is the most severe vulnerability.","Medium",12/5/2023,2,1
+"michaelhorty/VDemo_JAVA",14,"Secret/PII Scan","Secret in code","Generic Password was found in the code of a public repository","Medium",12/5/2023,2,1
+"michaelhorty/CxMOreporting",12,"Secret/PII Scan","Secret in code","Generic Secret was found in the code of a private repository","Medium",12/5/2023,2,1
+"michaelhorty/WG384",10,"Open Source Security","Vulnerable dependency (CVE) in code","commons-fileupload@1.2.2 is a Java direct dependency having 5 direct vulnerabilities and no indirect vulnerabilities. CVE-2016-1000031 (CVSS:9.8_ Improper Access Control) is the most severe vulnerability.","Medium",12/5/2023,5,1
+"michaelhorty/WG384",10,"Open Source Security","Vulnerable dependency (CVE) in code","spring-webmvc@3.2.4.RELEASE is a Java direct dependency having 6 direct and 5 indirect vulnerabilities. CVE-2016-1000027 (CVSS:9.8_ Deserialization of Untrusted Data) is the most severe vulnerability.","Medium",12/5/2023,11,1
+"michaelhorty/WG384",10,"Open Source Security","Vulnerable dependency (CVE) in code","spring-core@3.2.4.RELEASE is a Java direct dependency having 14 direct vulnerabilities and no indirect vulnerabilities. CVE-2018-1270 (CVSS:9.8_ Code Injection) is the most severe vulnerability.","Medium",12/5/2023,14,1
+"michaelhorty/WG384",10,"Open Source Security","Vulnerable dependency (CVE) in code","jackson-databind@2.0.4 is a Java direct dependency having 45 direct vulnerabilities and no indirect vulnerabilities. CVE-2017-17485 (CVSS:9.8_ Deserialization of Untrusted Data) is the most severe vulnerability.","Medium",12/5/2023,45,1
+"michaelhorty/WG384",10,"Open Source Security","Vulnerable dependency (CVE) in code","h2@1.4.187 is a Java direct dependency having 3 direct vulnerabilities and no indirect vulnerabilities. CVE-2021-42392 (CVSS:9.8_ Deserialization of Untrusted Data) is the most severe vulnerability.","Medium",12/5/2023,3,1
+"michaelhorty/WG384",10,"Secret/PII Scan","Secret in code","Generic Password was found in the code of a private repository","Medium",12/5/2023,2,1
+"michaelhorty/WG384",10,"Secret/PII Scan","PII embedded in code","Credit Card Number is exposed in code","Medium",12/5/2023,5,1
+"michaelhorty/WG384",10,"Secret/PII Scan","PII embedded in code","Email Address is exposed in code","Medium",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","Dockerfile has only a root user","Low",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s container does not have a CPU limit","Low",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s container does not have a memory request","Low",12/5/2023,2,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s container does not have a memory limit","Low",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s container may not pull latest image","Low",12/5/2023,2,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s container does not use a read-only filesystem","Low",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s container does not use NET_RAW capabilities","Low",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s pod does not have a securityContext assigned","Low",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s container does not have a securityContext assigned","Low",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s container secure computing mode is not configured to the secure default setting","Low",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s container is not restricted to default capabilities","Low",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s Service Account token should be mounted only when required","Low",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s container should run under a high UID to prevent privilege escalation","Low",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s image to be deployed is not selected by digest","Low",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s authorization mode does not include RBAC","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s readiness probe is not configured","Low",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s API Server profiling argument is not set to false","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s audit log retention period is not set to 30 days or as appropriate","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s old log file retention count is not set to 10 or as appropriate","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s audit log file size is not set to 100 MB or as appropriate","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s container is not pulling a specific image version","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s cluster should not use default namespace","Low",12/5/2023,2,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s liveness probe is not configured","Low",12/5/2023,2,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s container does not have a CPU request","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s Kubelet should be enabled via certificate","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s Kubelet read-only port should be disabled","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s Kernel parameters should be protected from override","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","K8s Kubelet should manage iptables","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","AWS S3 Bucket does not have public access blocks","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","AWS S3 bucket does not have a lifecycle configuration","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","AWS S3 bucket does not have event notifications enabled","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","AWS S3 bucket does not have cross-region replication enabled","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","AWS S3 bucket is not encrypted with KMS by default","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","AWS S3 access logging is not configured","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","AWS EC2 instance does not have an IAM role attached","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","AWS EC2 EBS is not optimized","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","AWS Security Group rule does not have a description","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","AWS EC2 Instance Metadata Service version without authentication","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"CI/CD Posture","Excessive permissions in workflow file","Workflow file should be configured with minimum required permissions","Low",12/5/2023,2,1
+"OX-Security-Demo/Bank-Website",97,"Open Source Security","Vulnerable dependency (CVE) in code","springfox-swagger2@2.9.2 is a Java direct dependency having 3 indirect vulnerabilities and no direct vulnerabilities. CVE-2023-2976 (CVSS:7.1_ Improper Access Control) is the most severe vulnerability.","Low",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website",97,"Open Source Security","Vulnerable dependency (CVE) in code","spring-boot-starter@2.1.2.RELEASE is a Java direct dependency having 11 indirect vulnerabilities and no direct vulnerabilities. CVE-2022-27772 (CVSS:7.8_ Information Exposure) is the most severe vulnerability.","Low",12/5/2023,11,1
+"OX-Security-Demo/Bank-Website",97,"Secret/PII Scan","Secret in code","reCAPTCHA Site Key was found in the code of a private repository","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"CI/CD Posture","Unpinned (SHA) Third-Party Actions in GitHub","Workflow uses third-party Actions that are not tied to a specific release: docker/setup-qemu-action","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"CI/CD Posture","Unpinned (SHA) Third-Party Actions in GitHub","Workflow uses third-party Actions that are not tied to a specific release: docker/setup-buildx-action","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability due to explicit unescape in a Mustache template","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability due to variable usage in script tag","Low",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website",97,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability in JQuery method","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability in JQuery .html() function","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Code Security","SAST issue","Cross-Site Request Forgery (CSRF) vulnerability due to unrestricted Request Mapping","Low",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website",97,"Code Security","SAST issue","Command Injection vulnerability due to formatted string in ProcessBuilder call","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Code Security","SAST issue","SQL Injection (SQLI) vulnerability due to formatted string in a SQL statement","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Open Source Security","Vulnerable dependency (CVE) in DockerFile base image","nginx@alpine is a base image defined in client/Dockerfile having 5 vulnerabilities. Top risk: CVE-2023-43787 (CVSS:7.8_ Incorrect Calculation)","Low",12/5/2023,5,1
+"OX-Security-Demo/Bank-Website",97,"Open Source Security","Vulnerable dependency (CVE) in DockerFile base image","nginx@alpine is a base image defined in internal_site/Dockerfile having 5 vulnerabilities. Top risk: CVE-2023-43787 (CVSS:7.8_ Incorrect Calculation)","Low",12/5/2023,5,1
+"OX-Security-Demo/Multi-currency-management",97,"Infrastructure as Code Scan","IaC issue","AWS Lambda concurrency limits are not configured","Low",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Infrastructure as Code Scan","IaC issue","AWS Lambda logs may be lost as a dead-letter queue is not used","Low",12/5/2023,3,1
+"OX-Security-Demo/Multi-currency-management",97,"Infrastructure as Code Scan","IaC issue","AWS Lambda is not configured inside a VPC","Low",12/5/2023,3,1
+"OX-Security-Demo/Multi-currency-management",97,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Open Source Security","Vulnerable dependency (CVE) in code","jsonwebtoken@8.5.1 is a JavaScript direct dependency having 3 direct and 1 indirect vulnerabilities. CVE-2022-23539 (CVSS:8.1_ Weak Encryption) is the most severe vulnerability.","Low",12/5/2023,4,1
+"OX-Security-Demo/Multi-currency-management",97,"CI/CD Posture","CI/CD workflow security issue","GitHub Actions run command is vulnerable to shell injection","Low",12/5/2023,2,1
+"OX-Security-Demo/Multi-currency-management",97,"CI/CD Posture","Unpinned (SHA) Third-Party Actions in GitHub","Workflow uses third-party Actions that are not tied to a specific release: aws-actions/configure-aws-credentials","Low",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"CI/CD Posture","Unpinned (SHA) Third-Party Actions in GitHub","Workflow uses third-party Actions that are not tied to a specific release: aws-actions/amazon-ecr-login","Low",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Code Security","SAST issue","Always use a valid certificate_ even during testing.","Low",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Code Security","SAST issue","JWT is decoded before its signature is verified","Low",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Code Security","SAST issue","Checks for setting the environment variable NODE_TLS_REJECT_UNAUTHORIZED to 0_ which disables TLS verification. This should only be used for debugging purposes. Setting the option rejectUnauthorized to false bypasses verification against the list of trusted CAs_ which also leads to insecure transport. These options lead to vulnerability to MTM attacks_ and should not be used.","Low",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Code Security","SAST issue","Checks for any usage of http servers instead of https servers. Encourages the usage of https protocol instead of http_ which does not have TLS and is therefore unencrypted. Using http can lead to man-in-the-middle attacks in which the attacker is able to read sensitive information.","Low",12/5/2023,1,1
+"OX-Security-Demo/Backend-Server",71,"Infrastructure as Code Scan","IaC issue","Dockerfile has only a root user","Low",12/5/2023,4,1
+"OX-Security-Demo/Backend-Server",71,"Infrastructure as Code Scan","IaC issue","Dockerfile has 'FROM' with the 'latest' version tag","Low",12/5/2023,3,1
+"OX-Security-Demo/Backend-Server",71,"Infrastructure as Code Scan","IaC issue","Dockerfile has unsafe 'ADD' instruction","Low",12/5/2023,67,1
+"OX-Security-Demo/Backend-Server",71,"Infrastructure as Code Scan","IaC issue","Dockerfile has root as last defined user","Low",12/5/2023,1,1
+"OX-Security-Demo/Backend-Server",71,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Infrastructure as Code Scan","IaC issue","K8s container does not have a CPU request","Low",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Infrastructure as Code Scan","IaC issue","K8s container does not have a CPU limit","Low",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Infrastructure as Code Scan","IaC issue","K8s container does not have a memory request","Low",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Infrastructure as Code Scan","IaC issue","K8s container does not have a memory limit","Low",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Infrastructure as Code Scan","IaC issue","K8s container is not pulling a specific image version","Low",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Infrastructure as Code Scan","IaC issue","K8s container does not use a read-only filesystem","Low",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Infrastructure as Code Scan","IaC issue","K8s container does not use NET_RAW capabilities","Low",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Infrastructure as Code Scan","IaC issue","K8s pod does not have a securityContext assigned","Low",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Infrastructure as Code Scan","IaC issue","K8s container does not have a securityContext assigned","Low",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Infrastructure as Code Scan","IaC issue","K8s container secure computing mode is not configured to the secure default setting","Low",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Infrastructure as Code Scan","IaC issue","K8s container is not restricted to default capabilities","Low",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Infrastructure as Code Scan","IaC issue","K8s Service Account token should be mounted only when required","Low",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Infrastructure as Code Scan","IaC issue","K8s container should run under a high UID to prevent privilege escalation","Low",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Infrastructure as Code Scan","IaC issue","K8s image to be deployed is not selected by digest","Low",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Infrastructure as Code Scan","IaC issue","K8s liveness probe is not configured","Low",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Infrastructure as Code Scan","IaC issue","K8s readiness probe is not configured","Low",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Infrastructure as Code Scan","IaC issue","Dockerfile has only a root user","Low",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Infrastructure as Code Scan","IaC issue","Dockerfile has unsafe 'ADD' instruction","Low",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability in JQuery method","Low",12/5/2023,12,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability in JQuery selector","Low",12/5/2023,44,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability in JQuery .html() function","Low",12/5/2023,21,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Denial-of-Service (DoS) vulnerability due to regex input","Low",12/5/2023,75,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Prototype Pollution vulnerability","Low",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","CSRF protection is disabled for this configuration. This is a security risk.","Low",12/5/2023,2,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Cross-Site Request Forgery (CSRF) vulnerability due to unrestricted Request Mapping","Low",12/5/2023,16,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability via insecure document methods usage","Low",12/5/2023,29,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability in Element.innerHTML","Low",12/5/2023,29,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Command Injection vulnerability due to dynamic code execution","Low",12/5/2023,46,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Usage of non-cryptographic random number generator","Low",12/5/2023,4,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Cross-Site Scripting (XSS) vulnerability due to unescaped variable injection in 'href'","Low",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Code Injection vulnerability due to non-literal package import","Low",12/5/2023,5,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Prototype Pollution vulnerability due to detected assignment to prototype object","Low",12/5/2023,8,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Weak cryptographic algorithm used","Low",12/5/2023,4,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Detected input from a HTTPServletRequest going into a session command_ like `setAttribute`. User input into such a command could lead to an attacker inputting malicious code into your session parameters_ blurring the line between what's trusted and untrusted_ and therefore leading to a trust boundary violation. This could lead to programmers trusting unvalidated data. Instead_ thoroughly sanitize user input before passing it into such function calls.","Low",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Insecure Deserialization of objects using ObjectInputStream","Low",12/5/2023,2,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Information Disclosure vulnerability as cookie can be read by client-side script","Low",12/5/2023,2,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Cookie can be transmitted over an insecure channel","Low",12/5/2023,2,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Cookie can be transmitted over an insecure channel","Low",12/5/2023,2,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","SQL Injection (SQLI) vulnerability due to formatted string in a SQL statement","Low",12/5/2023,6,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","XML external entities are not explicitly disabled for this XMLInputFactory. This could be vulnerable to XML external entity vulnerabilities. Explicitly disable external entities by setting javax.xml.stream.isSupportingExternalEntities to false.","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Infrastructure as Code Scan","IaC issue","Github Actions job has top-level write-all permissions","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Infrastructure as Code Scan","IaC issue","Dockerfile has only a root user","Low",12/5/2023,2,1
+"OX-Security-Demo/Bank-Website-Backend",69,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Open Source Security","Vulnerable dependency (CVE) in code","decode-uri-component@0.2.0 is a JavaScript direct dependency having 1 direct vulnerability and no indirect vulnerabilities. CVE-2022-38900 (CVSS:7.5_ Improper Input Validation) is the most severe vulnerability.","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Open Source Security","Vulnerable dependency (CVE) in code","pycrypto@2.6.1 is a Python direct dependency having 2 direct vulnerabilities and no indirect vulnerabilities. CVE-2013-7459 (CVSS:9.8_ Buffer Overflow) is the most severe vulnerability.","Low",12/5/2023,2,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Open Source Security","Vulnerable dependency (CVE) in code","numpy@1.15.4 is a Python direct dependency having 5 direct vulnerabilities and no indirect vulnerabilities. CVE-2019-6446 (CVSS:9.8_ Deserialization of Untrusted Data) is the most severe vulnerability.","Low",12/5/2023,5,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Open Source Security","Vulnerable dependency (CVE) in code","tensorflow@2.1.0 is a Python direct dependency having 397 direct and 1 indirect vulnerabilities. CVE-2020-15205 (CVSS:9.8_ Buffer Overflow) is the most severe vulnerability.","Low",12/5/2023,398,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Open Source Security","Vulnerable dependency (CVE) in code","notebook@5.7.8 is a Python direct dependency having 5 direct vulnerabilities and no indirect vulnerabilities. CVE-2021-32798 (CVSS:9.6_ Cross-site scripting) is the most severe vulnerability.","Low",12/5/2023,5,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Open Source Security","Vulnerable dependency (CVE) in code","jupyterlab@3.0.16 is a Python direct dependency having 1 direct and 2 indirect vulnerabilities. CVE-2021-32797 (CVSS:9.6_ Cross-site scripting) is the most severe vulnerability.","Low",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Open Source Security","Vulnerable dependency (CVE) in code","joblib@1.1.0 is a Python direct dependency having 1 direct vulnerability and no indirect vulnerabilities. CVE-2022-21797 (CVSS:9.8) is the most severe vulnerability.","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Open Source Security","Vulnerable dependency (CVE) in code","pillow@8.3.2 is a Python direct dependency having 9 direct vulnerabilities and no indirect vulnerabilities. CVE-2022-22817 (CVSS:9.8_ Improper Input Validation) is the most severe vulnerability.","Low",12/5/2023,9,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Open Source Security","Vulnerable dependency (CVE) in code","certifi@2022.6.15 is a Python direct dependency having 2 direct vulnerabilities and no indirect vulnerabilities. CVE-2023-37920 (CVSS:9.8_ Insufficient Verification of Data Authenticity) is the most severe vulnerability.","Low",12/5/2023,2,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Open Source Security","Vulnerable dependency (CVE) in code","torch@1.8.1 is a Python direct dependency having 1 direct vulnerability and no indirect vulnerabilities. CVE-2022-45907 (CVSS:9.8_ Code Injection) is the most severe vulnerability.","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Open Source Security","Vulnerable dependency (CVE) in code","werkzeug@1.0.1 is a Python direct dependency having 3 direct vulnerabilities and no indirect vulnerabilities. CVE-2023-25577 (CVSS:7.5_ Improper Memory Management) is the most severe vulnerability.","Low",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Secret/PII Scan","Secret in code","Generic Password was found in the code of a private repository","Low",12/5/2023,2,1
+"OX-Security-Demo/Bank-Website-Backend",69,"CI/CD Posture","CI/CD workflow security issue","Github Actions job has top-level write-all permissions","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"CI/CD Posture","Unpinned (SHA) Third-Party Actions in GitHub","Workflow uses third-party Actions that are not tied to a specific release: google-github-actions/auth","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability due to interpolated variables","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Code Security","SAST issue","FTP is not a secure protocol for sending files","Low",12/5/2023,1,1
+"OX-Security-Demo/Investment-management",67,"Infrastructure as Code Scan","IaC issue","Dockerfile has only a root user","Low",12/5/2023,1,1
+"OX-Security-Demo/Investment-management",67,"Infrastructure as Code Scan","IaC issue","Dockerfile has 'FROM' with the 'latest' version tag","Low",12/5/2023,1,1
+"OX-Security-Demo/Investment-management",67,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"OX-Security-Demo/Investment-management",67,"CI/CD Posture","Unpinned (SHA) Third-Party Actions in GitHub","Workflow uses third-party Actions that are not tied to a specific release: docker/setup-qemu-action","Low",12/5/2023,1,1
+"OX-Security-Demo/Investment-management",67,"CI/CD Posture","Unpinned (SHA) Third-Party Actions in GitHub","Workflow uses third-party Actions that are not tied to a specific release: docker/setup-buildx-action","Low",12/5/2023,1,1
+"OX-Security-Demo/Investment-management",67,"CI/CD Posture","Unpinned (SHA) Third-Party Actions in GitHub","Workflow uses third-party Actions that are not tied to a specific release: docker/login-action","Low",12/5/2023,1,1
+"OX-Security-Demo/Investment-management",67,"Open Source Security","Vulnerable dependency (CVE) in DockerFile base image","alpine@latest is a base image defined in Dockerfile having 4 vulnerabilities. Top risk: CVE-2023-5363 (CVSS:7.5)","Low",12/5/2023,4,1
+"OX-Security-Demo/BankForensicsCollector",62,"Infrastructure as Code Scan","IaC issue","Dockerfile has only a root user","Low",12/5/2023,1,1
+"OX-Security-Demo/BankForensicsCollector",62,"Infrastructure as Code Scan","IaC issue","Dockerfile has 'FROM' with the 'latest' version tag","Low",12/5/2023,1,1
+"OX-Security-Demo/BankForensicsCollector",62,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"OX-Security-Demo/BankForensicsCollector",62,"CI/CD Posture","Unpinned (SHA) Third-Party Actions in GitHub","Workflow uses third-party Actions that are not tied to a specific release: docker/setup-qemu-action","Low",12/5/2023,1,1
+"OX-Security-Demo/BankForensicsCollector",62,"CI/CD Posture","Unpinned (SHA) Third-Party Actions in GitHub","Workflow uses third-party Actions that are not tied to a specific release: docker/setup-buildx-action","Low",12/5/2023,1,1
+"OX-Security-Demo/BankForensicsCollector",62,"CI/CD Posture","Unpinned (SHA) Third-Party Actions in GitHub","Workflow uses third-party Actions that are not tied to a specific release: docker/login-action","Low",12/5/2023,1,1
+"OX-Security-Demo/BankForensicsCollector",62,"Code Security","SAST issue","Usage of non-cryptographic random number generator","Low",12/5/2023,1,1
+"OX-Security-Demo/BankForensicsCollector",62,"Open Source Security","Vulnerable dependency (CVE) in DockerFile base image","alpine@latest is a base image defined in Dockerfile having 4 vulnerabilities. Top risk: CVE-2023-5363 (CVSS:7.5)","Low",12/5/2023,4,1
+"OX-Security-Demo/Lines-Credits",60,"Infrastructure as Code Scan","IaC issue","Dockerfile has only a root user","Low",12/5/2023,1,1
+"OX-Security-Demo/Lines-Credits",60,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"OX-Security-Demo/Lines-Credits",60,"CI/CD Posture","Unpinned (SHA) Third-Party Actions in GitHub","Workflow uses third-party Actions that are not tied to a specific release: docker/setup-qemu-action","Low",12/5/2023,1,1
+"OX-Security-Demo/Lines-Credits",60,"CI/CD Posture","Unpinned (SHA) Third-Party Actions in GitHub","Workflow uses third-party Actions that are not tied to a specific release: docker/setup-buildx-action","Low",12/5/2023,1,1
+"OX-Security-Demo/Lines-Credits",60,"CI/CD Posture","Unpinned (SHA) Third-Party Actions in GitHub","Workflow uses third-party Actions that are not tied to a specific release: docker/login-action","Low",12/5/2023,1,1
+"OX-Security-Demo/Liquidity-management",37,"Infrastructure as Code Scan","IaC issue","Dockerfile has only a root user","Low",12/5/2023,1,1
+"OX-Security-Demo/Liquidity-management",37,"Infrastructure as Code Scan","IaC issue","Dockerfile has deprecated 'MAINTAINER' instruction","Low",12/5/2023,1,1
+"OX-Security-Demo/Liquidity-management",37,"Secret/PII Scan","Secret in Git history","MySQL Database Password was found in the history of a public repository","Low",12/5/2023,1,1
+"OX-Security-Demo/Liquidity-management",37,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"OX-Security-Demo/Liquidity-management",37,"Open Source Security","Vulnerable dependency (CVE) in code","jackson-mapper-asl@1.9.13 is a Java direct dependency having 2 direct vulnerabilities and no indirect vulnerabilities. CVE-2019-10202 (CVSS:9.8_ Deserialization of Untrusted Data) is the most severe vulnerability.","Low",12/5/2023,2,1
+"OX-Security-Demo/Liquidity-management",37,"Open Source Security","Vulnerable dependency (CVE) in code","liquibase-core@4.5.0 is a Java direct dependency having 1 indirect vulnerability and no direct vulnerabilities. CVE-2022-0839 (CVSS:9.8_ Information Exposure) is the most severe vulnerability.","Low",12/5/2023,1,1
+"OX-Security-Demo/Liquidity-management",37,"Open Source Security","Vulnerable dependency (CVE) in code","commons-text@1.9 is a Java direct dependency having 1 indirect vulnerability and no direct vulnerabilities. CVE-2022-42889 (CVSS:9.8_ Code Injection) is the most severe vulnerability.","Low",12/5/2023,1,1
+"OX-Security-Demo/Liquidity-management",37,"Code Security","SAST issue","Cross-Site Request Forgery (CSRF) vulnerability due to unrestricted Request Mapping","Low",12/5/2023,1,1
+"OX-Security-Demo/Insurance-Service",35,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"OX-Security-Demo/Currency-Credits",35,"Infrastructure as Code Scan","IaC issue","Dockerfile has only a root user","Low",12/5/2023,1,1
+"OX-Security-Demo/Currency-Credits",35,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"OX-Security-Demo/Currency-Credits",35,"Open Source Security","Vulnerable dependency (CVE) in code","springfox-swagger2@2.9.2 is a Java direct dependency having 3 indirect vulnerabilities and no direct vulnerabilities. CVE-2023-2976 (CVSS:7.1_ Improper Access Control) is the most severe vulnerability.","Low",12/5/2023,3,1
+"OX-Security-Demo/Currency-Credits",35,"Open Source Security","Vulnerable dependency (CVE) in code","jackson-mapper-asl@1.9.13 is a Java direct dependency having 2 direct vulnerabilities and no indirect vulnerabilities. CVE-2019-10202 (CVSS:9.8_ Deserialization of Untrusted Data) is the most severe vulnerability.","Low",12/5/2023,2,1
+"OX-Security-Demo/Currency-Credits",35,"Open Source Security","Vulnerable dependency (CVE) in code","postgresql@42.2.0 is a Java direct dependency having 6 direct vulnerabilities and no indirect vulnerabilities. CVE-2022-21724 (CVSS:9.8_ Improper Initialization) is the most severe vulnerability.","Low",12/5/2023,6,1
+"OX-Security-Demo/Currency-Credits",35,"Open Source Security","Vulnerable dependency (CVE) in code","commons-text@1.9 is a Java direct dependency having 1 indirect vulnerability and no direct vulnerabilities. CVE-2022-42889 (CVSS:9.8_ Code Injection) is the most severe vulnerability.","Low",12/5/2023,1,1
+"OX-Security-Demo/Currency-Credits",35,"CI/CD Posture","Unpinned (SHA) Third-Party Actions in GitHub","Workflow uses third-party Actions that are not tied to a specific release: docker/setup-qemu-action","Low",12/5/2023,1,1
+"OX-Security-Demo/Currency-Credits",35,"CI/CD Posture","Unpinned (SHA) Third-Party Actions in GitHub","Workflow uses third-party Actions that are not tied to a specific release: docker/setup-buildx-action","Low",12/5/2023,1,1
+"OX-Security-Demo/Currency-Credits",35,"CI/CD Posture","Unpinned (SHA) Third-Party Actions in GitHub","Workflow uses third-party Actions that are not tied to a specific release: docker/login-action","Low",12/5/2023,1,1
+"oxsecurity/ox-queries",21,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"michaelhorty/TMCLI",19,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"michaelhorty/TMCLI",19,"CI/CD Posture","Unpinned (SHA) Third-Party Actions in GitHub","Workflow uses third-party Actions that are not tied to a specific release: github/codeql-action","Low",12/5/2023,1,1
+"oxsecurity/ox-cli",15,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"michaelhorty/CxCLI",15,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"michaelhorty/VCCLI",15,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"michaelhorty/VCCLI",15,"Open Source Security","Vulnerable dependency (CVE) in code","RestSharp@106.11.7 is a C# direct dependency having 1 direct vulnerability and no indirect vulnerabilities. CVE-2021-27293 (CVSS:7.5_ Insufficient Comparison) is the most severe vulnerability.","Low",12/5/2023,1,1
+"michaelhorty/VCCLI",15,"Open Source Security","Vulnerable dependency (CVE) in code","Newtonsoft.Json@12.0.3 is a C# direct dependency having 1 direct vulnerability and no indirect vulnerabilities. Top risk: GHSA-5crp-9r3c-p9vr is the most severe vulnerability.","Low",12/5/2023,1,1
+"michaelhorty/CxCLI",15,"CI/CD Posture","Webhook without SSL/TLS","Insecure webhook: no SSL","Low",12/5/2023,1,1
+"michaelhorty/VCCLI",15,"Git Posture","License file missing in repo","License file missing from public repo","Low",12/5/2023,1,1
+"michaelhorty/VCCLI",15,"Git Posture","Security Policy file missing in repo","Security Policy missing from public repo","Low",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"Infrastructure as Code Scan","IaC issue","Github Actions job has top-level write-all permissions","Low",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"Infrastructure as Code Scan","IaC issue","Dockerfile has 'FROM' with the 'latest' version tag","Low",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"Secret/PII Scan","Secret in Git history","Generic Password was found in the history of a public repository","Low",12/5/2023,10,1
+"michaelhorty/juiceshop_clone",14,"Secret/PII Scan","Secret in Git history","Generic Secret was found in the history of a public repository","Low",12/5/2023,2,1
+"michaelhorty/juiceshop_clone",14,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"Secret/PII Scan","Secret in code","Generic Password was found in the code of a public repository","Low",12/5/2023,22,1
+"michaelhorty/juiceshop_clone",14,"CI/CD Posture","CI/CD workflow security issue","Github Actions job has top-level write-all permissions","Low",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"CI/CD Posture","Unpinned (SHA) Third-Party Actions in GitHub","Workflow uses third-party Actions that are not tied to a specific release: github/codeql-action","Low",12/5/2023,3,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","SQL Injection (SQLI) vulnerability due to usage of raw query","Low",12/5/2023,6,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability in Element.innerHTML","Low",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Path Traversal vulnerability due to user controlled path variables","Low",12/5/2023,12,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Make sure that unverified user data can not reach vm.runInContext.","Low",12/5/2023,2,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Path Traversal vulnerability due to user input in res.sendFile","Low",12/5/2023,4,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","It looks like 'toUrl' is read from user input and it is used to as a redirect. Ensure 'toUrl' is not externally controlled_ otherwise this is an open redirect.","Low",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Usage of Weak MD5 Hashing Algorithm","Low",12/5/2023,2,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Path Traversal vulnerability in FS call argument","Low",12/5/2023,25,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Usage of Weak Random Number Generators","Low",12/5/2023,11,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","A hardcoded username in plain text is identified. Store it properly in an environment variable.","Low",12/5/2023,2,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","SQL Injection (SQLI) vulnerability due to user input in sequelize statement","Low",12/5/2023,6,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability due to interpolated variables","Low",12/5/2023,6,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","String comparisons using '==='_ '!=='_ '!=' and '==' is vulnerable to timing attacks. More info: https://snyk.io/blog/node-js-timing-attack-ccc-ctf/","Low",12/5/2023,3,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Usage of non-cryptographic random number generator","Low",12/5/2023,2,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","A hardcoded password in plain text is identified. Store it properly in an environment variable.","Low",12/5/2023,2,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Command Injection vulnerability due to dynamic code execution","Low",12/5/2023,2,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Prototype Pollution vulnerability","Low",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability via insecure document methods usage","Low",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Denial-of-Service (DoS) vulnerability due to regex input","Low",12/5/2023,2,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","HMAC key is hardcoded","Low",12/5/2023,2,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Detected usage of the `notevil` package_ which is unmaintained and has vulnerabilities. Using any sort of `eval()` functionality can be very dangerous_ but if you must_ the `eval` package is an up to date alternative. Be sure that only trusted input reaches an `eval()` function.","Low",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Possible writing outside of the destination_ make sure that the target path is nested in the intended destination","Low",12/5/2023,4,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Detected use of parseXml() function with the `noent` field set to `true`. This can lead to an XML External Entities (XXE) attack if untrusted data is passed into it.","Low",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","User controlled URL in http client libraries can result in Server Side Request Forgery (SSRF).","Low",12/5/2023,2,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","The following request request.get() was found to be crafted from user-input `req` which can lead to Server-Side Request Forgery (SSRF) vulnerabilities. It is recommended where possible to not allow user-input to craft the base request_ but to be treated as part of the path or query parameter. When user-input is necessary to craft the request_ it is recommeneded to follow OWASP best practices to prevent abuse. ","Low",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","The application redirects to a URL specified by user-supplied input `query` that is not validated. This could redirect users to malicious locations. Consider using an allow-list approach to validate URLs_ or warn users they are being redirected to a third-party website.","Low",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Untrusted user input in MongoDB $where operator can result in NoSQL JavaScript Injection.","Low",12/5/2023,2,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","User data from `req` is being compiled into the template_ which can lead to a Server Side Template Injection (SSTI) vulnerability.","Low",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Exposure Risk from User-Controlled Data Driving Business Logic","Low",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability as a result of an unknown value being used in a script tag","Low",12/5/2023,2,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","User controlled data in 'yaml.load()' function can result in Remote Code Injection.","Low",12/5/2023,2,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","CORS Policy Set to Allow All Origins","Low",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Feature-Policy header is present. More information: https://helmetjs.github.io/docs/feature-policy/","Low",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Content-Type-Options header is present. More information: https://helmetjs.github.io/docs/dont-sniff-mimetype/","Low",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Directory listing/indexing is enabled_ which may lead to disclosure of sensitive directories and files. It is recommended to disable directory listing unless it is a public resource. If you need directory listing_ ensure that sensitive files are inaccessible when querying the resource.","Low",12/5/2023,3,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","XSS vulnerability due to explicit unescape in Pug template","Low",12/5/2023,1,1
+"michaelhorty/VDemo_JAVA",14,"SBOM","Unapproved license used by direct dependency in code","Library with unapproved license directly referenced in code: mysql:mysql-connector-java@5.1.48 (GPL-3.0-or-later_ The GNU General Public License_ Version 2)","Low",12/5/2023,1,1
+"michaelhorty/VDemo_JAVA",14,"Secret/PII Scan","Secret in Git history","Generic Password was found in the history of a public repository","Low",12/5/2023,3,1
+"michaelhorty/VDemo_JAVA",14,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"michaelhorty/VDemo_JAVA",14,"Open Source Security","Vulnerable dependency (CVE) in code","keycloak-saml-core@1.8.1.Final is a Java direct dependency having 1 direct and 5 indirect vulnerabilities. CVE-2021-40690 (CVSS:7.5_ Information Exposure) is the most severe vulnerability.","Low",12/5/2023,6,1
+"michaelhorty/VDemo_JAVA",14,"Open Source Security","Vulnerable dependency (CVE) in code","maven-sling-plugin@2.0.4-incubator is a Java direct dependency having 9 indirect vulnerabilities and no direct vulnerabilities. CVE-2017-1000487 (CVSS:9.8_ Code Injection) is the most severe vulnerability.","Low",12/5/2023,9,1
+"michaelhorty/VDemo_JAVA",14,"Open Source Security","Vulnerable dependency (CVE) in code","jbcrypt@0.3m is a Java direct dependency having 1 indirect vulnerability and no direct vulnerabilities. CVE-2015-0886 (CVSS:5_ Incorrect Calculation) is the most severe vulnerability.","Low",12/5/2023,1,1
+"michaelhorty/VDemo_JAVA",14,"Open Source Security","Vulnerable dependency (CVE) in code","commons-collections4@4.0 is a Java direct dependency having 2 indirect vulnerabilities and no direct vulnerabilities. CVE-2015-7501 (CVSS:9.8_ Deserialization of Untrusted Data) is the most severe vulnerability.","Low",12/5/2023,2,1
+"michaelhorty/VDemo_JAVA",14,"Open Source Security","Vulnerable dependency (CVE) in code","commons-fileupload@1.3.2 is a Java direct dependency having 2 indirect vulnerabilities and no direct vulnerabilities. CVE-2016-1000031 (CVSS:9.8_ Improper Access Control) is the most severe vulnerability.","Low",12/5/2023,2,1
+"michaelhorty/VDemo_JAVA",14,"Open Source Security","Vulnerable dependency (CVE) in code","spring-core@4.3.10.RELEASE is a Java direct dependency having 13 indirect vulnerabilities and no direct vulnerabilities. CVE-2018-1270 (CVSS:9.8_ Code Injection) is the most severe vulnerability.","Low",12/5/2023,13,1
+"michaelhorty/VDemo_JAVA",14,"Open Source Security","Vulnerable dependency (CVE) in code","mysql-connector-java@5.1.48 is a Java direct dependency having 3 direct vulnerabilities and no indirect vulnerabilities. CVE-2018-3258 (CVSS:8.8_ Improper Privilege Management) is the most severe vulnerability.","Low",12/5/2023,3,1
+"michaelhorty/VDemo_JAVA",14,"Open Source Security","Vulnerable dependency (CVE) in code","slf4j-log4j12@1.7.7 is a Java direct dependency having 5 indirect vulnerabilities and no direct vulnerabilities. CVE-2019-17571 (CVSS:9.8_ Deserialization of Untrusted Data) is the most severe vulnerability.","Low",12/5/2023,5,1
+"michaelhorty/VDemo_JAVA",14,"Open Source Security","Vulnerable dependency (CVE) in code","commons-io@2.4 is a Java direct dependency having 1 indirect vulnerability and no direct vulnerabilities. CVE-2021-29425 (CVSS:4.8_ Path Traversal) is the most severe vulnerability.","Low",12/5/2023,1,1
+"michaelhorty/VDemo_JAVA",14,"CI/CD Posture","Unpinned (SHA) Third-Party Actions in GitHub","Workflow uses third-party Actions that are not tied to a specific release: papeloto/action-zip","Low",12/5/2023,1,1
+"michaelhorty/VDemo_JAVA",14,"CI/CD Posture","Unpinned (SHA) Third-Party Actions in GitHub","Workflow uses third-party Actions that are not tied to a specific release: wei/curl","Low",12/5/2023,1,1
+"michaelhorty/VDemo_JAVA",14,"Code Security","SAST issue","SQL Injection (SQLI) vulnerability in format string query","Low",12/5/2023,12,1
+"michaelhorty/VDemo_JAVA",14,"Code Security","SAST issue","Unsafe Reflection due to user input in 'Class.forName'","Low",12/5/2023,1,1
+"michaelhorty/VDemo_JAVA",14,"Code Security","SAST issue","SQL Injection (SQLI) vulnerability due to manually-constructed SQL string","Low",12/5/2023,3,1
+"michaelhorty/VDemo_JAVA",14,"Code Security","SAST issue","Information Disclosure vulnerability as cookie can be read by client-side script","Low",12/5/2023,3,1
+"michaelhorty/VDemo_JAVA",14,"Code Security","SAST issue","Cookie can be transmitted over an insecure channel","Low",12/5/2023,3,1
+"michaelhorty/VDemo_JAVA",14,"Code Security","SAST issue","MD5 hash algorithm used is considered insecure","Low",12/5/2023,2,1
+"michaelhorty/VDemo_JAVA",14,"Code Security","SAST issue","SQL Injection (SQLI) vulnerability due to formatted string in a SQL statement","Low",12/5/2023,4,1
+"michaelhorty/VDemo_JAVA",14,"Code Security","SAST issue","Path Traversal vulnerability due to user controlled path variables","Low",12/5/2023,4,1
+"michaelhorty/VDemo_JAVA",14,"Code Security","SAST issue","Insecure Deserialization of objects using ObjectInputStream","Low",12/5/2023,1,1
+"michaelhorty/VDemo_JAVA",14,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability due to JSP Scriptlets usage","Low",12/5/2023,68,1
+"michaelhorty/VDemo_JAVA",14,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability due to unescaped output","Low",12/5/2023,2,1
+"michaelhorty/VDemo_JAVA",14,"Code Security","SAST issue","Detected an Expression Language segment in a tag that does not escape output. This is dangerous because if any data in this expression can be controlled externally_ it is a cross-site scripting vulnerability. Instead_ use the 'out' tag from the JSTL taglib to escape this expression. See https://www.tutorialspoint.com/jsp/jstl_core_out_tag.htm for more information.","Low",12/5/2023,2,1
+"michaelhorty/VDemo_JAVA",14,"Code Security","SAST issue","Usage of Weak Random Number Generators","Low",12/5/2023,1,1
+"michaelhorty/VDemo_JAVA",14,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability in JQuery selector","Low",12/5/2023,29,1
+"michaelhorty/VDemo_JAVA",14,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability in JQuery .html() function","Low",12/5/2023,1,1
+"michaelhorty/VDemo_JAVA",14,"Code Security","SAST issue","Command Injection vulnerability due to dynamic code execution","Low",12/5/2023,13,1
+"michaelhorty/VDemo_JAVA",14,"Git Posture","Security Policy file missing in repo","Security Policy missing from public repo","Low",12/5/2023,1,1
+"michaelhorty/OX-API-Client",12,"Code Security","SAST issue","Insecure Serialization due to Pickle usage","Low",12/5/2023,1,1
+"michaelhorty/AQL2XLS_WinApp",12,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"michaelhorty/AQL2XLS_WinApp",12,"Open Source Security","Vulnerable dependency (CVE) in code","RestSharp@106.6.10 is a C# direct dependency having 1 direct vulnerability and no indirect vulnerabilities. CVE-2021-27293 (CVSS:7.5_ Insufficient Comparison) is the most severe vulnerability.","Low",12/5/2023,1,1
+"michaelhorty/AQL2XLS_WinApp",12,"Open Source Security","Vulnerable dependency (CVE) in code","Newtonsoft.Json@12.0.3 is a C# direct dependency having 1 direct vulnerability and no indirect vulnerabilities. Top risk: GHSA-5crp-9r3c-p9vr is the most severe vulnerability.","Low",12/5/2023,1,1
+"MH-New-Organization/MH_NO_WEBG",12,"Code Security","SAST issue","CSRF protection is disabled for this configuration. This is a security risk.","Low",12/5/2023,1,1
+"MH-New-Organization/MH_NO_WEBG",12,"Code Security","SAST issue","Cross-Site Request Forgery (CSRF) vulnerability due to unrestricted Request Mapping","Low",12/5/2023,9,1
+"oxsecurity/ox-api-client",12,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"oxsecurity/ox-api-client",12,"Code Security","SAST issue","Insecure Serialization due to Pickle usage","Low",12/5/2023,1,1
+"michaelhorty/TMGUI",12,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"michaelhorty/TMGUI",12,"Open Source Security","Vulnerable dependency (CVE) in code","RestSharp@106.11.7 is a C# direct dependency having 1 direct vulnerability and no indirect vulnerabilities. CVE-2021-27293 (CVSS:7.5_ Insufficient Comparison) is the most severe vulnerability.","Low",12/5/2023,1,1
+"michaelhorty/CxMOreporting",12,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"michaelhorty/CxMOreporting",12,"Open Source Security","Vulnerable dependency (CVE) in code","RestSharp@106.6.9 is a C# direct dependency having 1 direct vulnerability and no indirect vulnerabilities. CVE-2021-27293 (CVSS:7.5_ Insufficient Comparison) is the most severe vulnerability.","Low",12/5/2023,1,1
+"michaelhorty/CxMOreporting",12,"Open Source Security","Vulnerable dependency (CVE) in code","Newtonsoft.Json@12.0.1 is a C# direct dependency having 1 direct vulnerability and no indirect vulnerabilities. Top risk: GHSA-5crp-9r3c-p9vr is the most severe vulnerability.","Low",12/5/2023,1,1
+"michaelhorty/AQL2XLS_WinApp",12,"Git Posture","License file missing in repo","License file missing from public repo","Low",12/5/2023,1,1
+"michaelhorty/AQL2XLS_WinApp",12,"Git Posture","Security Policy file missing in repo","Security Policy missing from public repo","Low",12/5/2023,1,1
+"MH-New-Organization/MH_NO_WEBG",12,"Git Posture","Branch Protection allows unsigned commits","Signed commits are not being enforced","Low",12/5/2023,1,1
+"MH-New-Organization/MH_NO_WEBG",12,"Git Posture","License file missing in repo","License file missing from public repo","Low",12/5/2023,1,1
+"MH-New-Organization/MH_NO_WEBG",12,"Git Posture","CODEOWNERS file missing in repo","CODEOWNERS file missing from public repo with branch protection","Low",12/5/2023,1,1
+"MH-New-Organization/MH_NO_WEBG",12,"Git Posture","Security Policy file missing in repo","Security Policy missing from public repo","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Backup-Operator",10,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"michaelhorty/WG384",10,"SBOM","Unapproved license used by direct dependency in code","Library with unapproved license directly referenced in code: hsqldb:hsqldb@1.8.0.7 (HSQLDB License)","Low",12/5/2023,1,1
+"michaelhorty/WG384",10,"SBOM","Unapproved license used by direct dependency in code","Library with unapproved license directly referenced in code: net.sourceforge.jtds:jtds@1.2.2 (LGPL-3.0-or-later_ LGPL)","Low",12/5/2023,1,1
+"michaelhorty/WG384",10,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"michaelhorty/WG384",10,"Open Source Security","Vulnerable dependency (CVE) in code","axis@1.2 is a Java direct dependency having 2 indirect vulnerabilities and no direct vulnerabilities. CVE-2018-8032 (CVSS:6.1_ Cross-site scripting) is the most severe vulnerability.","Low",12/5/2023,2,1
+"michaelhorty/WG384",10,"Open Source Security","Vulnerable dependency (CVE) in code","spring-security-core@3.2.4.RELEASE is a Java direct dependency having 7 direct vulnerabilities and no indirect vulnerabilities. CVE-2014-3527 (CVSS:9.8_ Improper Authentication) is the most severe vulnerability.","Low",12/5/2023,7,1
+"michaelhorty/WG384",10,"Open Source Security","Vulnerable dependency (CVE) in code","commons-collections@3.1 is a Java direct dependency having 2 indirect vulnerabilities and no direct vulnerabilities. CVE-2015-7501 (CVSS:9.8_ Deserialization of Untrusted Data) is the most severe vulnerability.","Low",12/5/2023,2,1
+"michaelhorty/WG384",10,"Open Source Security","Vulnerable dependency (CVE) in code","commons-digester@1.4.1 is a Java direct dependency having 1 indirect vulnerability and no direct vulnerabilities. CVE-2019-10086 (CVSS:7.3_ Deserialization of Untrusted Data) is the most severe vulnerability.","Low",12/5/2023,1,1
+"michaelhorty/WG384",10,"Open Source Security","Vulnerable dependency (CVE) in code","log4j@1.2.17 is a Java direct dependency having 5 direct vulnerabilities and no indirect vulnerabilities. CVE-2019-17571 (CVSS:9.8_ Deserialization of Untrusted Data) is the most severe vulnerability.","Low",12/5/2023,5,1
+"michaelhorty/WG384",10,"Open Source Security","Vulnerable dependency (CVE) in code","junit@4.8.1 is a Java direct dependency having 1 direct vulnerability and no indirect vulnerabilities. CVE-2020-15250 (CVSS:5.5_ Improper Access Control) is the most severe vulnerability.","Low",12/5/2023,1,1
+"michaelhorty/WG384",10,"Open Source Security","Vulnerable dependency (CVE) in code","spring-security-web@3.2.4.RELEASE is a Java direct dependency having 1 direct vulnerability and no indirect vulnerabilities. CVE-2021-22112 (CVSS:8.8_ Improper Privilege Management) is the most severe vulnerability.","Low",12/5/2023,1,1
+"michaelhorty/WG384",10,"Open Source Security","Vulnerable dependency (CVE) in code","commons-io@1.3.2 is a Java direct dependency having 1 direct vulnerability and no indirect vulnerabilities. CVE-2021-29425 (CVSS:4.8_ Path Traversal) is the most severe vulnerability.","Low",12/5/2023,1,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability in JQuery selector","Low",12/5/2023,28,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Command Injection vulnerability due to dynamic code execution","Low",12/5/2023,38,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability in JQuery .html() function","Low",12/5/2023,12,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability via insecure document methods usage","Low",12/5/2023,29,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability in Element.innerHTML","Low",12/5/2023,29,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Denial-of-Service (DoS) vulnerability due to regex input","Low",12/5/2023,93,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Potential SSRF via URL Input","Low",12/5/2023,1,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","SQL Injection (SQLI) vulnerability in format string query","Low",12/5/2023,8,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","SQL Injection (SQLI) vulnerability due to formatted string in a SQL statement","Low",12/5/2023,41,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Unsafe Reflection due to user input in 'Class.forName'","Low",12/5/2023,3,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Information Disclosure vulnerability as cookie can be read by client-side script","Low",12/5/2023,5,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Cookie can be transmitted over an insecure channel","Low",12/5/2023,5,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Cookie can be transmitted over an insecure channel","Low",12/5/2023,4,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Insecure cipher mode (CBC with PKCS5Padding) is vulnerable to padding oracle attacks","Low",12/5/2023,2,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","DES is considered deprecated. AES is the recommended cipher. Upgrade to use AES. See https://www.nist.gov/news-events/news/2005/06/nist-withdraws-outdated-data-encryption-standard for more information.","Low",12/5/2023,2,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","MD5 hash algorithm used is considered insecure","Low",12/5/2023,1,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Usage of non-cryptographic random number generator","Low",12/5/2023,3,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","XMLReader being instantiated without calling the setFeature functions that are generally used for disabling entity processing","Low",12/5/2023,1,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Cross-Site Request Forgery (CSRF) vulnerability due to unrestricted Request Mapping","Low",12/5/2023,14,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Data Leakage vulnerability due to unencrypted Socket","Low",12/5/2023,1,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability due to unescaped output","Low",12/5/2023,33,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Detected an Expression Language segment in a tag that does not escape output. This is dangerous because if any data in this expression can be controlled externally_ it is a cross-site scripting vulnerability. Instead_ use the 'out' tag from the JSTL taglib to escape this expression. See https://www.tutorialspoint.com/jsp/jstl_core_out_tag.htm for more information.","Low",12/5/2023,27,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability due to JSP Scriptlets usage","Low",12/5/2023,609,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","T-SQL stored procedure used can provide access to system resources","Low",12/5/2023,3,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Prototype Pollution vulnerability due to detected assignment to prototype object","Low",12/5/2023,6,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Taking a hash of a time value is suspicious_ as there is insufficient entropy to protect against brute-force attacks.","Low",12/5/2023,4,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Always use a valid certificate_ even during testing.","Low",12/5/2023,2,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Use AES instead.","Low",12/5/2023,1,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Code Injection vulnerability due to non-literal package import","Low",12/5/2023,5,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Command Injection vulnerability due to dynamic code execution","Low",12/5/2023,8,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability in JQuery method","Low",12/5/2023,8,1
+"OX-Security-Demo/Bank-Backup-Operator",10,"Git Posture","License file missing in repo","License file missing from public repo","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Backup-Operator",10,"Git Posture","Security Policy file missing in repo","Security Policy missing from public repo","Low",12/5/2023,1,1
+"michaelhorty/vulpy",7,"Code Security","SAST issue","Command Injection vulnerability due to dangerous subprocess usage with tainted env argument","Low",12/5/2023,1,1
+"michaelhorty/vulpy",7,"Code Security","SAST issue","SQL Injection (SQLI) vulnerability in format string query","Low",12/5/2023,6,1
+"michaelhorty/vulpy",7,"Code Security","SAST issue","Arbitary Code Execution (ACE) vulnerability in Flask","Low",12/5/2023,4,1
+"michaelhorty/vulpy",7,"Code Security","SAST issue","Data leakage vulnerability in Flask debug mode","Low",12/5/2023,2,1
+"michaelhorty/vulpy",7,"Code Security","SAST issue","request_without_timeout","Low",12/5/2023,6,1
+"michaelhorty/vulpy",7,"Code Security","SAST issue","Insecure temporary file vulnerability due to creation method","Low",12/5/2023,22,1
+"michaelhorty/vulpy",7,"Code Security","SAST issue","SQL Injection (SQLI) vulnerability in format string query","Low",12/5/2023,6,1
+"michaelhorty/vulpy",7,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability due to explicitly disabled autoescaping in 'safe' filter","Low",12/5/2023,4,1
+"michaelhorty/vulpy",7,"Code Security","SAST issue","An encryption mode of operation is being used without proper message authentication. This can potentially result in the encrypted content to be decrypted by an attacker. Consider instead use an AEAD mode of operation like GCM. ","Low",12/5/2023,2,1
+"michaelhorty/TMDB_Explore",7,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"michaelhorty/TMDBexplore",7,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"michaelhorty/vulpy",7,"Git Posture","Security Policy file missing in repo","Security Policy missing from public repo","Low",12/5/2023,1,1
+"michaelhorty/VeracodeAzureYMLSamples",4,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"michaelhorty/TEST_REPO",4,"Code Security","SAST issue","CSRF protection is disabled for this configuration. This is a security risk.","Low",12/5/2023,1,1
+"michaelhorty/TEST_REPO",4,"Code Security","SAST issue","Cross-Site Request Forgery (CSRF) vulnerability due to unrestricted Request Mapping","Low",12/5/2023,9,1
+"OX-Security-Demo/Bank-ecommerce",4,"CI/CD Posture","Excessive permissions in workflow setting","Workflow settings should be configured with minimum required permissions","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-ecommerce",4,"Open Source Security","Vulnerable dependency (CVE) in code","gorm.io/driver/postgres@1.0.8 is a Go direct dependency having 15 indirect vulnerabilities and no direct vulnerabilities. CVE-2022-3064 (CVSS:7.5_ Resource Exhaustion) is the most severe vulnerability.","Low",12/5/2023,15,1
+"OX-Security-Demo/Bank-ecommerce",4,"Open Source Security","Vulnerable dependency (CVE) in code","urfave/cli@1.22.5 is a Go direct dependency having 3 indirect vulnerabilities and no direct vulnerabilities. CVE-2022-3064 (CVSS:7.5_ Resource Exhaustion) is the most severe vulnerability.","Low",12/5/2023,3,1
+"OX-Security-Demo/Bank-ecommerce",4,"Open Source Security","Vulnerable dependency (CVE) in code","unrolled/render@1.4.0 is a Go direct dependency having 1 indirect vulnerability and no direct vulnerabilities. CVE-2022-29526 (CVSS:5.3_ Improper Privilege Management) is the most severe vulnerability.","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-ecommerce",4,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability via insecure document methods usage","Low",12/5/2023,3,1
+"OX-Security-Demo/Bank-ecommerce",4,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability in Element.innerHTML","Low",12/5/2023,3,1
+"OX-Security-Demo/Bank-ecommerce",4,"Code Security","SAST issue","HTTP server without TLS usage","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-ecommerce",4,"Code Security","SAST issue","A request was found to be crafted from user-input `r`. This can lead to Server-Side Request Forgery (SSRF) vulnerabilities_ potentially exposing sensitive data. It is recommend where possible to not allow user-input to craft the base request_ but to be treated as part of the path or query parameter. When user-input is necessary to craft the request_ it is recommended to follow OWASP best practices to prevent abuse_ including using an allowlist.","Low",12/5/2023,3,1
+"OX-Security-Demo/Bank-ecommerce",4,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability in JQuery selector","Low",12/5/2023,2,1
+"OX-Security-Demo/Bank-ecommerce",4,"Code Security","SAST issue","Cross Site Scripting (XSS) vulnerability in JQuery .html() function","Low",12/5/2023,3,1
+"OX-Security-Demo/Bank-ecommerce",4,"Code Security","SAST issue","Exposure of Error Messages with Stack Traces","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-ecommerce",4,"Code Security","SAST issue","Denial-of-Service (DoS) vulnerability due to regex input","Low",12/5/2023,2,1
+"OX-Security-Demo/Bank-ecommerce",4,"Code Security","SAST issue","Command Injection vulnerability due to dynamic code execution","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-ecommerce",4,"Code Security","SAST issue","Mass Assignment vulnerability due to insecure object assign","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-ecommerce",4,"Code Security","SAST issue","Insecure Random Number Generation 'math/rand'function usage","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-ecommerce",4,"Git Posture","License file missing in repo","License file missing from public repo","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-ecommerce",4,"Git Posture","Security Policy file missing in repo","Security Policy missing from public repo","Low",12/5/2023,1,1
+"michaelhorty/VeracodeAzureYMLSamples",4,"Git Posture","License file missing in repo","License file missing from public repo","Low",12/5/2023,1,1
+"michaelhorty/VeracodeAzureYMLSamples",4,"Git Posture","Security Policy file missing in repo","Security Policy missing from public repo","Low",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Infrastructure as Code Scan","IaC issue","Dockerfile has no healthcheck instruction","Info",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website",97,"Secret/PII Scan","Secret in Git history","Inactive GitHub Access Token was found in the history of a private repository","Info",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Secret/PII Scan","Secret in Git history","Inactive JSON Web Token was found in the history of a private repository","Info",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Secret/PII Scan","Secret in code","Inactive AWS Access Key was found in the code of a private repository","Info",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Secret/PII Scan","Secret in code","Inactive AWS Secret Key was found in the code of a private repository","Info",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Secret/PII Scan","Secret in code","Inactive JSON Web Token was found in the code of a private repository","Info",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website",97,"Secret/PII Scan","Secret in code","Inactive AWS Access Key was found in the code of a private repository","Info",12/5/2023,2,1
+"OX-Security-Demo/Bank-Website",97,"Secret/PII Scan","Secret in code","Inactive AWS Secret Key was found in the code of a private repository","Info",12/5/2023,2,1
+"OX-Security-Demo/Bank-Website",97,"Code Security","SAST issue","found alert() call; should this be in production code?","Info",12/5/2023,2,1
+"OX-Security-Demo/Bank-Website",97,"Code Security","SAST issue","Non-exhaustive list of Libraries that provide functionality to accept URL as a parameter","Info",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Infrastructure as Code Scan","IaC issue","Dockerfile has no healthcheck instruction","Info",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Secret/PII Scan","Secret in Git history","Inactive GitHub Access Token was found in the history of a public repository","Info",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Open Source Security","Vulnerable dependency (CVE) in code","axios@0.15.3 is a JavaScript direct dependency having 4 direct and 2 indirect vulnerabilities. The dependency is not imported into the code.","Info",12/5/2023,6,1
+"OX-Security-Demo/Multi-currency-management",97,"Open Source Security","Vulnerable dependency (CVE) in code","class-validator@0.12.2 is a JavaScript direct dependency having 1 direct and 2 indirect vulnerabilities. The dependency is not imported into the code.","Info",12/5/2023,3,1
+"OX-Security-Demo/Multi-currency-management",97,"Open Source Security","Vulnerable dependency (CVE) in code","xlsx@0.16.9 is a JavaScript direct dependency having 4 direct vulnerabilities and no indirect vulnerabilities. The dependency is not imported into the code.","Info",12/5/2023,4,1
+"OX-Security-Demo/Multi-currency-management",97,"Open Source Security","Vulnerable dependency (CVE) in code","json-schema@0.2.5 is a JavaScript direct dependency having 1 direct vulnerability and no indirect vulnerabilities. The dependency is not imported into the code.","Info",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Open Source Security","Vulnerable dependency (CVE) in code","next@12.0.10 is a JavaScript direct dependency having 2 direct and 1 indirect vulnerabilities. The dependency is not imported into the code.","Info",12/5/2023,3,1
+"OX-Security-Demo/Multi-currency-management",97,"Open Source Security","Vulnerable dependency (CVE) in code","jest@26.6.3 is a JavaScript direct dependency having 6 indirect vulnerabilities and no direct vulnerabilities. The dependency is not imported into the code.","Info",12/5/2023,6,1
+"OX-Security-Demo/Multi-currency-management",97,"Open Source Security","Vulnerable dependency (CVE) in code","@graphql-codegen/typescript-operations@2.3.2 is a JavaScript direct dependency having 2 indirect vulnerabilities and no direct vulnerabilities. The dependency is not imported into the code.","Info",12/5/2023,2,1
+"OX-Security-Demo/Multi-currency-management",97,"Open Source Security","Vulnerable dependency (CVE) in code","serverless-offline@11.6.0 is a JavaScript direct dependency having 1 indirect vulnerability and no direct vulnerabilities. The dependency is not imported into the code.","Info",12/5/2023,2,1
+"OX-Security-Demo/Multi-currency-management",97,"Open Source Security","Vulnerable dependency (CVE) in code","socket.io@3.1.2 is a JavaScript direct dependency having 2 indirect vulnerabilities and no direct vulnerabilities. The dependency is not imported into the code.","Info",12/5/2023,2,1
+"OX-Security-Demo/Multi-currency-management",97,"Open Source Security","Vulnerable dependency (CVE) in code","rookout@0.1.130 is a JavaScript direct dependency having 1 indirect vulnerability and no direct vulnerabilities. The dependency is not imported into the code.","Info",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Open Source Security","Vulnerable dependency (CVE) in code","apollo-server@3.11.1 is a JavaScript direct dependency having 1 indirect vulnerability and no direct vulnerabilities. The dependency is not imported into the code.","Info",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Secret/PII Scan","Secret in code","Inactive GitHub Access Token was found in the code of a public repository","Info",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Secret/PII Scan","Secret in code","Inactive AWS Access Key was found in the code of a public repository","Info",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Secret/PII Scan","Secret in code","Inactive AWS Secret Key was found in the code of a public repository","Info",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Code Security","SAST issue","JSX element not internationalized","Info",12/5/2023,1,1
+"OX-Security-Demo/Multi-currency-management",97,"Code Security","SAST issue","Cross Site Request Forgery (CSRF) vulnerability due to undetected 'csurf/csrf' middleware","Info",12/5/2023,1,1
+"OX-Security-Demo/Backend-Server",71,"Infrastructure as Code Scan","IaC issue","Dockerfile has no healthcheck instruction","Info",12/5/2023,5,1
+"michaelhorty/WebGoat",71,"Infrastructure as Code Scan","IaC issue","Dockerfile has no healthcheck instruction","Info",12/5/2023,4,1
+"michaelhorty/WebGoat",71,"Secret/PII Scan","Secret in code","Inactive JSON Web Token was found in the code of a public repository","Info",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Secret/PII Scan","Secret in code","Inactive JSON Web Token was found in the code of a public repository","Info",12/5/2023,1,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Edit the setTimeout so that no untrusted data is included. If untrusted data is absolutely necessary a great deal of care should be taken to ensure it is properly escaped so that it cannot be executed. This is not as simple as just escaping quotes.","Info",12/5/2023,155,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","A TODO or similar was left in source code_ possibly indicating incomplete functionality","Info",12/5/2023,52,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Non-exhaustive list of Libraries that provide functionality to accept URL as a parameter","Info",12/5/2023,6,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Open redirection vulnerability when running code in browser","Info",12/5/2023,6,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","found alert() call; should this be in production code?","Info",12/5/2023,5,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Lazy loading can complicate code bundling if care is not taken_ also `require`s are run synchronously by Node.js. If they are called from within a function_ it may block other requests from being handled at a more critical time. The best practice is to `require` modules at the beginning of each file_ before and outside of any functions.","Info",12/5/2023,7,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","found prompt() call; should this be in production code?","Info",12/5/2023,7,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","`t` is assigned twice; the first assignment is useless","Info",12/5/2023,26,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Incorrect format of translation key in i18next","Info",12/5/2023,10,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","found debugger call; should this be in production code?","Info",12/5/2023,3,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Edit the eval so that no untrusted data is included. If untrusted data is absolutely necessary a great deal of care should be taken to ensure it is properly escaped so that it cannot be executed. This is not as simple as just escaping quotes.","Info",12/5/2023,2,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Either add integrity protection or use a data format like JSON.","Info",12/5/2023,2,1
+"michaelhorty/WebGoat",71,"Code Security","SAST issue","Non-exhaustive list of Libraries that provide functionality to accept XML as an input","Info",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Infrastructure as Code Scan","IaC issue","Dockerfile has no healthcheck instruction","Info",12/5/2023,2,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Secret/PII Scan","Secret in Git history","Inactive GitHub Access Token was found in the history of a private repository","Info",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Secret/PII Scan","Secret in Git history","Inactive GitHub OAuth Access Token was found in the history of a private repository","Info",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Open Source Security","Vulnerable dependency (CVE) in code","ansi-regex@6.0.0 is a JavaScript direct dependency having 1 direct vulnerability and no indirect vulnerabilities. The dependency is not imported into the code.","Info",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Open Source Security","Vulnerable dependency (CVE) in code","convict@6.2.1 is a JavaScript direct dependency having 3 direct vulnerabilities and no indirect vulnerabilities. The dependency is not imported into the code.","Info",12/5/2023,3,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Open Source Security","Vulnerable dependency (CVE) in code","ejs@3.1.6 is a JavaScript direct dependency having 1 direct vulnerability and no indirect vulnerabilities. The dependency is not imported into the code.","Info",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Secret/PII Scan","Secret in code","Inactive GitHub Access Token was found in the code of a private repository","Info",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Code Security","SAST issue","Man-in-the-Middle (MitM) vulnerability due to 'http://' usage","Info",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Code Security","SAST issue","Detected a 'requests' call without a timeout set. By default_ 'requests' calls wait until the connection is closed. This means a 'requests' call without a timeout will hang the program if a response is never received. Consider setting a timeout for all 'requests'.","Info",12/5/2023,1,1
+"OX-Security-Demo/Bank-Website-Backend",69,"Code Security","SAST issue","Cross Site Request Forgery (CSRF) vulnerability due to undetected 'csurf/csrf' middleware","Info",12/5/2023,1,1
+"OX-Security-Demo/Investment-management",67,"Infrastructure as Code Scan","IaC issue","Dockerfile has no healthcheck instruction","Info",12/5/2023,1,1
+"OX-Security-Demo/Investment-management",67,"Secret/PII Scan","Secret in code","Inactive GitHub Access Token was found in the code of a public repository","Info",12/5/2023,1,1
+"OX-Security-Demo/BankForensicsCollector",62,"Infrastructure as Code Scan","IaC issue","Dockerfile has no healthcheck instruction","Info",12/5/2023,1,1
+"OX-Security-Demo/BankForensicsCollector",62,"Secret/PII Scan","Secret in Git history","Inactive GitHub Access Token was found in the history of a public repository","Info",12/5/2023,1,1
+"OX-Security-Demo/BankForensicsCollector",62,"Secret/PII Scan","Secret in code","Inactive AWS Access Key was found in the code of a public repository","Info",12/5/2023,1,1
+"OX-Security-Demo/BankForensicsCollector",62,"Secret/PII Scan","Secret in code","Inactive AWS Secret Key was found in the code of a public repository","Info",12/5/2023,1,1
+"OX-Security-Demo/BankForensicsCollector",62,"Code Security","SAST issue","calloc handles the most common integer math in memory allocation (# of elements * their size) with error handling to prevent overflows in most implementations_ and zeros out memory","Info",12/5/2023,2,1
+"OX-Security-Demo/BankForensicsCollector",62,"Code Security","SAST issue","A TODO or similar was left in source code_ possibly indicating incomplete functionality","Info",12/5/2023,3,1
+"OX-Security-Demo/Lines-Credits",60,"Infrastructure as Code Scan","IaC issue","Dockerfile has no healthcheck instruction","Info",12/5/2023,1,1
+"OX-Security-Demo/Lines-Credits",60,"Secret/PII Scan","Secret in code","Inactive GitHub Access Token was found in the code of a public repository","Info",12/5/2023,1,1
+"OX-Security-Demo/Liquidity-management",37,"Infrastructure as Code Scan","IaC issue","Dockerfile has no healthcheck instruction","Info",12/5/2023,1,1
+"OX-Security-Demo/Liquidity-management",37,"Secret/PII Scan","Secret in code","Inactive AWS Access Key was found in the code of a public repository","Info",12/5/2023,1,1
+"OX-Security-Demo/Liquidity-management",37,"Secret/PII Scan","Secret in code","Inactive AWS Secret Key was found in the code of a public repository","Info",12/5/2023,1,1
+"OX-Security-Demo/Liquidity-management",37,"Secret/PII Scan","Secret in code","Inactive Slack Access Token was found in the code of a public repository","Info",12/5/2023,1,1
+"OX-Security-Demo/Liquidity-management",37,"Secret/PII Scan","Secret in code","Inactive Slack Access Token was found in the code of a public repository","Info",12/5/2023,1,1
+"OX-Security-Demo/Currency-Credits",35,"Infrastructure as Code Scan","IaC issue","Dockerfile has no healthcheck instruction","Info",12/5/2023,1,1
+"OX-Security-Demo/Currency-Credits",35,"Secret/PII Scan","Secret in code","Inactive GitHub Access Token was found in the code of a public repository","Info",12/5/2023,1,1
+"OX-Security-Demo/Currency-Credits",35,"Code Security","SAST issue","A TODO or similar was left in source code_ possibly indicating incomplete functionality","Info",12/5/2023,2,1
+"michaelhorty/juiceshop_clone",14,"Infrastructure as Code Scan","IaC issue","Dockerfile has no healthcheck instruction","Info",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"Secret/PII Scan","Secret in Git history","Inactive JSON Web Token was found in the history of a public repository","Info",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"Secret/PII Scan","Secret in code","Inactive JSON Web Token was found in the code of a public repository","Info",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"Secret/PII Scan","Secret in code","Inactive JSON Web Token was found in the code of a public repository","Info",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"Secret/PII Scan","Secret in code","Inactive JSON Web Token was found in the code of a public repository","Info",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","The string method replaceAll is not supported in all versions of javascript_ and is not supported by older browser versions. Consider using replace() with a regex as the first argument instead like mystring.replace(/bad/g_ good) instead of mystring.replaceAll(bad_ good) (https://discourse.threejs.org/t/replaceall-is-not-a-function/14585)","Info",12/5/2023,2,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Edit the setTimeout so that no untrusted data is included. If untrusted data is absolutely necessary a great deal of care should be taken to ensure it is properly escaped so that it cannot be executed. This is not as simple as just escaping quotes.","Info",12/5/2023,7,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","A TODO or similar was left in source code_ possibly indicating incomplete functionality","Info",12/5/2023,48,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Lazy loading can complicate code bundling if care is not taken_ also `require`s are run synchronously by Node.js. If they are called from within a function_ it may block other requests from being handled at a more critical time. The best practice is to `require` modules at the beginning of each file_ before and outside of any functions.","Info",12/5/2023,2,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Detected a call to `replaceAll()` in an attempt to HTML escape the string `tableData[i].description`. Manually sanitizing input through a manually built list can be circumvented in many situations_ and it's better to use a well known sanitization library such as `sanitize-html` or `DOMPurify`.","Info",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","This looks like a JavaScript template string. Are you missing a '$' in front of '{...}'?","Info",12/5/2023,4,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","`delay` is assigned twice; the first assignment is useless","Info",12/5/2023,2,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Edit the eval so that no untrusted data is included. If untrusted data is absolutely necessary a great deal of care should be taken to ensure it is properly escaped so that it cannot be executed. This is not as simple as just escaping quotes.","Info",12/5/2023,2,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Detected a useless comparison operation `bot == bot` or `bot != bot`. This operation is always true. If testing for floating point NaN_ use `math.isnan`_ or `cmath.isnan` if the number is complex.","Info",12/5/2023,1,1
+"michaelhorty/juiceshop_clone",14,"Code Security","SAST issue","Cross Site Request Forgery (CSRF) vulnerability due to undetected 'csurf/csrf' middleware","Info",12/5/2023,1,1
+"michaelhorty/VDemo_JAVA",14,"Code Security","SAST issue","A TODO or similar was left in source code_ possibly indicating incomplete functionality","Info",12/5/2023,3,1
+"michaelhorty/VDemo_JAVA",14,"Code Security","SAST issue","`action == action` or `action != action` is always true. (Unless the value compared is a float or double). To test if `action` is not-a-number_ use `Double.isNaN(action)`.","Info",12/5/2023,1,1
+"michaelhorty/VDemo_JAVA",14,"Code Security","SAST issue","Either add integrity protection or use a data format like JSON.","Info",12/5/2023,1,1
+"michaelhorty/VDemo_JAVA",14,"Code Security","SAST issue","Edit the setTimeout so that no untrusted data is included. If untrusted data is absolutely necessary a great deal of care should be taken to ensure it is properly escaped so that it cannot be executed. This is not as simple as just escaping quotes.","Info",12/5/2023,7,1
+"michaelhorty/OX-API-Client",12,"Code Security","SAST issue","Missing 'encoding' parameter. 'open()' uses device locale encodings by default_ corrupting files with special characters. Specify the encoding to ensure cross-platform support when opening files in text mode (e.g. encoding=utf-8).","Info",12/5/2023,3,1
+"MH-New-Organization/MH_NO_WEBG",12,"Code Security","SAST issue","A TODO or similar was left in source code_ possibly indicating incomplete functionality","Info",12/5/2023,2,1
+"MH-New-Organization/MH_NO_WEBG",12,"Code Security","SAST issue","Non-exhaustive list of Libraries that provide functionality to accept URL as a parameter","Info",12/5/2023,1,1
+"oxsecurity/ox-api-client",12,"Code Security","SAST issue","Missing 'encoding' parameter. 'open()' uses device locale encodings by default_ corrupting files with special characters. Specify the encoding to ensure cross-platform support when opening files in text mode (e.g. encoding=utf-8).","Info",12/5/2023,3,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Edit the setTimeout so that no untrusted data is included. If untrusted data is absolutely necessary a great deal of care should be taken to ensure it is properly escaped so that it cannot be executed. This is not as simple as just escaping quotes.","Info",12/5/2023,54,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","A TODO or similar was left in source code_ possibly indicating incomplete functionality","Info",12/5/2023,80,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Non-exhaustive list of Libraries that provide functionality to accept URL as a parameter","Info",12/5/2023,3,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","`start == start` or `start != start` is always true. (Unless the value compared is a float or double). To test if `start` is not-a-number_ use `Double.isNaN(start)`.","Info",12/5/2023,1,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Non-exhaustive list of Libraries that provide functionality to accept XML as an input","Info",12/5/2023,1,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","`n` is assigned twice; the first assignment is useless","Info",12/5/2023,83,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","found prompt() call; should this be in production code?","Info",12/5/2023,1,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Incorrect format of translation key in i18next","Info",12/5/2023,16,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","Edit the eval so that no untrusted data is included. If untrusted data is absolutely necessary a great deal of care should be taken to ensure it is properly escaped so that it cannot be executed. This is not as simple as just escaping quotes.","Info",12/5/2023,24,1
+"michaelhorty/WG384",10,"Code Security","SAST issue","found alert() call; should this be in production code?","Info",12/5/2023,7,1
+"michaelhorty/vulpy",7,"Code Security","SAST issue","Man-in-the-Middle (MitM) vulnerability due to 'http://' usage","Info",12/5/2023,4,1
+"michaelhorty/vulpy",7,"Code Security","SAST issue","Detected a 'requests' call without a timeout set. By default_ 'requests' calls wait until the connection is closed. This means a 'requests' call without a timeout will hang the program if a response is never received. Consider setting a timeout for all 'requests'.","Info",12/5/2023,4,1
+"michaelhorty/vulpy",7,"Code Security","SAST issue","Missing 'encoding' parameter. 'open()' uses device locale encodings by default_ corrupting files with special characters. Specify the encoding to ensure cross-platform support when opening files in text mode (e.g. encoding=utf-8).","Info",12/5/2023,1,1
+"michaelhorty/vulpy",7,"Code Security","SAST issue","blacklist","Info",12/5/2023,1,1
+"michaelhorty/vulpy",7,"Code Security","SAST issue","subprocess_without_shell_equals_true","Info",12/5/2023,1,1
+"michaelhorty/vulpy",7,"Code Security","SAST issue","try_except_pass","Info",12/5/2023,2,1
+"michaelhorty/vulpy",7,"Code Security","SAST issue","code after return statement will not be executed","Info",12/5/2023,1,1
+"michaelhorty/TEST_REPO",4,"Code Security","SAST issue","A TODO or similar was left in source code_ possibly indicating incomplete functionality","Info",12/5/2023,1,1
+"michaelhorty/TEST_REPO",4,"Code Security","SAST issue","Non-exhaustive list of Libraries that provide functionality to accept URL as a parameter","Info",12/5/2023,1,1
+"OX-Security-Demo/Bank-ecommerce",4,"Code Security","SAST issue","Edit the setTimeout so that no untrusted data is included. If untrusted data is absolutely necessary a great deal of care should be taken to ensure it is properly escaped so that it cannot be executed. This is not as simple as just escaping quotes.","Info",12/5/2023,16,1
+"OX-Security-Demo/Bank-ecommerce",4,"Code Security","SAST issue","A TODO or similar was left in source code_ possibly indicating incomplete functionality","Info",12/5/2023,2,1
+"OX-Security-Demo/Bank-ecommerce",4,"Code Security","SAST issue","JSON stringify does not produce a stable key ordering_ and should not be relied on for producing object keys. Consider using json-stable-stringify instead.","Info",12/5/2023,1,1
+

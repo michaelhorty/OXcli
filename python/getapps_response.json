@@ -1,0 +1,6843 @@
+{
+  "data": {
+    "getApplications": {
+      "applications": [
+        {
+          "appId": "584352228",
+          "appName": "OX-Security-Demo/Bank-Website",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 5,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1695851176000",
+          "securityPosture": 0,
+          "businessPriority": 97,
+          "isSbomPresent": true,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 8,
+            "high": 20,
+            "medium": 16,
+            "low": 49,
+            "info": 8
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 1,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "high",
+              "score": 25,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 1,
+                "low": 7,
+                "medium": 2,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 17,
+              "total": 10,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 5,
+                "low": 0,
+                "medium": 3,
+                "high": 0,
+                "critical": 1,
+                "appox": 0
+              },
+              "severityScore": "info",
+              "score": 140,
+              "total": 9,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 1,
+                "low": 1,
+                "medium": 3,
+                "high": 2,
+                "critical": 5,
+                "appox": 0
+              },
+              "severityScore": "critical",
+              "score": 691,
+              "total": 12,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 1,
+                "low": 38,
+                "medium": 8,
+                "high": 17,
+                "critical": 2,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 753,
+              "total": 66,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 3,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 3,
+              "total": 3,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": [
+            {
+              "tagId": "ox_tag_8",
+              "name": "PostgreSQL",
+              "displayName": "PostgreSQL",
+              "tagType": "simple",
+              "createdBy": "support@ox.security",
+              "isOxTag": true
+            },
+            {
+              "tagId": "ox_tag_22",
+              "name": "SpringBoot",
+              "displayName": "Spring Boot",
+              "tagType": "simple",
+              "createdBy": "support@ox.security",
+              "isOxTag": true
+            }
+          ]
+        },
+        {
+          "appId": "*GitHub-Settings (OX-Security-Demo)",
+          "appName": "*GitHub-Settings (OX-Security-Demo)",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 0,
+          "codeChanges": 0,
+          "fakeApp": true,
+          "lastCodeChange": null,
+          "securityPosture": 0,
+          "businessPriority": 97,
+          "isSbomPresent": false,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 2,
+            "high": 0,
+            "medium": 1,
+            "low": 0,
+            "info": 0
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 1,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "medium",
+              "score": 5,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 2,
+                "appox": 0
+              },
+              "severityScore": "critical",
+              "score": 250,
+              "total": 2,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": []
+        },
+        {
+          "appId": "584102675",
+          "appName": "OX-Security-Demo/Multi-currency-management",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 4,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1695851182000",
+          "securityPosture": 0,
+          "businessPriority": 95.61428571428571,
+          "isSbomPresent": true,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 3,
+            "high": 8,
+            "medium": 2,
+            "low": 14,
+            "info": 16
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 2,
+                "critical": 1,
+                "appox": 0
+              },
+              "severityScore": "high",
+              "score": 175,
+              "total": 3,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 2,
+                "low": 3,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 3,
+              "total": 5,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 3,
+                "low": 2,
+                "medium": 0,
+                "high": 1,
+                "critical": 1,
+                "appox": 0
+              },
+              "severityScore": "info",
+              "score": 152,
+              "total": 7,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 10,
+                "low": 2,
+                "medium": 0,
+                "high": 1,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "info",
+              "score": 27,
+              "total": 13,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 1,
+                "high": 4,
+                "critical": 1,
+                "appox": 0
+              },
+              "severityScore": "high",
+              "score": 230,
+              "total": 6,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 1,
+                "low": 3,
+                "medium": 1,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 8,
+              "total": 5,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 4,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 4,
+              "total": 4,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": [
+            {
+              "tagId": "ox_tag_29",
+              "name": "Express.js",
+              "displayName": "Express.js",
+              "tagType": "simple",
+              "createdBy": "support@ox.security",
+              "isOxTag": true
+            },
+            {
+              "tagId": "ox_tag_30",
+              "name": "React",
+              "displayName": "React",
+              "tagType": "simple",
+              "createdBy": "support@ox.security",
+              "isOxTag": true
+            },
+            {
+              "tagId": "ox_tag_2",
+              "name": "Login",
+              "displayName": "Login",
+              "tagType": "simple",
+              "createdBy": "support@ox.security",
+              "isOxTag": true
+            }
+          ]
+        },
+        {
+          "appId": "310663043",
+          "appName": "michaelhorty/WebGoat",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 1,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1690825033000",
+          "securityPosture": 0,
+          "businessPriority": 72.05714285714285,
+          "isSbomPresent": false,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 4,
+            "high": 3,
+            "medium": 8,
+            "low": 41,
+            "info": 14
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 10,
+                "low": 22,
+                "medium": 3,
+                "high": 1,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 62,
+              "total": 36,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 3,
+                "low": 1,
+                "medium": 0,
+                "high": 2,
+                "critical": 1,
+                "appox": 0
+              },
+              "severityScore": "info",
+              "score": 176,
+              "total": 7,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 3,
+                "appox": 0
+              },
+              "severityScore": "critical",
+              "score": 375,
+              "total": 3,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 1,
+                "low": 18,
+                "medium": 3,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 33,
+              "total": 22,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 2,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "medium",
+              "score": 10,
+              "total": 2,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": {
+            "jobId": "5717834870",
+            "jobTriggeredAt": 1690825049927,
+            "scanResult": "none",
+            "issuesCount": 0,
+            "jobTriggeredBy": "michaelhorty",
+            "jobUrl": "https://github.com/michaelhorty/WebGoat/actions/runs/5717834870"
+          },
+          "tags": [
+            {
+              "tagId": "ox_tag_17",
+              "name": "Django",
+              "displayName": "Django",
+              "tagType": "simple",
+              "createdBy": "support@ox.security",
+              "isOxTag": true
+            },
+            {
+              "tagId": "ox_tag_22",
+              "name": "SpringBoot",
+              "displayName": "Spring Boot",
+              "tagType": "simple",
+              "createdBy": "support@ox.security",
+              "isOxTag": true
+            },
+            {
+              "tagId": "ox_tag_1",
+              "name": "PII",
+              "displayName": "PII",
+              "tagType": "simple",
+              "createdBy": "support@ox.security",
+              "isOxTag": true
+            },
+            {
+              "tagId": "b8793483-85f8-4f9e-be05-887021b3d704",
+              "name": "new tag",
+              "displayName": "New Tag",
+              "tagType": "simple",
+              "createdBy": "michael@ox.security",
+              "isOxTag": false
+            },
+            {
+              "tagId": "9502fea7-2507-494a-98fa-138ffced9115",
+              "name": "test zohar",
+              "displayName": "Test Zohar",
+              "tagType": "simple",
+              "createdBy": "michael@ox.security",
+              "isOxTag": false
+            }
+          ]
+        },
+        {
+          "appId": "585303099",
+          "appName": "OX-Security-Demo/Bank-Website-Backend",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 4,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1695851188000",
+          "securityPosture": 0,
+          "businessPriority": 69.28571428571428,
+          "isSbomPresent": true,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 3,
+            "high": 11,
+            "medium": 2,
+            "low": 16,
+            "info": 4
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 1,
+                "high": 0,
+                "critical": 2,
+                "appox": 0
+              },
+              "severityScore": "critical",
+              "score": 255,
+              "total": 3,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 0,
+                "low": 1,
+                "medium": 0,
+                "high": 4,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "high",
+              "score": 101,
+              "total": 5,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 3,
+                "low": 1,
+                "medium": 1,
+                "high": 2,
+                "critical": 1,
+                "appox": 0
+              },
+              "severityScore": "info",
+              "score": 181,
+              "total": 8,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 10,
+                "medium": 0,
+                "high": 2,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 60,
+              "total": 12,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 3,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "high",
+              "score": 75,
+              "total": 3,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 1,
+                "low": 2,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 2,
+              "total": 3,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 2,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 2,
+              "total": 2,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": []
+        },
+        {
+          "appId": "585479391",
+          "appName": "OX-Security-Demo/Investment-management",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 3,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1695851184000",
+          "securityPosture": 0,
+          "businessPriority": 62.357142857142854,
+          "isSbomPresent": false,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 0,
+            "high": 1,
+            "medium": 0,
+            "low": 6,
+            "info": 2
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 1,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "high",
+              "score": 25,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 1,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "info",
+              "score": 0,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 1,
+                "low": 2,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 2,
+              "total": 3,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 4,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 4,
+              "total": 4,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": []
+        },
+        {
+          "appId": "585497913",
+          "appName": "OX-Security-Demo/BankForensicsCollector",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 3,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1695851187000",
+          "securityPosture": 0,
+          "businessPriority": 62.357142857142854,
+          "isSbomPresent": false,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 0,
+            "high": 2,
+            "medium": 1,
+            "low": 7,
+            "info": 6
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 1,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "high",
+              "score": 25,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 2,
+                "low": 1,
+                "medium": 1,
+                "high": 1,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "info",
+              "score": 31,
+              "total": 5,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 3,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "info",
+              "score": 0,
+              "total": 3,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 1,
+                "low": 2,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 2,
+              "total": 3,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 4,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 4,
+              "total": 4,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": []
+        },
+        {
+          "appId": "637651212",
+          "appName": "OX-Security-Demo/Lines-Credits",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 2,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1695851181000",
+          "securityPosture": 0,
+          "businessPriority": 59.58571428571428,
+          "isSbomPresent": true,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 0,
+            "high": 2,
+            "medium": 0,
+            "low": 5,
+            "info": 2
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 1,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "info",
+              "score": 0,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 2,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "high",
+              "score": 50,
+              "total": 2,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 1,
+                "low": 1,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 1,
+              "total": 2,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 4,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 4,
+              "total": 4,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": [
+            {
+              "tagId": "ox_tag_22",
+              "name": "SpringBoot",
+              "displayName": "Spring Boot",
+              "tagType": "simple",
+              "createdBy": "support@ox.security",
+              "isOxTag": true
+            }
+          ]
+        },
+        {
+          "appId": "586554191",
+          "appName": "OX-Security-Demo/Liquidity-management",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 3,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1695851178000",
+          "securityPosture": 0,
+          "businessPriority": 37.41428571428571,
+          "isSbomPresent": true,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 0,
+            "high": 6,
+            "medium": 2,
+            "low": 10,
+            "info": 4
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 1,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "medium",
+              "score": 5,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 0,
+                "low": 1,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 1,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 3,
+                "low": 3,
+                "medium": 0,
+                "high": 2,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 53,
+              "total": 8,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 3,
+                "medium": 1,
+                "high": 4,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "high",
+              "score": 108,
+              "total": 8,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 1,
+                "low": 2,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 2,
+              "total": 3,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 1,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 1,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": [
+            {
+              "tagId": "ox_tag_21",
+              "name": "Spring",
+              "displayName": "Spring",
+              "tagType": "simple",
+              "createdBy": "support@ox.security",
+              "isOxTag": true
+            }
+          ]
+        },
+        {
+          "appId": "585531998",
+          "appName": "OX-Security-Demo/Insurance-Service",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 3,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1695851186000",
+          "securityPosture": 0,
+          "businessPriority": 34.64285714285714,
+          "isSbomPresent": false,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 0,
+            "high": 0,
+            "medium": 1,
+            "low": 1,
+            "info": 0
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 1,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "medium",
+              "score": 5,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 1,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 1,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": []
+        },
+        {
+          "appId": "593520605",
+          "appName": "OX-Security-Demo/Currency-Credits",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 3,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1695851182000",
+          "securityPosture": 0,
+          "businessPriority": 34.64285714285714,
+          "isSbomPresent": true,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 0,
+            "high": 5,
+            "medium": 3,
+            "low": 8,
+            "info": 4
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 1,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "medium",
+              "score": 5,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 1,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "info",
+              "score": 0,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 1,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "info",
+              "score": 0,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 1,
+                "low": 3,
+                "medium": 2,
+                "high": 5,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "high",
+              "score": 138,
+              "total": 11,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 1,
+                "low": 1,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 1,
+              "total": 2,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 4,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 4,
+              "total": 4,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": [
+            {
+              "tagId": "ox_tag_22",
+              "name": "SpringBoot",
+              "displayName": "Spring Boot",
+              "tagType": "simple",
+              "createdBy": "support@ox.security",
+              "isOxTag": true
+            }
+          ]
+        },
+        {
+          "appId": "363001753",
+          "appName": "michaelhorty/TMCLI",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 3,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1653507770000",
+          "securityPosture": 0,
+          "businessPriority": 19.4,
+          "isSbomPresent": false,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 0,
+            "high": 0,
+            "medium": 2,
+            "low": 2,
+            "info": 0
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 2,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "medium",
+              "score": 10,
+              "total": 2,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 2,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 2,
+              "total": 2,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [
+            {
+              "name": "Mike",
+              "email": "michael@ox.security",
+              "roles": [
+                "Watcher"
+              ]
+            }
+          ],
+          "pipeline": null,
+          "tags": []
+        },
+        {
+          "appId": "647669373",
+          "appName": "OX-Security-Demo/Backend-Server",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 1,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1688569598000",
+          "securityPosture": 0,
+          "businessPriority": 16.628571428571426,
+          "isSbomPresent": true,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 1,
+            "high": 0,
+            "medium": 1,
+            "low": 11,
+            "info": 1
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 1,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 1,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 0,
+                "low": 1,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 1,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 1,
+                "appox": 0
+              },
+              "severityScore": "critical",
+              "score": 125,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 4,
+                "medium": 1,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 9,
+              "total": 5,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 1,
+                "low": 4,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 4,
+              "total": 5,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 1,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 1,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": []
+        },
+        {
+          "appId": "335646257",
+          "appName": "michaelhorty/VCCLI",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 2,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1612393912000",
+          "securityPosture": 0,
+          "businessPriority": 15.242857142857142,
+          "isSbomPresent": true,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 0,
+            "high": 0,
+            "medium": 0,
+            "low": 5,
+            "info": 0
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 2,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 2,
+              "total": 2,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 2,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 2,
+              "total": 2,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 1,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 1,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": []
+        },
+        {
+          "appId": "167596016",
+          "appName": "michaelhorty/CxCLI",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 2,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1566495517000",
+          "securityPosture": 0,
+          "businessPriority": 15.242857142857142,
+          "isSbomPresent": false,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 0,
+            "high": 0,
+            "medium": 1,
+            "low": 2,
+            "info": 0
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 1,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "medium",
+              "score": 5,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 2,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 2,
+              "total": 2,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [
+            {
+              "name": "Mike",
+              "email": "michael@ox.security",
+              "roles": [
+                "Watcher"
+              ]
+            }
+          ],
+          "pipeline": null,
+          "tags": []
+        },
+        {
+          "appId": "307444027",
+          "appName": "michaelhorty/VDemo_JAVA",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 1,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1611865260000",
+          "securityPosture": 0,
+          "businessPriority": 13.857142857142858,
+          "isSbomPresent": true,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 0,
+            "high": 0,
+            "medium": 1,
+            "low": 29,
+            "info": 4
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 4,
+                "low": 15,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 15,
+              "total": 19,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 0,
+                "low": 3,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 3,
+              "total": 3,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 7,
+                "medium": 1,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 12,
+              "total": 8,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 1,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 1,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 3,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 3,
+              "total": 3,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": [
+            {
+              "tagId": "ox_tag_11",
+              "name": "MySQL",
+              "displayName": "MySQL",
+              "tagType": "simple",
+              "createdBy": "support@ox.security",
+              "isOxTag": true
+            },
+            {
+              "tagId": "ox_tag_21",
+              "name": "Spring",
+              "displayName": "Spring",
+              "tagType": "simple",
+              "createdBy": "support@ox.security",
+              "isOxTag": true
+            }
+          ]
+        },
+        {
+          "appId": "688093659",
+          "appName": "MH-New-Organization/MH_NO_WEBG",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 1,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1694019099000",
+          "securityPosture": 0,
+          "businessPriority": 13.857142857142858,
+          "isSbomPresent": false,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 0,
+            "high": 0,
+            "medium": 0,
+            "low": 4,
+            "info": 1
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 2,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 2,
+              "total": 2,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 1,
+                "low": 2,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 2,
+              "total": 3,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": []
+        },
+        {
+          "appId": "*GitHub-Settings (MH-New-Organization)",
+          "appName": "*GitHub-Settings (MH-New-Organization)",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 0,
+          "codeChanges": 0,
+          "fakeApp": true,
+          "lastCodeChange": null,
+          "securityPosture": 0,
+          "businessPriority": 13.857142857142858,
+          "isSbomPresent": false,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 0,
+            "high": 0,
+            "medium": 1,
+            "low": 0,
+            "info": 0
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 1,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "medium",
+              "score": 5,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": []
+        },
+        {
+          "appId": "373373380",
+          "appName": "michaelhorty/TMGUI",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 1,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1631073385000",
+          "securityPosture": 0,
+          "businessPriority": 12.471428571428572,
+          "isSbomPresent": true,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 0,
+            "high": 0,
+            "medium": 0,
+            "low": 2,
+            "info": 0
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 1,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 1,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 1,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 1,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": []
+        },
+        {
+          "appId": "179169985",
+          "appName": "michaelhorty/CxMOreporting",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 1,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1561653475000",
+          "securityPosture": 0,
+          "businessPriority": 12.471428571428572,
+          "isSbomPresent": true,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 0,
+            "high": 0,
+            "medium": 1,
+            "low": 3,
+            "info": 0
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 1,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "medium",
+              "score": 5,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 2,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 2,
+              "total": 2,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 1,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 1,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": []
+        },
+        {
+          "appId": "222751603",
+          "appName": "michaelhorty/AQL2XLS_WinApp",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 1,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1670491293000",
+          "securityPosture": 0,
+          "businessPriority": 12.471428571428572,
+          "isSbomPresent": true,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 0,
+            "high": 0,
+            "medium": 0,
+            "low": 5,
+            "info": 0
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 2,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 2,
+              "total": 2,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 2,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 2,
+              "total": 2,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 1,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 1,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": []
+        },
+        {
+          "appId": "191856056",
+          "appName": "michaelhorty/WG384",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 1,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1573641328000",
+          "securityPosture": 0,
+          "businessPriority": 9.7,
+          "isSbomPresent": true,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 0,
+            "high": 0,
+            "medium": 8,
+            "low": 41,
+            "info": 10
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 10,
+                "low": 33,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 33,
+              "total": 43,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 2,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "medium",
+              "score": 10,
+              "total": 2,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 5,
+                "medium": 6,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "medium",
+              "score": 35,
+              "total": 11,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 2,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 2,
+              "total": 2,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 1,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 1,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": [
+            {
+              "tagId": "ox_tag_7",
+              "name": "MSSQL",
+              "displayName": "MSSQL",
+              "tagType": "simple",
+              "createdBy": "support@ox.security",
+              "isOxTag": true
+            },
+            {
+              "tagId": "ox_tag_21",
+              "name": "Spring",
+              "displayName": "Spring",
+              "tagType": "simple",
+              "createdBy": "support@ox.security",
+              "isOxTag": true
+            },
+            {
+              "tagId": "ox_tag_3",
+              "name": "PaymentProcessing",
+              "displayName": "Payment",
+              "tagType": "simple",
+              "createdBy": "support@ox.security",
+              "isOxTag": true
+            },
+            {
+              "tagId": "ox_tag_1",
+              "name": "PII",
+              "displayName": "PII",
+              "tagType": "simple",
+              "createdBy": "support@ox.security",
+              "isOxTag": true
+            }
+          ]
+        },
+        {
+          "appId": "629437774",
+          "appName": "OX-Security-Demo/Bank-Backup-Operator",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 1,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1681812536000",
+          "securityPosture": 0,
+          "businessPriority": 9.7,
+          "isSbomPresent": false,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 0,
+            "high": 0,
+            "medium": 0,
+            "low": 3,
+            "info": 0
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 2,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 2,
+              "total": 2,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 1,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 1,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": []
+        },
+        {
+          "appId": "672064956",
+          "appName": "michaelhorty/vulpy",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 1,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1690576720000",
+          "securityPosture": 0,
+          "businessPriority": 8.314285714285713,
+          "isSbomPresent": true,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 1,
+            "high": 0,
+            "medium": 0,
+            "low": 10,
+            "info": 7
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 1,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 1,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 7,
+                "low": 9,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 9,
+              "total": 16,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 1,
+                "appox": 0
+              },
+              "severityScore": "critical",
+              "score": 125,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": {
+            "jobId": "5696136269",
+            "jobTriggeredAt": 1690576898870,
+            "scanResult": "monitor",
+            "issuesCount": 16,
+            "jobTriggeredBy": "michaelhorty",
+            "jobUrl": "https://github.com/michaelhorty/vulpy/actions/runs/5696136269"
+          },
+          "tags": []
+        },
+        {
+          "appId": "354893252",
+          "appName": "michaelhorty/TMDBexplore",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 1,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1617639010000",
+          "securityPosture": 0,
+          "businessPriority": 6.928571428571429,
+          "isSbomPresent": false,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 0,
+            "high": 0,
+            "medium": 0,
+            "low": 1,
+            "info": 0
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 1,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 1,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": []
+        },
+        {
+          "appId": "354893981",
+          "appName": "michaelhorty/TMDB_Explore",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 1,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1619631567000",
+          "securityPosture": 0,
+          "businessPriority": 6.928571428571429,
+          "isSbomPresent": false,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 0,
+            "high": 0,
+            "medium": 0,
+            "low": 1,
+            "info": 0
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 1,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 1,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": []
+        },
+        {
+          "appId": "688095954",
+          "appName": "michaelhorty/TEST_REPO",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 1,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1694018761000",
+          "securityPosture": 0,
+          "businessPriority": 5.542857142857143,
+          "isSbomPresent": false,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 0,
+            "high": 0,
+            "medium": 0,
+            "low": 2,
+            "info": 1
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 1,
+                "low": 2,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 2,
+              "total": 3,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": []
+        },
+        {
+          "appId": "329712156",
+          "appName": "michaelhorty/VeracodeAzureYMLSamples",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 0,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1578938118000",
+          "securityPosture": 0,
+          "businessPriority": 4.157142857142857,
+          "isSbomPresent": false,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 0,
+            "high": 0,
+            "medium": 0,
+            "low": 3,
+            "info": 0
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 2,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 2,
+              "total": 2,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 1,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 1,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": []
+        },
+        {
+          "appId": "647668897",
+          "appName": "OX-Security-Demo/Bank-ecommerce",
+          "risk": 0,
+          "type": "GitHub",
+          "userCount": 0,
+          "codeChanges": 0,
+          "fakeApp": false,
+          "lastCodeChange": "1683141052000",
+          "securityPosture": 0,
+          "businessPriority": 4.157142857142857,
+          "isSbomPresent": true,
+          "isMonoRepoChild": false,
+          "monoRepoParent": "",
+          "overridePriority": -1,
+          "issuesBySeverity": {
+            "appox": 0,
+            "critical": 0,
+            "high": 1,
+            "medium": 0,
+            "low": 15,
+            "info": 3
+          },
+          "categories": [
+            {
+              "categoryName": "Git Posture",
+              "categoryId": null,
+              "catId": 3,
+              "severities": {
+                "info": 0,
+                "low": 2,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 2,
+              "total": 2,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Code Security",
+              "categoryId": null,
+              "catId": 4,
+              "severities": {
+                "info": 3,
+                "low": 10,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 10,
+              "total": 13,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Secret Scan",
+              "categoryId": null,
+              "catId": 5,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 1,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "high",
+              "score": 25,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Open Source Security",
+              "categoryId": null,
+              "catId": 6,
+              "severities": {
+                "info": 0,
+                "low": 2,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 2,
+              "total": 2,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "SBOM",
+              "categoryId": null,
+              "catId": 7,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Infrastructure as Code Scan",
+              "categoryId": null,
+              "catId": 8,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "CI/CD Posture",
+              "categoryId": null,
+              "catId": 25,
+              "severities": {
+                "info": 0,
+                "low": 1,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "low",
+              "score": 1,
+              "total": 1,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Security Tool Coverage",
+              "categoryId": null,
+              "catId": 10,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Container Security",
+              "categoryId": null,
+              "catId": 12,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Artifact Integrity",
+              "categoryId": null,
+              "catId": 14,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": false,
+              "reason": []
+            },
+            {
+              "categoryName": "Cloud Security",
+              "categoryId": null,
+              "catId": 15,
+              "severities": {
+                "info": 0,
+                "low": 0,
+                "medium": 0,
+                "high": 0,
+                "critical": 0,
+                "appox": 0
+              },
+              "severityScore": "appox",
+              "score": 0,
+              "total": 0,
+              "isNa": true,
+              "reason": [
+                "There are no cloud providers connected to run policies in this category"
+              ]
+            }
+          ],
+          "appOwners": [],
+          "pipeline": null,
+          "tags": []
+        }
+      ],
+      "offset": 1000,
+      "total": 29,
+      "totalFilteredApps": 0,
+      "totalIrrelevantApps": 2
+    }
+  }
+}

@@ -1,0 +1,741 @@
+{
+  "data": {
+    "getSingleIssueInfo": {
+      "dependencyGraph": {
+        "edges": [],
+        "nodes": [
+          {
+            "name": "spring-web@5.3.19",
+            "issues": {
+              "appox": 0,
+              "critical": 0,
+              "info": 0,
+              "high": 0,
+              "low": 0,
+              "medium": 0
+            },
+            "height": "50",
+            "id": "spring-web@5.3.19",
+            "position": {
+              "x": 125,
+              "y": 25
+            },
+            "vulnerable": false
+          }
+        ],
+        "allEdges": [
+          {
+            "v": "spring-beans@5.2.4.RELEASE",
+            "w": "spring-core@5.2.4.RELEASE"
+          },
+          {
+            "v": "spring-core@5.2.4.RELEASE",
+            "w": "spring-jcl@5.2.4.RELEASE"
+          },
+          {
+            "v": "spring-web@5.3.19",
+            "w": "spring-beans@5.2.4.RELEASE"
+          },
+          {
+            "v": "spring-web@5.3.19",
+            "w": "spring-core@5.2.4.RELEASE"
+          }
+        ],
+        "allNodes": [
+          {
+            "name": "spring-jcl@5.2.4.RELEASE",
+            "issues": {
+              "appox": 0,
+              "critical": 0,
+              "info": 0,
+              "high": 0,
+              "low": 0,
+              "medium": 0
+            },
+            "height": "50",
+            "id": "spring-jcl@5.2.4.RELEASE",
+            "position": {
+              "x": 230,
+              "y": 558
+            },
+            "vulnerable": false
+          },
+          {
+            "name": "spring-beans@5.2.4.RELEASE",
+            "issues": {
+              "appox": 0,
+              "critical": 0,
+              "info": 0,
+              "high": 0,
+              "low": 0,
+              "medium": 0
+            },
+            "height": "50",
+            "id": "spring-beans@5.2.4.RELEASE",
+            "position": {
+              "x": 144,
+              "y": 198
+            },
+            "vulnerable": false
+          },
+          {
+            "name": "spring-core@5.2.4.RELEASE",
+            "issues": {
+              "appox": 0,
+              "critical": 0,
+              "info": 0,
+              "high": 0,
+              "low": 0,
+              "medium": 0
+            },
+            "height": "50",
+            "id": "spring-core@5.2.4.RELEASE",
+            "position": {
+              "x": 230,
+              "y": 378
+            },
+            "vulnerable": false
+          },
+          {
+            "name": "spring-web@5.3.19",
+            "issues": {
+              "appox": 0,
+              "critical": 0,
+              "info": 0,
+              "high": 0,
+              "low": 0,
+              "medium": 0
+            },
+            "height": "50",
+            "id": "spring-web@5.3.19",
+            "position": {
+              "x": 230,
+              "y": 18
+            },
+            "vulnerable": false
+          }
+        ]
+      },
+      "sbom": {
+        "id": "651110189778b62c06b25701",
+        "libId": null,
+        "license": "N/A",
+        "appName": "OX-Security-Demo/Bank-Website",
+        "dependencyType": "Direct",
+        "location": "pom.xml line: 31",
+        "appId": "584352228",
+        "locationLink": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/pom.xml#L31",
+        "appLink": "https://github.com/OX-Security-Demo/Bank-Website",
+        "pkgName": "org.springframework:spring-web",
+        "copyWriteInfo": [
+          "N/A"
+        ],
+        "copyWriteInfoLink": "",
+        "libLink": "",
+        "libraryName": "org.springframework:spring-web",
+        "libraryVersion": null,
+        "latestVersion": null,
+        "latestVersionDate": null,
+        "stars": 52495,
+        "forks": 36450,
+        "openIssues": 1332,
+        "maintainers": null,
+        "notPopular": false,
+        "licenseIssue": false,
+        "notMaintained": null,
+        "isDeprecated": false,
+        "notImported": false,
+        "notUpdated": false,
+        "dependencyLevel": 0,
+        "language": "Java",
+        "downloads": null,
+        "contributors": null,
+        "packageManager": "maven",
+        "packageManagerLink": "https://mvnrepository.com/artifact/org.springframework/spring-web/5.3.19",
+        "source": "Repository",
+        "sourceLink": "https://github.com/spring-projects/spring-framework",
+        "triggerPackage": "org.springframework:spring-web@5.3.19"
+      },
+      "id": "6511101a9778b62c06b26485",
+      "issueId": "584352228-oxPolicy_securityScan_120-org.springframework:spring-web_5.3.19",
+      "gptInfo": null,
+      "isGPTFixAvailable": true,
+      "name": "Vulnerable dependency (CVE) in code",
+      "scanId": "adb3ff84-85cd-4783-9a7d-3df18af8bda5",
+      "created": 1695616812332,
+      "scanDate": 1695616812332,
+      "mainTitle": "spring-web@5.3.19 is a Java direct dependency having 1 direct vulnerability and no indirect vulnerabilities. CVE-2016-1000027 (CVSS:9.8, Deserialization of Untrusted Data) is the most severe vulnerability.",
+      "secondTitle": "org.springframework:spring-web\\@5.3.19 is a Java package that was introduced as a direct dependency. It contains:<br><br>&bull; 1 direct vulnerability and no indirect vulnerabilities<br>&bull; 1 vulnerability with  publicly available exploits<br>&bull; 3 indirect dependencies<br><br>There is 1 vulnerability.<br><br>The severities of the CVEs are as follows:<br>&bull; Critical : 1<br><br>\n          The following dependency has vulnerabilities: org.springframework:spring-web\\@5.3.19<br><br>Docker instruction: undefined",
+      "description": "",
+      "severity": "Critical",
+      "owners": [
+        "Kostya Zhuruev"
+      ],
+      "ruleId": "CVE-2016-1000027",
+      "originalToolSeverity": "Critical",
+      "exclusionCategory": "sca",
+      "occurrences": 1,
+      "comment": null,
+      "learnMore": [
+        ""
+      ],
+      "exclusionId": null,
+      "isMonoRepoChild": false,
+      "monoRepoParent": "",
+      "isFixAvailable": false,
+      "prDeatils": null,
+      "autoFix": null,
+      "extraInfo": [
+        {
+          "key": "Recommended Video",
+          "value": "https://www.youtube.com/watch?v=GtLZp6DbcE4"
+        },
+        {
+          "key": "Rule Id",
+          "value": "CVE-2016-1000027"
+        }
+      ],
+      "resource": {
+        "id": "Trivy",
+        "type": "sca"
+      },
+      "app": {
+        "id": "584352228",
+        "name": "OX-Security-Demo/Bank-Website",
+        "businessPriority": 97,
+        "type": "GitHub",
+        "originBranchName": "main",
+        "repoId": "584352228",
+        "organization": "OX-Security-Demo",
+        "repoName": "Bank-Website",
+        "applicationFlows": {
+          "artifacts": [],
+          "cloudDeployments": [],
+          "cicdInfo": [
+            {
+              "type": "cicd",
+              "system": "GitHub Actions",
+              "latestDate": "2023-09-23T21:46:17Z",
+              "lastMonthJobCount": "46",
+              "location": [
+                {
+                  "runBy": "",
+                  "foundBy": "File",
+                  "foundIn": "Deployment File - plain text secrets",
+                  "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/.github/workflows/DorsAction.yaml"
+                },
+                {
+                  "runBy": "kostya253",
+                  "foundBy": "Pipeline",
+                  "foundIn": "Pipeline ID - 44397956",
+                  "link": "https://github.com/OX-Security-Demo/Bank-Website/actions/workflows/build.yml"
+                }
+              ]
+            }
+          ],
+          "orchestrators": [],
+          "kubernetes": [
+            {
+              "type": "Kubernetes",
+              "system": "Kubernetes",
+              "hash": "83ec1262a86ef9dcee125380a588a437f8d1f6619b15f491abc03ad7e8f41954",
+              "subType": "Pod",
+              "size": "0",
+              "date": "",
+              "location": [
+                {
+                  "runBy": "",
+                  "foundBy": "File",
+                  "foundIn": "Deployment File - apiServer.yaml",
+                  "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/K8/apiServer.yaml"
+                }
+              ]
+            },
+            {
+              "type": "Kubernetes",
+              "system": "Kubernetes",
+              "hash": "6ead8c033b12433430f6034f4167f32a9b714efdeeeeb0b1af85823f849bbc5b",
+              "subType": "Deployment",
+              "size": "0",
+              "date": "",
+              "location": [
+                {
+                  "runBy": "",
+                  "foundBy": "File",
+                  "foundIn": "Deployment File - deployment.yml",
+                  "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/K8s/deployment.yml"
+                }
+              ]
+            },
+            {
+              "type": "Kubernetes",
+              "system": "Kubernetes",
+              "hash": "6ead8c033b12433430f6034f4167f32a9b714efdeeeeb0b1af85823f849bbc5b",
+              "subType": "Service",
+              "size": "0",
+              "date": "",
+              "location": [
+                {
+                  "runBy": "",
+                  "foundBy": "File",
+                  "foundIn": "Deployment File - deployment.yml",
+                  "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/K8s/deployment.yml"
+                }
+              ]
+            },
+            {
+              "type": "Kubernetes",
+              "system": "Kubernetes",
+              "hash": "ffadc4827b4b1e6ae92e5d86ece1230891c638f8ac5c5a5f451c698044e65a6a",
+              "subType": "Pod",
+              "size": "0",
+              "date": "",
+              "location": [
+                {
+                  "runBy": "",
+                  "foundBy": "File",
+                  "foundIn": "Deployment File - kublet.yaml",
+                  "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/K8s/kublet.yaml"
+                }
+              ]
+            }
+          ],
+          "repository": [
+            {
+              "type": "repository",
+              "system": "GitHub",
+              "date": null,
+              "location": [
+                {
+                  "runBy": "Oxy",
+                  "foundBy": "",
+                  "foundIn": "OX-Security-Demo/Bank-Website",
+                  "link": "https://github.com/OX-Security-Demo/Bank-Website"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "policy": {
+        "id": "oxPolicy_securityScan_120",
+        "name": "Vulnerable dependency (CVE) in code",
+        "detailedDescription": "OSS/SCA is a critical tool that identifies vulnerabilities within open-source and third-party components of software applications. Ignoring OSS issues exposes applications to potential breaches, unauthorized access, and system malfunctions. As reliance on third-party libraries grows, the significance of addressing these vulnerabilities becomes paramount. The Log4J incident is one example of this. OSS scanning is the most basic way of determining if an application is using vulnerable dependencies."
+      },
+      "category": {
+        "name": "Open Source Security",
+        "categoryId": 6
+      },
+      "isPRAvailable": true,
+      "fixes": null,
+      "aggregations": {
+        "summary": {
+          "summary": "",
+          "comment": null
+        },
+        "type": "policySecurityScanSCA",
+        "items": [
+          {
+            "stars": null,
+            "forks": null,
+            "downloads": null,
+            "vulBySeverity": null,
+            "nameAndVer": null,
+            "sourceRepoName": null,
+            "sourceRepoLink": null,
+            "sourceCreationDate": null,
+            "sourceLastModifyDate": null,
+            "destinationRepoName": null,
+            "destinationRepoLink": null,
+            "destinationCreationDate": null,
+            "destinationLastModifyDate": null,
+            "destinationRepoVisibility": null,
+            "reasons": null,
+            "additionalToolData": null,
+            "devOperationDate": null,
+            "adminOperationDate": null,
+            "reviewOperation": null,
+            "reviewOperationDate": null,
+            "hashAggId": "ad81865bf6f3bf2ea92fe28e3c5c7b58",
+            "url": null,
+            "events": null,
+            "allEvents": null,
+            "pushType": "",
+            "sha": null,
+            "title": "Update pom.xml",
+            "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/pom.xml#L31",
+            "mergedBy": "",
+            "fileName": "pom.xml",
+            "fileUri": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/pom.xml#L31",
+            "date": "2023-02-25 20:15:48",
+            "fileCount": null,
+            "diffInDays": null,
+            "reviewers": "",
+            "commitLink": "https://github.com/OX-Security-Demo/Bank-Website/commit//fe292c7842a46ac7d8f6d661230169b0acdb56e8",
+            "user": null,
+            "userLink": null,
+            "userAvatar": null,
+            "devOperation": null,
+            "adminOperation": null,
+            "orgRole": null,
+            "earliestActivityDate": null,
+            "repoPermissions": null,
+            "adminLocation": null,
+            "email": null,
+            "pullRequestsCount": null,
+            "diffFromNowToCreatedAtInDays": null,
+            "username": null,
+            "accessLevel": null,
+            "createdAt": null,
+            "lastAccess": null,
+            "match": "\t\t    <artifactId>spring-web</artifactId>",
+            "commitBy": "Kostya Zhuruev",
+            "reputation": null,
+            "resource": null,
+            "service": null,
+            "region": null,
+            "accountName": null,
+            "secret": null,
+            "image": null,
+            "tag": null,
+            "dockerVer": null,
+            "os": null,
+            "imageCreatedAt": null,
+            "pkgCount": null,
+            "binariesCount": null,
+            "snippet": "\t\t<dependency>\n\t\t    <groupId>org.springframework</groupId>\n\t\t    <artifactId>spring-web</artifactId>\n\t\t    <version>5.3.19</version>\n\t\t</dependency>\n\t\t<dependency>",
+            "size": null,
+            "pushedAt": null,
+            "source": "Trivy",
+            "ruleId": "CVE-2016-1000027",
+            "realMatch": "org.springframework:spring-web@5.3.19",
+            "filePath": "pom.xml",
+            "lockfile": "pom.xml",
+            "_id": "6511101a9778b62c06b26486",
+            "accountId": null,
+            "snippetLineNumber": 28,
+            "language": "Java",
+            "daysOpen": null,
+            "aggId": "org.springframework:spring-web@5.3.19-pom.xml",
+            "repo": null,
+            "repoCreator": null,
+            "lastCodeDate": null,
+            "lastAdminOperation": null,
+            "exclusionId": null,
+            "numberOfReposDomainAppear": null
+          }
+        ]
+      },
+      "exclusions": [
+        {
+          "label": "Exclude the issue only.",
+          "type": null,
+          "id": "1",
+          "isDefault": true
+        }
+      ],
+      "recommendation": "&bull; Current Dependency: spring-web\\@5.3.19<br>&bull; Recommended Upgrade: spring-web\\@6.0.12<br>&bull; spring-web\\@6.0.12 resolves 1 of 1 direct vulnerabilities<br><br>Upgrading to spring-web\\@6.0.12 will resolve ALL known vulnerabilities in your current dependency.",
+      "violationInfoTitle": "",
+      "sourceTools": [
+        "Trivy"
+      ],
+      "cwe": [
+        "CWE-502"
+      ],
+      "fixLink": "",
+      "fixIssue": null,
+      "dependencyChain": null,
+      "publicExploitLink": null,
+      "cweList": [
+        {
+          "name": "CWE-502: Deserialization of Untrusted Data",
+          "description": "The application deserializes untrusted data without sufficiently verifying that the resulting data will be valid.",
+          "url": "https://cwe.mitre.org/data/definitions/502.html"
+        }
+      ],
+      "lowerSeverityReason": null,
+      "scaVulnerabilities": [
+        {
+          "cwe": [
+            {
+              "name": "CWE-502: Deserialization of Untrusted Data",
+              "shortName": "CWE-502",
+              "url": "https://cwe.mitre.org/data/definitions/502.html"
+            }
+          ],
+          "cve": "CVE-2016-1000027",
+          "dependencyChain": "spring-web",
+          "cveLink": "https://nvd.nist.gov/vuln/detail/CVE-2016-1000027",
+          "cvsVer": "9.8",
+          "exploitInTheWildLink": "https://raw.githubusercontent.com/distributedweaknessfiling/cvelist/master/2016/1000xxx/CVE-2016-1000027.json",
+          "description": "Pivotal Spring Framework through 5.3.16 suffers from a potential remote code execution (RCE) issue if used for Java deserialization of untrusted data. Depending on how the library is implemented within a product, this issue may or not occur, and authentication may be required. NOTE: the vendor's position is that untrusted data is not an intended use case. The product's behavior will not be changed because some users rely on deserialization of trusted data.",
+          "dateDiscovered": "Thu Jan 02 2020",
+          "minorVerWithFix": "Not Available",
+          "majorVerWithFix": "6.0.0",
+          "exploitRequirement": "Network access required to system with installed dependency",
+          "exploitCode": "NETWORK",
+          "originalSeverity": "Critical"
+        }
+      ],
+      "directSCAVulnerability": [
+        {
+          "cwe": [
+            {
+              "name": "CWE-502: Deserialization of Untrusted Data",
+              "shortName": "CWE-502",
+              "url": "https://cwe.mitre.org/data/definitions/502.html"
+            }
+          ],
+          "dependencyChain": "spring-web",
+          "libName": "spring-web",
+          "libVersion": "5.3.19",
+          "chainDepth": 0,
+          "cve": "CVE-2016-1000027",
+          "cveLink": "https://nvd.nist.gov/vuln/detail/CVE-2016-1000027",
+          "cvsVer": "9.8",
+          "exploitInTheWildLink": "https://raw.githubusercontent.com/distributedweaknessfiling/cvelist/master/2016/1000xxx/CVE-2016-1000027.json",
+          "description": "Pivotal Spring Framework through 5.3.16 suffers from a potential remote code execution (RCE) issue if used for Java deserialization of untrusted data. Depending on how the library is implemented within a product, this issue may or not occur, and authentication may be required. NOTE: the vendor's position is that untrusted data is not an intended use case. The product's behavior will not be changed because some users rely on deserialization of trusted data.",
+          "dateDiscovered": "Thu Jan 02 2020",
+          "minorVerWithFix": "Not Available",
+          "majorVerWithFix": "6.0.0",
+          "exploitRequirement": "Network access required to system with installed dependency",
+          "exploitCode": "NETWORK",
+          "originalSeverity": "Critical"
+        }
+      ],
+      "scaTriggerPkg": "org.springframework:spring-web@5.3.19",
+      "indirectSupported": true,
+      "noneDirectSCAVulnerability": [],
+      "severityChangedReason": [
+        {
+          "changeNumber": 0.5,
+          "reason": "Applications deemed as Critical Business Priority are those identified by OX or the user as vitally important. Issues found in such apps may have elevated severity.",
+          "shortName": "Critical Business Priority",
+          "changeCategory": "Damage",
+          "extraInfo": []
+        },
+        {
+          "changeNumber": 0.1,
+          "reason": "This application interacts with PostgreSQL Database",
+          "shortName": "App connects with PostgreSQL",
+          "changeCategory": "Damage",
+          "extraInfo": [
+            {
+              "key": "Snippet",
+              "value": null,
+              "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/src/main/java/com/scalesec/vulnado/Comment.java#L40",
+              "snippet": {
+                "snippetLineNumber": 40,
+                "language": "Java",
+                "text": "      Connection cxn = Postgres.connection();",
+                "fileName": "src/main/java/com/scalesec/vulnado/Comment.java"
+              }
+            },
+            {
+              "key": "Snippet",
+              "value": null,
+              "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/src/main/java/com/scalesec/vulnado/Comment.java#L65",
+              "snippet": {
+                "snippetLineNumber": 65,
+                "language": "Java",
+                "text": "      Connection con = Postgres.connection();",
+                "fileName": "src/main/java/com/scalesec/vulnado/Comment.java"
+              }
+            },
+            {
+              "key": "Snippet",
+              "value": null,
+              "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/src/main/java/com/scalesec/vulnado/Comment.java#L78",
+              "snippet": {
+                "snippetLineNumber": 78,
+                "language": "Java",
+                "text": "    Connection con = Postgres.connection();",
+                "fileName": "src/main/java/com/scalesec/vulnado/Comment.java"
+              }
+            },
+            {
+              "key": "Snippet",
+              "value": null,
+              "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/src/main/java/com/scalesec/vulnado/LoginController.java#L21",
+              "snippet": {
+                "snippetLineNumber": 21,
+                "language": "Java",
+                "text": "    if (Postgres.md5(input.password).equals(user.hashedPassword)) {",
+                "fileName": "src/main/java/com/scalesec/vulnado/LoginController.java"
+              }
+            },
+            {
+              "key": "Snippet",
+              "value": null,
+              "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/src/main/java/com/scalesec/vulnado/Postgres.java#L12",
+              "snippet": {
+                "snippetLineNumber": 12,
+                "language": "Java",
+                "text": "public class Postgres {",
+                "fileName": "src/main/java/com/scalesec/vulnado/Postgres.java"
+              }
+            }
+          ]
+        },
+        {
+          "changeNumber": 0.1,
+          "reason": "The vulnerable package is included in your repository dependencies list and imported in your code.",
+          "shortName": "Vulnerable Package Imported",
+          "changeCategory": "Reachable",
+          "extraInfo": [
+            {
+              "key": "Snippet",
+              "value": null,
+              "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/src/main/java/com/scalesec/vulnado/CommentsController.java#L3",
+              "snippet": {
+                "snippetLineNumber": 3,
+                "language": "Java",
+                "text": "import org.springframework.http.HttpStatus;",
+                "fileName": "src/main/java/com/scalesec/vulnado/CommentsController.java"
+              }
+            },
+            {
+              "key": "Snippet",
+              "value": null,
+              "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/src/main/java/com/scalesec/vulnado/CommentsController.java#L4",
+              "snippet": {
+                "snippetLineNumber": 4,
+                "language": "Java",
+                "text": "import org.springframework.web.bind.annotation.*;",
+                "fileName": "src/main/java/com/scalesec/vulnado/CommentsController.java"
+              }
+            },
+            {
+              "key": "Snippet",
+              "value": null,
+              "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/src/main/java/com/scalesec/vulnado/CommentsController.java#L5",
+              "snippet": {
+                "snippetLineNumber": 5,
+                "language": "Java",
+                "text": "import org.springframework.beans.factory.annotation.*;",
+                "fileName": "src/main/java/com/scalesec/vulnado/CommentsController.java"
+              }
+            },
+            {
+              "key": "Snippet",
+              "value": null,
+              "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/src/main/java/com/scalesec/vulnado/CommentsController.java#L6",
+              "snippet": {
+                "snippetLineNumber": 6,
+                "language": "Java",
+                "text": "import org.springframework.boot.autoconfigure.*;",
+                "fileName": "src/main/java/com/scalesec/vulnado/CommentsController.java"
+              }
+            },
+            {
+              "key": "Snippet",
+              "value": null,
+              "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/src/main/java/com/scalesec/vulnado/CommentsController.java#L3",
+              "snippet": {
+                "snippetLineNumber": 3,
+                "language": "Java",
+                "text": "import org.springframework.http.HttpStatus;",
+                "fileName": "src/main/java/com/scalesec/vulnado/CommentsController.java"
+              }
+            },
+            {
+              "key": "Snippet",
+              "value": null,
+              "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/src/main/java/com/scalesec/vulnado/LinksController.java#L4",
+              "snippet": {
+                "snippetLineNumber": 4,
+                "language": "Java",
+                "text": "import org.springframework.http.HttpStatus;",
+                "fileName": "src/main/java/com/scalesec/vulnado/LinksController.java"
+              }
+            },
+            {
+              "key": "Snippet",
+              "value": null,
+              "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/src/main/java/com/scalesec/vulnado/CommentsController.java#L4",
+              "snippet": {
+                "snippetLineNumber": 4,
+                "language": "Java",
+                "text": "import org.springframework.web.bind.annotation.*;",
+                "fileName": "src/main/java/com/scalesec/vulnado/CommentsController.java"
+              }
+            },
+            {
+              "key": "Snippet",
+              "value": null,
+              "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/src/main/java/com/scalesec/vulnado/CowController.java#L3",
+              "snippet": {
+                "snippetLineNumber": 3,
+                "language": "Java",
+                "text": "import org.springframework.web.bind.annotation.*;",
+                "fileName": "src/main/java/com/scalesec/vulnado/CowController.java"
+              }
+            },
+            {
+              "key": "Snippet",
+              "value": null,
+              "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/src/main/java/com/scalesec/vulnado/LinksController.java#L5",
+              "snippet": {
+                "snippetLineNumber": 5,
+                "language": "Java",
+                "text": "import org.springframework.web.bind.annotation.*;",
+                "fileName": "src/main/java/com/scalesec/vulnado/LinksController.java"
+              }
+            }
+          ]
+        },
+        {
+          "changeNumber": 0.01,
+          "reason": "Vulnerabilities exist that can cause Remote Code Execution (RCE).",
+          "shortName": "Remote Code Execution",
+          "changeCategory": "Damage",
+          "extraInfo": []
+        },
+        {
+          "changeNumber": 0.01,
+          "reason": "Security issues that may allow an attacker to move laterally across your infrastructure.",
+          "shortName": "Lateral Movement",
+          "changeCategory": "Damage",
+          "extraInfo": []
+        },
+        {
+          "changeNumber": 0.01,
+          "reason": "The issue is associated with a CVE-2016-1000027 that has a wide variety of public exploits available, raising the probability of attackers exploiting the library. CVE-2016-1000027 has been mentioned on at least 16 public repositories and 1312 PoC code references on GitHub, which is among the top 10% of all CVEs.",
+          "shortName": "Many Public Exploits",
+          "changeCategory": "Exploitable",
+          "extraInfo": []
+        },
+        {
+          "changeNumber": 0.01,
+          "reason": "CVE-2016-1000027 has At least one public exploit exists, making it easier for attackers to weaponize the exploit.",
+          "shortName": "Public Exploit Available",
+          "changeCategory": "Exploitable",
+          "extraInfo": []
+        },
+        {
+          "changeNumber": 0.01,
+          "reason": "An issue exists within a direct dependency of the system, meaning a library that the system directly relies upon. This poses a more immediate and critical risk compared to vulnerabilities in first-level or deeper dependencies. The direct interaction with this component amplifies the potential for exploitation and system compromise.",
+          "shortName": "Direct Dependency",
+          "changeCategory": "Reachable",
+          "extraInfo": []
+        },
+        {
+          "changeNumber": 0.01,
+          "reason": "NIST defines CVSS scores between 9.0 and 10.0 as critical severity.",
+          "shortName": "Critical CVSS score",
+          "changeCategory": "Damage",
+          "extraInfo": []
+        }
+      ],
+      "tickets": [],
+      "oscarData": [
+        {
+          "id": "T0118",
+          "name": "T0118: Command injection",
+          "description": "OS command injection is a web security vulnerability that allows an attacker to execute arbitrary operating system commands on the server that is running an application.\nCommand injection attacks are possible when an application passes unsafe user supplied data (forms, cookies, HTTP headers etc.) to a system shell. \nIn this attack, the attacker-supplied operating system commands are usually executed with the privileges of the vulnerable application. \nCommand injection attacks are possible largely due to insufficient input validation\n",
+          "url": "https://pbom.dev/techniques/&t_id=T0118"
+        }
+      ]
+    }
+  }
+}

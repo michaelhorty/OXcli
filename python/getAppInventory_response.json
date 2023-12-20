@@ -1,0 +1,120 @@
+{
+  "data": {
+    "getInventoryResult": {
+      "inventory": [
+        {
+          "name": "New",
+          "label": "New",
+          "count": 0,
+          "delta": 0,
+          "trend": "neutral",
+          "tooltip": []
+        },
+        {
+          "name": "InDevelopment",
+          "label": "In Development",
+          "count": 9,
+          "delta": 0,
+          "trend": "neutral",
+          "tooltip": [
+            {
+              "appId": "584352228",
+              "appName": "OX-Security-Demo/Bank-Website",
+              "businessPriority": 97
+            },
+            {
+              "appId": "584102675",
+              "appName": "OX-Security-Demo/Multi-currency-management",
+              "businessPriority": 95.61428571428571
+            },
+            {
+              "appId": "585303099",
+              "appName": "OX-Security-Demo/Bank-Website-Backend",
+              "businessPriority": 69.28571428571428
+            },
+            {
+              "appId": "585479391",
+              "appName": "OX-Security-Demo/Investment-management",
+              "businessPriority": 62.357142857142854
+            },
+            {
+              "appId": "585497913",
+              "appName": "OX-Security-Demo/BankForensicsCollector",
+              "businessPriority": 62.357142857142854
+            }
+          ]
+        },
+        {
+          "name": "DeployedProd",
+          "label": "Deployed In Production",
+          "count": 27,
+          "delta": 0,
+          "trend": "neutral",
+          "tooltip": [
+            {
+              "appId": "584352228",
+              "appName": "OX-Security-Demo/Bank-Website",
+              "businessPriority": 97
+            },
+            {
+              "appId": "584102675",
+              "appName": "OX-Security-Demo/Multi-currency-management",
+              "businessPriority": 95.61428571428571
+            },
+            {
+              "appId": "310663043",
+              "appName": "michaelhorty/WebGoat",
+              "businessPriority": 72.05714285714285
+            },
+            {
+              "appId": "585303099",
+              "appName": "OX-Security-Demo/Bank-Website-Backend",
+              "businessPriority": 69.28571428571428
+            },
+            {
+              "appId": "585479391",
+              "appName": "OX-Security-Demo/Investment-management",
+              "businessPriority": 62.357142857142854
+            }
+          ]
+        },
+        {
+          "name": "ExternallyFacing",
+          "label": "Public Code",
+          "count": 16,
+          "delta": 0,
+          "trend": "neutral",
+          "tooltip": [
+            {
+              "appId": "584102675",
+              "appName": "OX-Security-Demo/Multi-currency-management",
+              "businessPriority": 95.61428571428571
+            },
+            {
+              "appId": "310663043",
+              "appName": "michaelhorty/WebGoat",
+              "businessPriority": 72.05714285714285
+            },
+            {
+              "appId": "585479391",
+              "appName": "OX-Security-Demo/Investment-management",
+              "businessPriority": 62.357142857142854
+            },
+            {
+              "appId": "585497913",
+              "appName": "OX-Security-Demo/BankForensicsCollector",
+              "businessPriority": 62.357142857142854
+            },
+            {
+              "appId": "637651212",
+              "appName": "OX-Security-Demo/Lines-Credits",
+              "businessPriority": 59.58571428571428
+            }
+          ]
+        }
+      ],
+      "totalApps": 29,
+      "notRelevantApps": 2
+    }
+  }
+}

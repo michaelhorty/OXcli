@@ -1,0 +1,251 @@
+{
+  "data": {
+    "getSingleApplicationInfo": {
+      "appId": "584352228",
+      "issues": 101,
+      "appName": "OX-Security-Demo/Bank-Website",
+      "branch": "main",
+      "branchesCount": 9,
+      "businessPriority": 97,
+      "codeChanges": 0,
+      "fakeApp": false,
+      "link": "https://github.com/OX-Security-Demo/Bank-Website",
+      "commitCount": 276,
+      "createdAt": "1672654788000",
+      "creator": "Oxy",
+      "daysSinceLastCodeChange": 0,
+      "daysSinceRepoCreation": 268,
+      "deployedProd": true,
+      "filesCount": 63,
+      "forksCount": 1,
+      "hasDownloads": true,
+      "pipelineScans": null,
+      "irrelevantReasons": [],
+      "isMonoRepoChild": false,
+      "monoRepoParent": "",
+      "monorepoChildrenCount": 0,
+      "sbomCount": 80,
+      "monorepoChildrenAppIds": [],
+      "languages": [
+        {
+          "language": "GitHub Actions",
+          "languagePercentage": 6
+        },
+        {
+          "language": "INI",
+          "languagePercentage": 4
+        },
+        {
+          "language": "YAML",
+          "languagePercentage": 4
+        },
+        {
+          "language": "Kubernetes",
+          "languagePercentage": 6
+        },
+        {
+          "language": "Markdown",
+          "languagePercentage": 14
+        },
+        {
+          "language": "Terraform",
+          "languagePercentage": 8
+        },
+        {
+          "language": "OpenAPI",
+          "languagePercentage": 2
+        },
+        {
+          "language": "CSS",
+          "languagePercentage": 2
+        },
+        {
+          "language": "JavaScript",
+          "languagePercentage": 6
+        },
+        {
+          "language": "HTML",
+          "languagePercentage": 6
+        },
+        {
+          "language": "Shell",
+          "languagePercentage": 2
+        },
+        {
+          "language": "Docker Compose",
+          "languagePercentage": 2
+        },
+        {
+          "language": "XML",
+          "languagePercentage": 4
+        },
+        {
+          "language": "Batchfile",
+          "languagePercentage": 2
+        },
+        {
+          "language": "Maven POM",
+          "languagePercentage": 2
+        },
+        {
+          "language": "Java",
+          "languagePercentage": 22
+        },
+        {
+          "language": "JSON",
+          "languagePercentage": 2
+        }
+      ],
+      "lastCodeChange": "1695851176000",
+      "new": false,
+      "overrideRelevance": "default",
+      "overridePriority": -1,
+      "publicVisibility": false,
+      "pullCount": 0,
+      "pushCount": 0,
+      "relevant": true,
+      "risk": 0,
+      "scanId": "80110d5f-71af-4ab2-affc-3cfa42fd8052",
+      "scannedAt": 1695880227655,
+      "secInfrastructure": null,
+      "securityPosture": 0,
+      "size": 1509990,
+      "tagsCount": 0,
+      "type": "GitHub",
+      "updated": true,
+      "userCount": 5,
+      "version": "GitHub",
+      "violationCount": 0,
+      "watchersCount": 0,
+      "yamlsCount": 10,
+      "scoreHistory": null,
+      "applicationFlows": {
+        "artifacts": [],
+        "cloudDeployments": [],
+        "cicdInfo": [
+          {
+            "type": "cicd",
+            "system": "GitHub Actions",
+            "latestDate": "2023-09-23T21:46:17Z",
+            "lastMonthJobCount": "52",
+            "location": [
+              {
+                "runBy": "",
+                "foundBy": "File",
+                "foundIn": "Deployment File - plain text secrets",
+                "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/.github/workflows/DorsAction.yaml"
+              },
+              {
+                "runBy": "kostya253",
+                "foundBy": "Pipeline",
+                "foundIn": "Pipeline ID - 44397956",
+                "link": "https://github.com/OX-Security-Demo/Bank-Website/actions/workflows/build.yml"
+              }
+            ]
+          }
+        ],
+        "orchestrators": [],
+        "kubernetes": [
+          {
+            "type": "Kubernetes",
+            "system": "Kubernetes",
+            "hash": "83ec1262a86ef9dcee125380a588a437f8d1f6619b15f491abc03ad7e8f41954",
+            "subType": "Pod",
+            "size": "0",
+            "date": "",
+            "location": [
+              {
+                "runBy": "",
+                "foundBy": "File",
+                "foundIn": "Deployment File - apiServer.yaml",
+                "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/K8/apiServer.yaml"
+              }
+            ]
+          },
+          {
+            "type": "Kubernetes",
+            "system": "Kubernetes",
+            "hash": "6ead8c033b12433430f6034f4167f32a9b714efdeeeeb0b1af85823f849bbc5b",
+            "subType": "Deployment",
+            "size": "0",
+            "date": "",
+            "location": [
+              {
+                "runBy": "",
+                "foundBy": "File",
+                "foundIn": "Deployment File - deployment.yml",
+                "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/K8s/deployment.yml"
+              }
+            ]
+          },
+          {
+            "type": "Kubernetes",
+            "system": "Kubernetes",
+            "hash": "6ead8c033b12433430f6034f4167f32a9b714efdeeeeb0b1af85823f849bbc5b",
+            "subType": "Service",
+            "size": "0",
+            "date": "",
+            "location": [
+              {
+                "runBy": "",
+                "foundBy": "File",
+                "foundIn": "Deployment File - deployment.yml",
+                "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/K8s/deployment.yml"
+              }
+            ]
+          },
+          {
+            "type": "Kubernetes",
+            "system": "Kubernetes",
+            "hash": "ffadc4827b4b1e6ae92e5d86ece1230891c638f8ac5c5a5f451c698044e65a6a",
+            "subType": "Pod",
+            "size": "0",
+            "date": "",
+            "location": [
+              {
+                "runBy": "",
+                "foundBy": "File",
+                "foundIn": "Deployment File - kublet.yaml",
+                "link": "https://github.com/OX-Security-Demo/Bank-Website/blob/main/K8s/kublet.yaml"
+              }
+            ]
+          }
+        ],
+        "repository": [
+          {
+            "type": "repository",
+            "system": "GitHub",
+            "date": null,
+            "location": [
+              {
+                "runBy": "Oxy",
+                "foundBy": "",
+                "foundIn": "OX-Security-Demo/Bank-Website",
+                "link": "https://github.com/OX-Security-Demo/Bank-Website"
+              }
+            ]
+          }
+        ]
+      },
+      "isSbomPresent": null,
+      "appOwners": [],
+      "pipeline": null,
+      "tags": [
+        {
+          "tagId": "ox_tag_8",
+          "name": "PostgreSQL",
+          "displayName": "PostgreSQL",
+          "createdBy": "support@ox.security",
+          "isOxTag": true
+        },
+        {
+          "tagId": "ox_tag_22",
+          "name": "SpringBoot",
+          "displayName": "Spring Boot",
+          "createdBy": "support@ox.security",
+          "isOxTag": true
+        }
+      ]
+    }
+  }
+}

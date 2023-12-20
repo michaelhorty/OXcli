@@ -2,6 +2,7 @@ Imports System.Text.RegularExpressions
 Imports System
 Imports System.IO
 Imports System.Runtime.InteropServices
+Imports System.Reflection
 
 Module Program
     Public aTimer As New System.Timers.Timer
@@ -27,9 +28,9 @@ Module Program
 
         ' this will generate errors if no python folder exists
         ogDir$ = FileSystem.CurDir
-        ChDir("python")
-        pyDir$ = FileSystem.CurDir
-        ChDir(ogDir)
+        ' ChDir("python")
+        ' pyDir$ = FileSystem.CurDir
+        ' ChDir(ogDir)
 
 
         If RuntimeInformation.IsOSPlatform(OSPlatform.Windows) = True Then osType = "Windows"
@@ -39,108 +40,111 @@ Module Program
         Console.WriteLine("Detecting " + osType + " environment")
 
         Select Case LCase(actioN)
-                Case "help"
-                    Console.WriteLine(vbCrLf + "Usage  : ACTION --PARAM1 value --PARAM2 value                        >>>> Actions and parameters are not case sensitive")
-                    Console.WriteLine("Example: oxcli getjson --api getapplications --file applist.json     >>>> Performs 'getjson' action using param values of 'api' and 'file'")
-                    Console.WriteLine("=======================================================================================================================================================")
-                    Console.WriteLine(fLine("help", "shows this list of commands"))
-                    Console.WriteLine("-----------------")
-                    Console.WriteLine(fLine("checkme", "self-inspection of environment"))
-                    Console.WriteLine("-----------------")
-                    Console.WriteLine(fLine("setenv", "sets environment vars for Python API calls"))
-                    Console.WriteLine(fLine("", "[REQUIRED] --KEY (OX API Key)"))
-                    Console.WriteLine(fLine("", "[OPT] --KEY (OX API Key defaults to https://api.cloud.ox.security/api/apollo-gateway)"))
-                    Console.WriteLine("-----------------")
-                    Console.WriteLine(fLine("policycsv", "create CSV of policies (requires that policy JSON files are saved manually)"))
-                    Console.WriteLine("-----------------")
-                    Console.WriteLine(fLine("getjson", "uses python engine to pull API JSON args"))
-                    Console.WriteLine(fLine("", "[REQUIRED] --API (name of API), --file (output filename)"))
-                    Console.WriteLine("-----------------")
-                    Console.WriteLine(fLine("issuesxls", "retrieves issues using python engine args and creates pivot Excel doc"))
-                    Console.WriteLine(fLine("", "[REQUIRED] --FILE (name of XLS file to create)"))
-                    Console.WriteLine("-----------------")
-                    Console.WriteLine(fLine("issuescsv", "retrieves issues using python engine args and creates CSV doc"))
-                    Console.WriteLine(fLine("", "[REQUIRED] --FILE (name of CSV file to create)"))
-                    Console.WriteLine("-----------------")
-                    Console.WriteLine(fLine("addtag", "adds a new tag - name must be unique"))
-                    Console.WriteLine(fLine("", "[REQUIRED] --NAME (name of the tag)"))
-                    Console.WriteLine(fLine("", "[OPTIONAL] --DISPLAY (display name, defaults to same as --NAME), --TYPE (defaults to 'simple' - recommend default)"))
-                    Console.WriteLine("-----------------")
+            Case "help"
+                Console.WriteLine(vbCrLf + "Usage  : ACTION --PARAM1 value --PARAM2 value                        >>>> Actions and parameters are not case sensitive")
+                Console.WriteLine("Example: oxcli getjson --api getapplications --file applist.json     >>>> Performs 'getjson' action using param values of 'api' and 'file'")
+                Console.WriteLine("=======================================================================================================================================================")
+                Console.WriteLine(fLine("help", "shows this list of commands"))
+                Console.WriteLine("-----------------")
+                Console.WriteLine(fLine("checkme", "self-inspection of environment"))
+                Console.WriteLine("-----------------")
+                Console.WriteLine(fLine("setenv", "sets environment vars for Python API calls"))
+                Console.WriteLine(fLine("", "[REQUIRED] --KEY (OX API Key)"))
+                Console.WriteLine(fLine("", "[OPT] --KEY (OX API Key defaults to https://api.cloud.ox.security/api/apollo-gateway)"))
+                Console.WriteLine("-----------------")
+                Console.WriteLine(fLine("policycsv", "create CSV of policies (requires that policy JSON files are saved manually)"))
+                Console.WriteLine("-----------------")
+                Console.WriteLine(fLine("getjson", "uses python engine to pull API JSON args"))
+                Console.WriteLine(fLine("", "[REQUIRED] --API (name of API), --file (output filename)"))
+                Console.WriteLine("-----------------")
+                Console.WriteLine(fLine("issuesxls", "retrieves issues using python engine args and creates pivot Excel doc"))
+                Console.WriteLine(fLine("", "[REQUIRED] --FILE (name of XLS file to create)"))
+                Console.WriteLine("-----------------")
+                Console.WriteLine(fLine("issuescsv", "retrieves issues using python engine args and creates CSV doc"))
+                Console.WriteLine(fLine("", "[REQUIRED] --FILE (name of CSV file to create)"))
+                Console.WriteLine("-----------------")
+                Console.WriteLine(fLine("addtag", "adds a new tag - name must be unique"))
+                Console.WriteLine(fLine("", "[REQUIRED] --NAME (name of the tag)"))
+                Console.WriteLine(fLine("", "[OPTIONAL] --DISPLAY (display name, defaults to same as --NAME), --TYPE (defaults to 'simple' - recommend default)"))
+                Console.WriteLine("-----------------")
 
-                    Console.WriteLine(fLine("edittags", "Loop through apps and Add/Remove tags using string and/or regex match"))
-                    Console.WriteLine(fLine("", "[REQUIRED] --ADDTAG (tag displayname) OR --REMTAG (name)"))
-                    Console.WriteLine(fLine("", "[OPTIONAL] --STR (app contains string), --REGEX (app matches regex), --COMMIT true (otherwise will only preview)"))
-                    Console.WriteLine(fLine("", "[TEST]     --MATCH (submit test app name) - will confirm string and/or regex match without looping through apps"))
-                    Console.WriteLine("=======================================================================================================================================================")
+                Console.WriteLine(fLine("edittags", "Loop through apps and Add/Remove tags using string and/or regex match"))
+                Console.WriteLine(fLine("", "[REQUIRED] --ADDTAG (tag displayname) OR --REMTAG (name)"))
+                Console.WriteLine(fLine("", "[OPTIONAL] --STR (app contains string), --REGEX (app matches regex), --COMMIT true (otherwise will only preview)"))
+                Console.WriteLine(fLine("", "[TEST]     --MATCH (submit test app name) - will confirm string and/or regex match without looping through apps"))
+                Console.WriteLine("=======================================================================================================================================================")
+                End
+            Case "checkme"
+                ' removed folder structure due to nuances between different versions of *NIX (tested good on MacOS & Windows only, failed on DEBIAN BOOKWORM and BULLSEYE)
+
+                Console.WriteLine("File System check - filesystem.curdir: " + ogDir)
+                ' ChDir("python")
+                ' Console.WriteLine("Python directory:  " + pyDir)
+                ' Console.WriteLine("alternate - path.getdirectory: " + Path.GetDirectoryName(Assembly.GetEntryAssembly().Location))
+
+                If File.Exists(".env") Then
+                    Console.WriteLine("Environment file exists - credentials not verified")
+                Else
+                    Console.WriteLine("Environment file (.env) is not present and is needed for credentials")
+                End If
+                If File.Exists("python_examp.py") Then
+                    Console.WriteLine("Python executable exists")
+                Else
+                    Console.WriteLine("Python script to call APIs must be present - obtain python folder that accompanies this DOTNET executable")
+                End If
+                '                ChDir(ogDir)
+
+                '                Console.WriteLine("Changing back to parent folder - " + ogDir)
+                '               Console.WriteLine("Path.GetFullPath(Directory.GetCurrentDirectory()= " + Path.GetFullPath(Directory.GetCurrentDirectory()))
+
+                '               Console.WriteLine("Attempt 2 - filesystem chdir")
+                '              FileSystem.ChDir(ogDir)
+                '             Console.WriteLine("Path.GetFullPath(Directory.GetCurrentDirectory()= " + Path.GetFullPath(Directory.GetCurrentDirectory()))
+
+                If File.Exists("Newtonsoft.json.dll") = True Then
+                    Console.WriteLine("OXcli files present")
+                Else
+                    Console.WriteLine("OX dependencies missing - check folder contents or download new version")
+                End If
+                End
+            Case "setenv"
+                Dim urL$ = argValue("url", args)
+                Dim apiKey$ = argValue("key", args)
+                If apiKey = "" Then
+                    Console.WriteLine("To set environment, OXCLI needs the URL and API KEY. Submit using --URL and --KEY params")
+                End If
+                If urL = "" Then
+                    urL = "https://api.cloud.ox.security/api/apollo-gateway"
+                    Console.WriteLine("Will default to https://api.cloud.ox.security/api/apollo-gateway")
+                End If
+                Dim newEfile$ = "oxUrl='" + urL + "'" + Chr(13) + "oxKey='" + apiKey + "'"
+                safeKILL(".env")
+                Call streamWriterTxt(".env", newEfile)
+                Console.WriteLine("New environment variables set for " + urL)
+                End
+
+            Case "policycsv"
+                Call policyCSV()
+                End
+            Case "addtag"
+                Call addTag(argValue("name", args), argValue("display", args), argValue("type", args))
+                End
+            Case "edittags"
+                Call editTags(args)
+                End
+            Case "getjson"
+                Dim apiCall$ = argValue("api", args)
+                Dim fileN$ = argValue("file", args)
+                If Len(apiCall) = 0 Then
+                    Console.WriteLine("This command's parameters:  getjson --api apiname --file 'file name.json'" + vbCrLf + "api  [req] : the name of the API call (action getAPIs)" + vbCrLf + "file [opt]: the output filename to dump JSON")
                     End
-
-                Case "checkme"
-                    Console.WriteLine("Current directory: " + ogDir)
-                    ChDir("python")
-                    Console.WriteLine("Python directory:  " + pyDir)
-                    If File.Exists(".env") Then
-                        Console.WriteLine("Environment file exists - credentials not verified")
-                    Else
-                        Console.WriteLine("Environment file (.\python\.env) is not present and is needed for credentials")
-                    End If
-                    If File.Exists("python_examp.py") Then
-                        Console.WriteLine("Python executable exists")
-                    Else
-                        Console.WriteLine("Python script to call APIs must be present - obtain python folder that accompanies this DOTNET executable")
-                    End If
-                    ChDir(ogDir)
-                    If File.Exists("Newtonsoft.json.dll") = True Then
-                        Console.WriteLine("OXcli files present")
-                    Else
-                        Console.WriteLine("OX dependencies missing - check folder contents or download new version")
-                    End If
-                    End
-
-
-                Case "setenv"
-                    Dim urL$ = argValue("url", args)
-                    Dim apiKey$ = argValue("key", args)
-                    If apiKey = "" Then
-                        Console.WriteLine("To set environment, OXCLI needs the URL and API KEY. Submit using --URL and --KEY params")
-                    End If
-                    If urL = "" Then
-                        urL = "https://api.cloud.ox.security/api/apollo-gateway"
-                        Console.WriteLine("Will default to https://api.cloud.ox.security/api/apollo-gateway")
-                    End If
-                    Dim newEfile$ = "oxUrl='" + urL + "'" + Chr(13) + "oxKey='" + apiKey + "'"
-                    safeKILL("./python/.env")
-                    Call streamWriterTxt("./python/.env", newEfile)
-                    Console.WriteLine("New environment variables set for " + urL)
-                    End
-
-                Case "policycsv"
-                    Call policyCSV()
-                    End
-
-                Case "addtag"
-                    Call addTag(argValue("name", args), argValue("display", args), argValue("type", args))
-                    End
-
-
-
-                Case "edittags"
-                    Call editTags(args)
-                    End
-
-                Case "getjson"
-                    Dim apiCall$ = argValue("api", args)
-                    Dim fileN$ = argValue("file", args)
-
-                    If Len(apiCall) = 0 Then
-                        Console.WriteLine("This command's parameters:  getjson --api apiname --file 'file name.json'" + vbCrLf + "api  [req] : the name of the API call (action getAPIs)" + vbCrLf + "file [opt]: the output filename to dump JSON")
-                        End
-                    End If
+                End If
 
                 If Len(fileN) = 0 Then
                     Call setUpAPICall(apiCall, "", True)
                 Else
                     Call setUpAPICall(apiCall, fileN)
-                    Console.WriteLine("File created: " + "./python/" + fileN)
+                    Console.WriteLine("File created: " + fileN)
                 End If
 
                 End
@@ -151,17 +155,15 @@ Module Program
                     Console.WriteLine("This command will only work on a Windows machine with Excel locally installed")
                     End
                 End If
-
                 Dim toFilename$ = argValue("file", args)
-                    If Len(toFilename) = 0 Then
-                        Console.WriteLine("This command's parameters:  issuesxls OR issuescsv --file 'filename.xlsx'" + vbCrLf + "file : the output Excel filename.")
-                        Console.WriteLine("You must specify a filename for the CSV or Excel .xlsx.")
-                        End
-                    End If
-                    Call getAllIssues()
-                    Dim allIssues As List(Of issueS)
+                If Len(toFilename) = 0 Then
+                    Console.WriteLine("This command's parameters:  issuesxls OR issuescsv --file 'filename.xlsx'" + vbCrLf + "file : the output Excel filename.")
+                    Console.WriteLine("You must specify a filename for the CSV or Excel .xlsx.")
+                    End
+                End If
+                Call getAllIssues()
+                Dim allIssues As List(Of issueS)
                 allIssues = buildIssues("getissues.json", numResponseFiles - 1)
-
                 If osType = "Windows" Then
                     toFilename = ogDir + "\" + toFilename
                 Else
@@ -173,9 +175,9 @@ Module Program
                 Else
                     Call issueCSV(allIssues, toFilename)
                 End If
-            End Select
+        End Select
 
-            End
+        End
 
 
 
@@ -190,18 +192,13 @@ Module Program
         Console.WriteLine("Adding tag:")
         Call setAddTagVars(tagName, dName, tType)
         Dim jSon$ = setUpAPICall("addTag",, True)
-
         addTag = OX.getTagId(jSon)
-
         If addTag = "" Then
             Console.WriteLine("ERROR: Could not add tag - return JSON=" + vbCrLf + jSon)
         Else
             Console.WriteLine("New Tag: " + tagName + " >> TagID: " + addTag)
         End If
-
     End Function
-
-
     Public Sub editTags(args() As String)
         Dim doRegExMatch As Boolean = False
         Dim toMatch$ = argValue("match", args)
@@ -355,7 +352,7 @@ Module Program
 
         Call setUpAPICall("getAllTags", fName)
 
-        getAllTags = OX.getAllTags("./python/" + fName)
+        getAllTags = OX.getAllTags(fName)
     End Function
 
 
@@ -366,7 +363,7 @@ Module Program
 
         Call setUpAPICall("getAppsShort", fName)
 
-        getAppListShort = OX.getAppInfoShort("./python/" + fName)
+        getAppListShort = OX.getAppInfoShort(fName)
     End Function
 
     Public Function getAllIssues() As Integer
@@ -380,7 +377,7 @@ Module Program
         Call setUpAPICall("getissues", Replace(fileName, ".json", "0.json"))
 
         Dim respIssue As listIssues = New listIssues
-        respIssue = OX.getListIssues("./python/" + Replace(fileName, ".json", "0.json"))
+        respIssue = OX.getListIssues(Replace(fileName, ".json", "0.json"))
         With respIssue
             Console.WriteLine("Total Issues: " + .totalIssues.ToString)
             'Console.WriteLine("Filtered Issues: " + .totalFilteredIssues.ToString)
@@ -414,7 +411,7 @@ Module Program
         OX = New oxWrapper("", "")
         Dim newJson$ = OX.jsonGetNewTagVars(newTag)
         Console.WriteLine(newJson)
-        Call saveJSONtoFile(newJson, "./python/addTag.variables.json")
+        Call saveJSONtoFile(newJson, "addTag.variables.json")
 
     End Sub
 
@@ -432,7 +429,7 @@ Module Program
         ' this is sloppy pls figure out why you did this, this way
         OX = New oxWrapper("", "")
         newJson = OX.jsonGetIssuesVars(newIssueVar)
-        Call saveJSONtoFile(newJson, "./python/getissues.variables.json")
+        Call saveJSONtoFile(newJson, "getissues.variables.json")
 
     End Sub
 
@@ -442,7 +439,7 @@ Module Program
         OX = New oxWrapper("", "")
         newJson = OX.jsonGetEditTagsVars(evReq)
         'Console.WriteLine(newJson)
-        Call saveJSONtoFile(newJson, "./python/modifyAppsTags.variables.json")
+        Call saveJSONtoFile(newJson, "modifyAppsTags.variables.json")
     End Sub
 
 
@@ -463,13 +460,8 @@ Module Program
         OX = New oxWrapper("", "")
         'Console.WriteLine("Retrieving JSON From OX API: " + apiCall)
 
-        Dim getFile$ = osFilename(pyDir + "\" + apiCall + "_response.json")
-        '        If osType = "Windows" Then
-        '            getFile = pyDir + "\" + apiCall + "_response.json"
-        '        Else
-        '            getFile = pyDir + "/" + apiCall + "_response.json"
-        '        End If
-        If fileN <> "" Then fileN = osFilename(pyDir + "\" + fileN)
+        Dim getFile$ = apiCall + "_response.json"
+        If fileN <> "" Then fileN = fileN
 
         safeKILL(getFile)
         If Len(fileN) Then safeKILL(fileN)
@@ -477,7 +469,7 @@ Module Program
         Dim succesS As Boolean = OX.getJSON(apiCall)
 
         If succesS = False Then
-            Console.WriteLine("Check the underlying Python connector, make sure Python is in the path. Try 'python ./python/python_examp.py ./python/" + apiCall)
+            Console.WriteLine("Check the underlying Python connector, make sure Python is in the path. Try 'python python_examp.py " + apiCall)
             End
         Else
             If Len(fileN) Then
@@ -526,7 +518,7 @@ Module Program
         Dim cFile$
 
         For currFile = 0 To numFiles
-            cFile = "./python/" + Replace(fileN, ".json", currFile.ToString + ".json")
+            cFile = Replace(fileN, ".json", currFile.ToString + ".json")
             Dim tempIssues As List(Of issueS) = New List(Of issueS)
             Console.WriteLine("Deserializing JSON " + cFile)
             tempIssues = OX.returnIssues(streamReaderTxt(cFile))
