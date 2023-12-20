@@ -1,5 +1,0 @@
-mutation ModifyAppsTags($input: ModifyAppsTagsInput!) {
-    modifyAppsTags(input: $input) {
-      acknowledge
-    }
-  }
