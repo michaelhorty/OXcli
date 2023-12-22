@@ -5,17 +5,9 @@ Object processes designed in VB.NET are easily replicated in other languages, al
 
 To use, download and unzip contents of OXcli.zip into local folder. Tested on both Windows and Mac.
 
-OXCLI commands utilizing OX GraphQL API require a simple Python script located in the \python folder.
-Modify the .env file with your OX API KEY.
+Preparations require DOTNET6 RUNTIME and PYTHON in the environment and accessible via %PATH%.
 
-In order for Python to run, test using:  python python_examp.py help
-
-Likely will require:
-
-pip install -r requirements
-pip install python-getenv
-pip install jsonpickle
-
+OXCLI commands utilizing OX GraphQL API require a simple Python script.
 
 1) Download the *OXcli.zip file from GitHub
 2) Unzip the ZIP contents into a folder that you will run the application from
@@ -25,9 +17,8 @@ pip install jsonpickle
        Install DOTNET 6.025 RUNTIMETo put DOTNET into path use command: _ln -s /usr/local/share/dotnet/dotnet /usr/local/bin/_ (may need SUDO)
 4) From terminal/shell run dotnet oxcli.dll checkme
 5) Assuming good, run dotnet _oxcli.dll setenv --key ox_api_key_ to set OX environment
-6) Prepare Python, navigate to /python folder
-       pip install python-dotenv    (allows Python to read the hidden .env file)
-       pip install jsonpickle (demo app shows how to use jsonpickle for deserialization)
+6) Prepare Python
+       python -m pip install -r requirements.txt    (allows Python to install all dependencies defined in file)
        Try it out: _python getApps_ should produce file getapps_response.json
 
 OX CLI should now be ready to go
