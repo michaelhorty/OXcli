@@ -69,7 +69,7 @@ Public Class oxWrapper
         On Error GoTo errorcatch
 
         Dim sInfo$ = "python"
-        If osType = "MacOSX" Then sInfo = "python3"
+        If osType = "MacOSX" Or osType = "Linux" Then sInfo = "python3"
 
         Dim startInfo As New ProcessStartInfo
         startInfo.FileName = sInfo
