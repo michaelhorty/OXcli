@@ -44,11 +44,14 @@ if (len(sys.argv) < 2):
 
 if sys.argv[1].lower() == 'help':
     print('Use any of the following queries as an argument: python_examp.py queryname')
-    print('getissues')
-    print('getsingleissue')
-    print('getapps')
-    print('getappinventory')
-    print('getappinfo')
+    print('Commands are case sensitive if not Windows/MacOS environment')
+    print('getIssues')
+    print('getSingleIssue')
+    print('getApps')
+    print('getAppInventory')
+    print('getAppInfo')
+    print('sbomLibs')
+    print('sbomLibStats')
     exit()    
 
 # Reading Query and Variables files for GraphQL API

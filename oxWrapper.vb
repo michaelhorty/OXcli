@@ -71,9 +71,11 @@ Public Class oxWrapper
         Dim sInfo$ = "python"
         If osType = "MacOSX" Or osType = "Linux" Then sInfo = "python3"
 
+        FileSystem.ChDir(pyDir)
+
         Dim startInfo As New ProcessStartInfo
         startInfo.FileName = sInfo
-        startInfo.Arguments = "python_examp.py " + LCase(apiCall)
+        startInfo.Arguments = "python_examp.py " + apiCall
         'startInfo.UseShellExecute = True
 
         ' Console.WriteLine("Executing>" + vbCrLf + startInfo.FileName + " " + startInfo.Arguments)
@@ -83,14 +85,17 @@ Public Class oxWrapper
 
         If callPython.WaitForExit(30000) = True Then
             getJSON = True
+            FileSystem.ChDir(ogDir)
             Exit Function
         Else
             Console.WriteLine("API Process timeout")
             getJSON = False
+            FileSystem.ChDir(ogDir)
             Exit Function
         End If
 
 errorcatch:
+        FileSystem.ChDir(ogDir)
         getJSON = False
         Console.WriteLine("ERROR: " & ErrorToString())
         'Return getAPIData("/api/apollo-gateway", True, "")
@@ -154,21 +159,16 @@ errorcatch:
 
     End Function
 
-    Public Function getAppInfoShort(filen) As List(Of oxAppshort)
+    Public Function getAppInfoShort(jsoN$) As List(Of oxAppshort)
         getAppInfoShort = New List(Of oxAppshort)
 
-        'Console.WriteLine("Does " + filen + " exist? " + File.Exists(filen))
-
-        Dim jsoN$ = streamReaderTxt(filen)
         Dim nD As JObject = JObject.Parse(jsoN)
         jsoN = nD.SelectToken("data").SelectToken("getApplications").SelectToken("applications").ToString
 
         getAppInfoShort = JsonConvert.DeserializeObject(Of List(Of oxAppshort))(jsoN)
     End Function
 
-    Public Function getAllTags(filen) As List(Of oxTag)
-        getAllTags = New List(Of oxTag)
-        Dim jsoN$ = streamReaderTxt(filen)
+    Public Function getAllTags(jsoN$) As List(Of oxTag)
         Dim nD As JObject = JObject.Parse(jsoN)
         jsoN = nD.SelectToken("data").SelectToken("getAllTags").SelectToken("tags").ToString
 
