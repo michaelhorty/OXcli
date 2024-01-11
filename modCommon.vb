@@ -508,6 +508,7 @@ nextChr:
         If File.Exists(fileN) = False Then
             Exit Sub
         Else
+            'Console.WriteLine("Killing " + fileN)
             Kill(fileN)
         End If
     End Sub

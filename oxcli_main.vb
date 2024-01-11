@@ -133,9 +133,19 @@ Module Program
                     Console.WriteLine("Will default to https://api.cloud.ox.security/api/apollo-gateway")
                 End If
                 Dim newEfile$ = "oxUrl='" + urL + "'" + Chr(13) + "oxKey='" + apiKey + "'"
-                safeKILL(Path.Combine(pyDir, ".env"))
-                Call streamWriterTxt(Path.Combine(pyDir, ".env"), newEfile)
+
+                FileSystem.ChDir(pyDir)
+                'Console.WriteLine("Checking for " + Path.Combine(pyDir, ".env"))
+                If RuntimeInformation.IsOSPlatform(OSPlatform.Windows) <> True Then
+                    If File.Exists(Path.Combine(pyDir, ".env")) = True Then
+                        Console.WriteLine("On *NIX systems, either delete /python/.env and run this command again or edit your existing /python/.env file to keep only the latest values")
+                    End If
+                Else
+                    safeKILL(".env")
+                End If
+                Call streamWriterTxt(".env", newEfile)
                 Console.WriteLine("New environment variables set for " + urL)
+                FileSystem.ChDir(ogDir)
                 End
 
             Case "policycsv"
